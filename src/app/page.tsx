@@ -14,6 +14,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { useFtpServers, useTestServer } from "@/hooks/use-ftp";
+import { FtpServer, TestResult } from "@/lib/types/ftp";
 import {
   Github,
   Info,
@@ -31,16 +32,13 @@ export default function FtpTesterPage() {
   const testMutation = useTestServer();
   const [search, setSearch] = useState("");
   const [results, setResults] = useState<
-    Record<
-      string,
-      { status: string; isOnline?: boolean; latency?: number; loading: boolean }
-    >
+    Record<string, TestResult & { loading: boolean }>
   >({});
 
   const filteredServers = useMemo(() => {
     if (!servers) return [];
     return servers.filter(
-      (s) =>
+      (s: FtpServer) =>
         s.name.toLowerCase().includes(search.toLowerCase()) ||
         s.url.toLowerCase().includes(search.toLowerCase()) ||
         s.category.toLowerCase().includes(search.toLowerCase())
@@ -50,23 +48,22 @@ export default function FtpTesterPage() {
   const testOne = async (id: string, url: string) => {
     setResults((prev) => ({
       ...prev,
-      [id]: { status: "Testing...", loading: true },
+      [id]: { url, isOnline: false, statusText: "Testing...", loading: true },
     }));
     try {
       const res = await testMutation.mutateAsync(url);
       setResults((prev) => ({
         ...prev,
         [id]: {
-          status: res.statusText,
-          isOnline: res.isOnline,
-          latency: res.latency,
+          ...res,
           loading: false,
         },
       }));
-    } catch (_err) {
+    } catch (error) {
+      console.error("Test failed", error);
       setResults((prev) => ({
         ...prev,
-        [id]: { status: "Error", isOnline: false, loading: false },
+        [id]: { url, isOnline: false, statusText: "Error", loading: false },
       }));
     }
   };
@@ -79,7 +76,7 @@ export default function FtpTesterPage() {
     const batchSize = 5;
     for (let i = 0; i < filteredServers.length; i += batchSize) {
       const batch = filteredServers.slice(i, i + batchSize);
-      await Promise.all(batch.map((s) => testOne(s.id, s.url)));
+      await Promise.all(batch.map((s: FtpServer) => testOne(s.id, s.url)));
     }
     toast.success("All tests completed!");
   };
@@ -215,7 +212,7 @@ export default function FtpTesterPage() {
                       </TableCell>
                     </TableRow>
                   ))
-                : filteredServers.map((server) => {
+                : filteredServers.map((server: FtpServer) => {
                     const result = results[server.id];
                     return (
                       <TableRow

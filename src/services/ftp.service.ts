@@ -1,19 +1,6 @@
+import { FtpServer, TestResult as TestResponse } from "@/lib/types/ftp";
 import axios from "axios";
 import ftpServers from "../data/ftp-servers.json";
-
-export interface FtpServer {
-  id: string;
-  name: string;
-  url: string;
-  category: string;
-}
-
-export interface TestResponse {
-  url: string;
-  isOnline: boolean;
-  statusText: string;
-  latency: number;
-}
 
 export class FtpClientService {
   /**

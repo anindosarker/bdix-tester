@@ -24,7 +24,7 @@ export class FtpService {
           startTime
         );
       }
-    } catch (error) {
+    } catch {
       return {
         url: targetUrl,
         isOnline: false,
@@ -54,7 +54,7 @@ export class FtpService {
         statusText: `Online (${response.status})`,
         latency: Date.now() - startTime,
       };
-    } catch (error) {
+    } catch {
       return {
         url,
         isOnline: false,
