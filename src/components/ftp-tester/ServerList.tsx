@@ -29,7 +29,7 @@ export function ServerList({
   onTestOne,
 }: ServerListProps) {
   return (
-    <Card className="bg-card/40 backdrop-blur-md border border-border rounded-xl overflow-hidden shadow-2xl">
+    <Card className="bg-card/80 backdrop-blur-xl border border-border rounded-xl overflow-hidden shadow-xl">
       <Table>
         <TableHeader className="bg-muted/50 border-b border-border">
           <TableRow className="hover:bg-transparent border-none">
@@ -79,7 +79,7 @@ export function ServerList({
                 return (
                   <TableRow
                     key={server.id}
-                    className="group border-border hover:bg-accent/5 transition-colors h-16"
+                    className="group border-border hover:bg-primary/5 transition-colors h-16"
                   >
                     <TableCell className="font-semibold text-foreground pl-6">
                       <div className="flex items-center gap-3">
@@ -88,8 +88,8 @@ export function ServerList({
                             !isTested
                               ? "bg-muted"
                               : isOnline
-                              ? "bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]"
-                              : "bg-destructive shadow-[0_0_8px_rgba(239,68,68,0.5)]"
+                              ? "bg-emerald-500 shadow-md shadow-emerald-500/50"
+                              : "bg-destructive shadow-md shadow-destructive/50"
                           }`}
                         />
                         {server.name}
@@ -107,8 +107,8 @@ export function ServerList({
                     </TableCell>
                     <TableCell className="hidden md:table-cell">
                       <Badge
-                        variant="outline"
-                        className="bg-muted/50 border-border text-muted-foreground font-bold text-[10px] uppercase tracking-tighter px-2"
+                        variant="secondary"
+                        className="bg-muted text-muted-foreground font-bold text-[10px] uppercase tracking-tighter px-2 border-none"
                       >
                         {server.category}
                       </Badge>
@@ -124,9 +124,10 @@ export function ServerList({
                         </div>
                       ) : (
                         <Badge
+                          variant={isOnline ? "default" : "destructive"}
                           className={`${
                             isOnline
-                              ? "bg-emerald-400/10 text-emerald-400 border-emerald-400/20"
+                              ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20"
                               : "bg-destructive/10 text-destructive border-destructive/20"
                           } border font-bold text-[10px] uppercase tracking-widest px-2.5 py-0.5 rounded-full`}
                         >
@@ -140,7 +141,7 @@ export function ServerList({
                         variant="ghost"
                         onClick={() => onTestOne(server.id, server.url)}
                         disabled={result?.loading}
-                        className="rounded-full w-8 h-8 hover:bg-accent transition-all opacity-0 group-hover:opacity-100"
+                        className="rounded-full w-8 h-8 hover:bg-muted transition-all opacity-0 group-hover:opacity-100"
                       >
                         <Wifi className="w-4 h-4 text-primary" />
                       </Button>
@@ -152,7 +153,7 @@ export function ServerList({
       </Table>
       {!isLoading && servers.length === 0 && (
         <div className="py-24 text-center space-y-4">
-          <div className="text-muted text-6xl">🔍</div>
+          <div className="text-muted text-6xl opacity-20">🔍</div>
           <h3 className="text-xl font-bold text-muted-foreground">
             No servers found
           </h3>

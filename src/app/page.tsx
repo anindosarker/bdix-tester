@@ -56,9 +56,7 @@ export default function FtpTesterPage() {
   const testAll = async () => {
     if (!filteredServers.length) return;
     setHasTested(true);
-    toast.info(`Scanning ${filteredServers.length} servers...`, {
-      className: "bg-neutral-900 border-neutral-800 text-cyan-400",
-    });
+    toast.info(`Scanning ${filteredServers.length} servers...`);
 
     // Test in batches of 5 to avoid overloading the backend/client
     const batchSize = 5;
@@ -66,9 +64,7 @@ export default function FtpTesterPage() {
       const batch = filteredServers.slice(i, i + batchSize);
       await Promise.all(batch.map((s: FtpServer) => testOne(s.id, s.url)));
     }
-    toast.success("All scans completed!", {
-      className: "bg-neutral-900 border-neutral-800 text-emerald-400",
-    });
+    toast.success("All scans completed!");
   };
 
   const openGithubIssue = () => {
@@ -88,7 +84,7 @@ export default function FtpTesterPage() {
   ).length;
 
   return (
-    <div className="min-h-screen bg-neutral-950 pt-24 pb-16 px-4 md:px-12 selection:bg-cyan-500/30">
+    <div className="min-h-screen bg-background pt-24 pb-16 px-4 md:px-12 selection:bg-primary/30">
       <Topbar onSubmitServer={openGithubIssue} />
 
       <div className="max-w-4xl mx-auto">

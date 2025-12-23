@@ -28,13 +28,13 @@ export function SearchBar({ value, onChange, totalFiltered }: SearchBarProps) {
           relative overflow-hidden transition-all duration-300 rounded-xl
           ${
             isFocused
-              ? "ring-1 ring-primary/50 shadow-[0_0_20px_rgba(var(--primary),0.1)]"
-              : "border border-border shadow-xl"
+              ? "ring-1 ring-primary/50 shadow-xl shadow-primary/10"
+              : "border border-border shadow-lg"
           }
-          bg-card/60 backdrop-blur-xl
+          bg-card/80 backdrop-blur-xl
         `}
         >
-          <div className="absolute left-5 top-1/2 -translate-y-1/2 text-muted-foreground group-hover:text-primary/70 transition-colors">
+          <div className="absolute left-5 top-1/2 -translate-y-1/2 text-muted-foreground group-hover:text-primary transition-colors">
             <Search className="w-5 h-5" />
           </div>
           <Input

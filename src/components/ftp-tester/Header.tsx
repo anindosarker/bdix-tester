@@ -19,7 +19,7 @@ export function Header({
   return (
     <div className="flex flex-col items-center text-center space-y-8 mb-16">
       <div className="flex flex-col items-center space-y-4">
-        <div className="w-16 h-16 rounded-xl bg-card border border-border flex items-center justify-center shadow-2xl">
+        <div className="w-16 h-16 rounded-xl bg-card border border-border flex items-center justify-center shadow-lg">
           <Terminal className="w-8 h-8 text-primary" />
         </div>
         <div className="space-y-2">
@@ -38,7 +38,7 @@ export function Header({
         <Button
           onClick={onTestAll}
           disabled={isTestDisabled}
-          className="w-full h-14 rounded-xl bg-primary hover:opacity-90 text-primary-foreground font-extrabold text-lg shadow-[0_0_20px_rgba(var(--primary),0.4)] transition-all hover:scale-[1.02] active:scale-[0.98] group relative overflow-hidden"
+          className="w-full h-14 rounded-xl bg-primary hover:opacity-90 text-primary-foreground font-extrabold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-[1.02] active:scale-[0.98] group relative overflow-hidden"
         >
           <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
           {hasTested ? (

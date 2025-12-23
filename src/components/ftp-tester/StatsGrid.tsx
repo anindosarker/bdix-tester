@@ -30,15 +30,15 @@ export function StatsGrid({
         label="Online"
         value={onlineCount}
         icon={<CheckCircle2 className="w-5 h-5 text-emerald-500" />}
-        borderColor="border-emerald-500/20"
-        glowColor="shadow-[0_0_15px_rgba(16,185,129,0.1)]"
+        borderColor="border-emerald-500/20 dark:border-emerald-500/30"
+        glowColor="shadow-xl shadow-emerald-500/5"
       />
       <StatCard
         label="Offline"
         value={offlineCount}
         icon={<XCircle className="w-5 h-5 text-destructive" />}
-        borderColor="border-destructive/20"
-        glowColor="shadow-[0_0_15px_rgba(239,68,68,0.1)]"
+        borderColor="border-destructive/20 dark:border-destructive/30"
+        glowColor="shadow-xl shadow-destructive/5"
       />
     </div>
   );
@@ -59,14 +59,14 @@ function StatCard({
 }) {
   return (
     <Card
-      className={`bg-card/60 backdrop-blur-xl border ${borderColor} ${glowColor} rounded-xl overflow-hidden transition-all duration-300 hover:border-accent`}
+      className={`bg-card/80 backdrop-blur-xl border ${borderColor} ${glowColor} rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50`}
     >
       <CardContent className="p-6 flex items-center gap-6">
-        <div className="w-14 h-14 rounded-xl bg-background border border-border flex items-center justify-center shadow-2xl">
+        <div className="w-14 h-14 rounded-xl bg-background border border-border flex items-center justify-center shadow-inner">
           {icon}
         </div>
         <div className="space-y-0.5">
-          <div className="text-3xl font-black text-card-foreground lining-nums tabular-nums leading-none">
+          <div className="text-3xl font-black text-foreground lining-nums tabular-nums leading-none">
             {value}
           </div>
           <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
