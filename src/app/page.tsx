@@ -56,7 +56,9 @@ export default function FtpTesterPage() {
   const testAll = async () => {
     if (!filteredServers.length) return;
     setHasTested(true);
-    toast.info(`Testing ${filteredServers.length} servers...`);
+    toast.info(`Scanning ${filteredServers.length} servers...`, {
+      className: "bg-neutral-900 border-neutral-800 text-cyan-400",
+    });
 
     // Test in batches of 5 to avoid overloading the backend/client
     const batchSize = 5;
@@ -64,7 +66,9 @@ export default function FtpTesterPage() {
       const batch = filteredServers.slice(i, i + batchSize);
       await Promise.all(batch.map((s: FtpServer) => testOne(s.id, s.url)));
     }
-    toast.success("All tests completed!");
+    toast.success("All scans completed!", {
+      className: "bg-neutral-900 border-neutral-800 text-emerald-400",
+    });
   };
 
   const openGithubIssue = () => {
@@ -79,24 +83,33 @@ export default function FtpTesterPage() {
   };
 
   const onlineCount = Object.values(results).filter((r) => r.isOnline).length;
+  const offlineCount = Object.values(results).filter(
+    (r) => !r.isOnline && !r.loading
+  ).length;
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-neutral-50 to-neutral-200 dark:from-neutral-950 dark:to-neutral-900 pt-24 pb-12 px-4 md:px-12 transition-colors duration-500">
+    <div className="min-h-screen bg-neutral-950 pt-24 pb-16 px-4 md:px-12 selection:bg-cyan-500/30">
       <Topbar onSubmitServer={openGithubIssue} />
 
-      <div className="max-w-5xl mx-auto space-y-4">
+      <div className="max-w-4xl mx-auto">
         <Header
           onTestAll={testAll}
           onSubmitServer={openGithubIssue}
           isTestDisabled={isLoading || filteredServers.length === 0}
+          hasTested={hasTested}
         />
 
-        <SearchBar value={search} onChange={setSearch} />
-
         <StatsGrid
+          totalCount={filteredServers.length}
           onlineCount={onlineCount}
-          totalFiltered={filteredServers.length}
+          offlineCount={offlineCount}
           isVisible={hasTested}
+        />
+
+        <SearchBar
+          value={search}
+          onChange={setSearch}
+          totalFiltered={filteredServers.length}
         />
 
         <ServerList

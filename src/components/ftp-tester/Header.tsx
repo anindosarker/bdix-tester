@@ -1,65 +1,64 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Github, Play, Wifi } from "lucide-react";
+import { Play, Terminal } from "lucide-react";
 
 interface HeaderProps {
   onTestAll: () => void;
   onSubmitServer: () => void;
   isTestDisabled: boolean;
+  hasTested: boolean;
 }
 
 export function Header({
   onTestAll,
   onSubmitServer,
   isTestDisabled,
+  hasTested,
 }: HeaderProps) {
   return (
-    <div className="flex flex-col items-center text-center space-y-6 mb-12">
-      <div className="space-y-2">
-        <h1 className="text-5xl font-extrabold tracking-tight lg:text-7xl bg-linear-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent pb-1">
-          BDIX FTP Tester
-        </h1>
-        <div className="flex flex-col items-center space-y-2">
-          <p className="text-xl text-neutral-600 dark:text-neutral-300 max-w-2xl px-4">
-            This tester identifies which BDIX FTP servers are accessible on your
-            current WiFi/Network.
-          </p>
-          <p className="text-sm text-neutral-400 dark:text-neutral-500 flex items-center justify-center gap-2">
-            <Wifi className="w-4 h-4 text-blue-500" /> High-speed local
-            discovery made easy.
+    <div className="flex flex-col items-center text-center space-y-8 mb-16">
+      <div className="flex flex-col items-center space-y-4">
+        <div className="w-16 h-16 rounded-xl bg-card border border-border flex items-center justify-center shadow-2xl">
+          <Terminal className="w-8 h-8 text-primary" />
+        </div>
+        <div className="space-y-2">
+          <div className="flex items-center justify-center gap-3">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+              FTP <span className="text-primary italic">Tester</span>
+            </h1>
+          </div>
+          <p className="text-muted-foreground font-medium max-w-sm">
+            Test your FTP server connections instantly
           </p>
         </div>
       </div>
 
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-6 w-full max-w-xs">
         <Button
-          size="lg"
           onClick={onTestAll}
           disabled={isTestDisabled}
-          className="rounded-full shadow-2xl h-16 px-12 text-lg font-bold transition-all hover:scale-105 active:scale-95 bg-blue-600 hover:bg-blue-700 glow-blue group"
+          className="w-full h-14 rounded-xl bg-primary hover:opacity-90 text-primary-foreground font-extrabold text-lg shadow-[0_0_20px_rgba(var(--primary),0.4)] transition-all hover:scale-[1.02] active:scale-[0.98] group relative overflow-hidden"
         >
-          <Play className="w-6 h-6 mr-3 group-hover:animate-ping" /> Start Total
-          Scan
+          <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+          {hasTested ? (
+            <span className="flex items-center gap-2">
+              <Play className="w-5 h-5 fill-current" /> Test Again
+            </span>
+          ) : (
+            <span className="flex items-center gap-2">
+              <Play className="w-5 h-5 fill-current" /> Start Test
+            </span>
+          )}
         </Button>
 
-        <Button
-          variant="ghost"
-          onClick={onSubmitServer}
-          className="rounded-full text-neutral-400 hover:text-neutral-600 dark:hover:text-white"
-        >
-          <Github className="w-4 h-4 mr-2" /> Submit New Server
-        </Button>
+        {!hasTested && (
+          <p className="text-xs text-muted-foreground max-w-[240px] leading-relaxed">
+            Click the button to test connectivity to all FTP servers in the list
+            below.
+          </p>
+        )}
       </div>
-
-      <style jsx global>{`
-        .glow-blue {
-          box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
-        }
-        .glow-blue:hover {
-          box-shadow: 0 0 30px rgba(37, 99, 235, 0.5);
-        }
-      `}</style>
     </div>
   );
 }

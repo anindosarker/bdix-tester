@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { FtpServer, TestResult } from "@/lib/types/ftp";
-import { Signal } from "lucide-react";
+import { Activity, Wifi } from "lucide-react";
 
 interface ServerListProps {
   servers: FtpServer[];
@@ -29,105 +29,120 @@ export function ServerList({
   onTestOne,
 }: ServerListProps) {
   return (
-    <Card className="border-none shadow-2xl overflow-hidden bg-white/30 backdrop-blur-xl dark:bg-black/30">
+    <Card className="bg-card/40 backdrop-blur-md border border-border rounded-xl overflow-hidden shadow-2xl">
       <Table>
-        <TableHeader className="bg-neutral-100/50 dark:bg-neutral-800/50">
-          <TableRow>
-            <TableHead className="font-bold">Name</TableHead>
-            <TableHead className="font-bold">URL</TableHead>
-            <TableHead className="font-bold hidden md:table-cell">
+        <TableHeader className="bg-muted/50 border-b border-border">
+          <TableRow className="hover:bg-transparent border-none">
+            <TableHead className="text-muted-foreground font-bold uppercase tracking-wider text-[10px] pl-6 h-12 flex items-center gap-2">
+              <Activity className="w-3 h-3" /> Server Name
+            </TableHead>
+            <TableHead className="text-muted-foreground font-bold uppercase tracking-wider text-[10px] h-12">
+              Host
+            </TableHead>
+            <TableHead className="text-muted-foreground font-bold uppercase tracking-wider text-[10px] hidden md:table-cell h-12">
               Category
             </TableHead>
-            <TableHead className="font-bold">Status</TableHead>
-            <TableHead className="font-bold text-right">Action</TableHead>
+            <TableHead className="text-muted-foreground font-bold uppercase tracking-wider text-[10px] h-12">
+              Status
+            </TableHead>
+            <TableHead className="text-muted-foreground font-bold uppercase tracking-wider text-[10px] text-right pr-6 h-12">
+              {/* No header for action */}
+            </TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {isLoading
             ? Array.from({ length: 5 }).map((_, i) => (
-                <TableRow key={i}>
-                  <TableCell>
-                    <Skeleton className="h-4 w-[150px]" />
+                <TableRow key={i} className="border-border">
+                  <TableCell className="pl-6">
+                    <Skeleton className="h-4 w-32 bg-muted" />
                   </TableCell>
                   <TableCell>
-                    <Skeleton className="h-4 w-[200px]" />
+                    <Skeleton className="h-4 w-40 bg-muted" />
                   </TableCell>
                   <TableCell className="hidden md:table-cell">
-                    <Skeleton className="h-4 w-[100px]" />
+                    <Skeleton className="h-4 w-20 bg-muted" />
                   </TableCell>
                   <TableCell>
-                    <Skeleton className="h-4 w-[80px]" />
+                    <Skeleton className="h-4 w-16 bg-muted" />
                   </TableCell>
-                  <TableCell className="text-right">
-                    <Skeleton className="h-8 w-16 ml-auto" />
+                  <TableCell>
+                    <Skeleton className="h-8 w-8 ml-auto bg-muted rounded-full" />
                   </TableCell>
                 </TableRow>
               ))
             : servers.map((server) => {
                 const result = results[server.id];
+                const isOnline = result?.isOnline;
+                const isTested = !!result;
+
                 return (
                   <TableRow
                     key={server.id}
-                    className="group hover:bg-white/40 dark:hover:bg-black/40 transition-colors"
+                    className="group border-border hover:bg-accent/5 transition-colors h-16"
                   >
-                    <TableCell className="font-medium">{server.name}</TableCell>
-                    <TableCell className="truncate max-w-[200px] md:max-w-none">
+                    <TableCell className="font-semibold text-foreground pl-6">
+                      <div className="flex items-center gap-3">
+                        <div
+                          className={`w-2 h-2 rounded-full ${
+                            !isTested
+                              ? "bg-muted"
+                              : isOnline
+                              ? "bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]"
+                              : "bg-destructive shadow-[0_0_8px_rgba(239,68,68,0.5)]"
+                          }`}
+                        />
+                        {server.name}
+                      </div>
+                    </TableCell>
+                    <TableCell className="text-muted-foreground font-mono text-xs">
                       <a
                         href={server.url}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-blue-500 hover:underline"
+                        className="hover:text-primary transition-colors"
                       >
-                        {server.url}
+                        {server.url.replace("http://", "").replace("/", "")}
                       </a>
                     </TableCell>
                     <TableCell className="hidden md:table-cell">
-                      <Badge variant="secondary" className="rounded-full px-3">
+                      <Badge
+                        variant="outline"
+                        className="bg-muted/50 border-border text-muted-foreground font-bold text-[10px] uppercase tracking-tighter px-2"
+                      >
                         {server.category}
                       </Badge>
                     </TableCell>
                     <TableCell>
-                      {!result ? (
-                        <Badge
-                          variant="outline"
-                          className="rounded-full px-3 text-neutral-400 border-neutral-300"
-                        >
-                          Not Tested
-                        </Badge>
-                      ) : result.loading ? (
-                        <Badge
-                          variant="outline"
-                          className="rounded-full px-3 animate-pulse border-blue-400 text-blue-500"
-                        >
-                          Testing...
-                        </Badge>
-                      ) : result.isOnline ? (
-                        <div className="flex flex-col gap-1">
-                          <Badge className="bg-emerald-500 hover:bg-emerald-600 rounded-full px-3 w-fit">
-                            Online
-                          </Badge>
-                          <span className="text-[10px] text-emerald-600 font-mono ml-1">
-                            {result.latency}ms
-                          </span>
+                      {result?.loading ? (
+                        <div className="flex items-center gap-2 text-primary text-xs font-bold animate-pulse">
+                          <Activity className="w-3 h-3 animate-spin" /> Testing
+                        </div>
+                      ) : !isTested ? (
+                        <div className="text-muted-foreground/60 text-xs font-medium italic">
+                          Pending
                         </div>
                       ) : (
                         <Badge
-                          variant="destructive"
-                          className="rounded-full px-3"
+                          className={`${
+                            isOnline
+                              ? "bg-emerald-400/10 text-emerald-400 border-emerald-400/20"
+                              : "bg-destructive/10 text-destructive border-destructive/20"
+                          } border font-bold text-[10px] uppercase tracking-widest px-2.5 py-0.5 rounded-full`}
                         >
-                          Offline
+                          {isOnline ? "Online" : "Offline"}
                         </Badge>
                       )}
                     </TableCell>
-                    <TableCell className="text-right">
+                    <TableCell className="text-right pr-6">
                       <Button
-                        size="sm"
+                        size="icon"
                         variant="ghost"
                         onClick={() => onTestOne(server.id, server.url)}
                         disabled={result?.loading}
-                        className="rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition-all opacity-0 group-hover:opacity-100 focus:opacity-100"
+                        className="rounded-full w-8 h-8 hover:bg-accent transition-all opacity-0 group-hover:opacity-100"
                       >
-                        <Signal className="w-4 h-4 mr-2" /> Test
+                        <Wifi className="w-4 h-4 text-primary" />
                       </Button>
                     </TableCell>
                   </TableRow>
@@ -136,11 +151,13 @@ export function ServerList({
         </TableBody>
       </Table>
       {!isLoading && servers.length === 0 && (
-        <div className="py-20 text-center space-y-4">
-          <div className="text-neutral-400 text-6xl">🔍</div>
-          <h3 className="text-xl font-semibold">No servers found</h3>
-          <p className="text-neutral-500">
-            Try searching for something else or submit a new server.
+        <div className="py-24 text-center space-y-4">
+          <div className="text-muted text-6xl">🔍</div>
+          <h3 className="text-xl font-bold text-muted-foreground">
+            No servers found
+          </h3>
+          <p className="text-muted-foreground/60">
+            Try refining your search terms.
           </p>
         </div>
       )}
