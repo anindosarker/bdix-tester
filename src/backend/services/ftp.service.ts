@@ -1,13 +1,7 @@
+import { TestResult } from "@/lib/types/ftp";
 import axios from "axios";
 import net from "net";
 import { URL } from "url";
-
-export interface TestResult {
-  url: string;
-  isOnline: boolean;
-  statusText: string;
-  latency?: number;
-}
 
 export class FtpService {
   /**
