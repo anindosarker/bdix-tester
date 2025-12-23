@@ -9,5 +9,4 @@ export interface TestResult {
   url: string;
   isOnline: boolean;
   statusText: string;
-  latency?: number;
 }

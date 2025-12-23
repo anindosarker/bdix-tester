@@ -8,20 +8,18 @@ export class FtpService {
    * Tests connectivity to a URL (HTTP/HTTPS or FTP/TCP)
    */
   static async testConnection(targetUrl: string): Promise<TestResult> {
-    const startTime = Date.now();
     try {
       const parsedUrl = new URL(targetUrl);
       const isHttp =
         parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:";
 
       if (isHttp) {
-        return await this.testHttp(targetUrl, startTime);
+        return await this.testHttp(targetUrl);
       } else {
         return await this.testTcp(
           parsedUrl.hostname,
           parsedUrl.port || "21",
-          targetUrl,
-          startTime
+          targetUrl
         );
       }
     } catch {
@@ -29,15 +27,11 @@ export class FtpService {
         url: targetUrl,
         isOnline: false,
         statusText: "Invalid URL",
-        latency: 0,
       };
     }
   }
 
-  private static async testHttp(
-    url: string,
-    startTime: number
-  ): Promise<TestResult> {
+  private static async testHttp(url: string): Promise<TestResult> {
     try {
       // We use a short timeout for BDIX checks
       const response = await axios.get(url, {
@@ -52,14 +46,12 @@ export class FtpService {
         url,
         isOnline: true,
         statusText: `Online (${response.status})`,
-        latency: Date.now() - startTime,
       };
     } catch {
       return {
         url,
         isOnline: false,
         statusText: "Offline",
-        latency: Date.now() - startTime,
       };
     }
   }
@@ -67,8 +59,7 @@ export class FtpService {
   private static testTcp(
     host: string,
     port: string,
-    url: string,
-    startTime: number
+    url: string
   ): Promise<TestResult> {
     return new Promise((resolve) => {
       const socket = new net.Socket();
@@ -82,7 +73,6 @@ export class FtpService {
           url,
           isOnline: true,
           statusText: "Online (TCP)",
-          latency: Date.now() - startTime,
         });
       });
 
@@ -92,7 +82,6 @@ export class FtpService {
           url,
           isOnline: false,
           statusText: "Connection Error",
-          latency: Date.now() - startTime,
         });
       });
 
@@ -102,7 +91,6 @@ export class FtpService {
           url,
           isOnline: false,
           statusText: "Timed Out",
-          latency: Date.now() - startTime,
         });
       });
 

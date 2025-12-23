@@ -1,65 +1,47 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Search, SignalHigh, SignalLow } from "lucide-react";
+import { SignalHigh } from "lucide-react";
 
 interface StatsGridProps {
   onlineCount: number;
   totalFiltered: number;
-  avgLatency: number;
-  search: string;
-  onSearchChange: (value: string) => void;
+  isVisible: boolean;
 }
 
 export function StatsGrid({
   onlineCount,
   totalFiltered,
-  avgLatency,
-  search,
-  onSearchChange,
+  isVisible,
 }: StatsGridProps) {
+  if (!isVisible) return null;
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <Card className="border-none shadow-xl bg-white/50 backdrop-blur-md dark:bg-black/50 overflow-hidden group">
+    <div className="max-w-md mx-auto mb-12 animate-in fade-in slide-in-from-top-4 duration-500">
+      <Card className="border-none shadow-xl bg-white/70 backdrop-blur-md dark:bg-black/70 overflow-hidden group">
         <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
           <SignalHigh className="w-12 h-12" />
         </div>
         <CardHeader className="pb-2">
-          <CardTitle className="text-sm font-medium text-neutral-500">
-            Online Servers
+          <CardTitle className="text-xs font-semibold uppercase tracking-wider text-neutral-500 text-center">
+            Current Reachability
           </CardTitle>
         </CardHeader>
-        <CardContent>
-          <div className="text-3xl font-bold">
-            {onlineCount} / {totalFiltered}
+        <CardContent className="flex justify-center pb-6">
+          <div className="text-5xl font-black flex items-baseline gap-2">
+            <span className="text-blue-600 dark:text-blue-400">
+              {onlineCount}
+            </span>
+            <span className="text-neutral-300 dark:text-neutral-700 text-3xl">
+              /
+            </span>
+            <span className="text-neutral-400">{totalFiltered}</span>
+            <span className="text-sm font-medium text-neutral-500 ml-2">
+              Online
+            </span>
           </div>
         </CardContent>
       </Card>
-
-      <Card className="border-none shadow-xl bg-white/50 backdrop-blur-md dark:bg-black/50 overflow-hidden group">
-        <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-          <SignalLow className="w-12 h-12 text-red-500" />
-        </div>
-        <CardHeader className="pb-2">
-          <CardTitle className="text-sm font-medium text-neutral-500">
-            Avg. Latency
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="text-3xl font-bold">{avgLatency}ms</div>
-        </CardContent>
-      </Card>
-
-      <div className="relative">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
-        <Input
-          placeholder="Search by name, URL or category..."
-          className="pl-10 h-full min-h-[80px] text-lg bg-white/50 backdrop-blur-md dark:bg-black/50 border-none shadow-xl rounded-xl focus-visible:ring-2 focus-visible:ring-blue-500 transition-all"
-          value={search}
-          onChange={(e) => onSearchChange(e.target.value)}
-        />
-      </div>
     </div>
   );
 }

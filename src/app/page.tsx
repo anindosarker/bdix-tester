@@ -2,8 +2,10 @@
 
 import { Footer } from "@/components/ftp-tester/Footer";
 import { Header } from "@/components/ftp-tester/Header";
+import { SearchBar } from "@/components/ftp-tester/SearchBar";
 import { ServerList } from "@/components/ftp-tester/ServerList";
 import { StatsGrid } from "@/components/ftp-tester/StatsGrid";
+import { Topbar } from "@/components/ftp-tester/Topbar";
 import { useFtpServers, useTestServer } from "@/hooks/use-ftp";
 import { FtpServer, TestResult } from "@/lib/types/ftp";
 import { useMemo, useState } from "react";
@@ -13,6 +15,7 @@ export default function FtpTesterPage() {
   const { data: servers, isLoading } = useFtpServers();
   const testMutation = useTestServer();
   const [search, setSearch] = useState("");
+  const [hasTested, setHasTested] = useState(false);
   const [results, setResults] = useState<
     Record<string, TestResult & { loading: boolean }>
   >({});
@@ -52,6 +55,7 @@ export default function FtpTesterPage() {
 
   const testAll = async () => {
     if (!filteredServers.length) return;
+    setHasTested(true);
     toast.info(`Testing ${filteredServers.length} servers...`);
 
     // Test in batches of 5 to avoid overloading the backend/client
@@ -75,28 +79,24 @@ export default function FtpTesterPage() {
   };
 
   const onlineCount = Object.values(results).filter((r) => r.isOnline).length;
-  const avgLatency = Math.round(
-    Object.values(results)
-      .filter((r) => r.latency)
-      .reduce((acc, curr) => acc + (curr.latency || 0), 0) /
-      (Object.values(results).filter((r) => r.latency).length || 1)
-  );
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-neutral-50 to-neutral-100 dark:from-neutral-950 dark:to-neutral-900 p-4 md:p-8">
-      <div className="max-w-6xl mx-auto space-y-8">
+    <div className="min-h-screen bg-linear-to-b from-neutral-50 to-neutral-200 dark:from-neutral-950 dark:to-neutral-900 pt-24 pb-12 px-4 md:px-12 transition-colors duration-500">
+      <Topbar onSubmitServer={openGithubIssue} />
+
+      <div className="max-w-5xl mx-auto space-y-4">
         <Header
           onTestAll={testAll}
           onSubmitServer={openGithubIssue}
           isTestDisabled={isLoading || filteredServers.length === 0}
         />
 
+        <SearchBar value={search} onChange={setSearch} />
+
         <StatsGrid
           onlineCount={onlineCount}
           totalFiltered={filteredServers.length}
-          avgLatency={avgLatency}
-          search={search}
-          onSearchChange={setSearch}
+          isVisible={hasTested}
         />
 
         <ServerList
