@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Local FTP 1",
+    "url": "http://103.103.239.66/",
+    "category": "General"
+  },
+  {
+    "id": "2",
+    "name": "Alpha Media Zone",
+    "url": "http://alphamediazone.com/moviedom/",
+    "category": "Movies"
+  },
+  {
+    "id": "3",
+    "name": "Local FTP 2",
+    "url": "http://172.127.27.102/",
+    "category": "General"
+  },
+  {
+    "id": "4",
+    "name": "Local FTP 3",
+    "url": "http://103.135.134.226/",
+    "category": "General"
+  }
+]
