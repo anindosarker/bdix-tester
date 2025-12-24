@@ -80,7 +80,6 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
         accessorKey: "priority",
         header: () => null,
         cell: () => null,
-        enableHiding: true,
       },
       {
         accessorKey: "name",
@@ -90,7 +89,6 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
               <Button
                 variant="ghost"
                 size="sm"
-                className="-ml-3 h-8 data-[state=open]:bg-accent"
                 onClick={() => {
                   const sorted = column.getIsSorted();
                   if (sorted === "asc") column.toggleSorting(true);
@@ -145,7 +143,9 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
                     : "bg-destructive"
                 }`}
               />
-              <span className="break-all">{server.name}</span>
+              <span className="break-all">
+                {row.index + 1}. {server.name}
+              </span>
             </div>
           );
         },
@@ -157,7 +157,6 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
             <Button
               variant="ghost"
               size="sm"
-              className="-ml-3 h-8"
               onClick={() => {
                 const sorted = column.getIsSorted();
                 if (sorted === "asc") column.toggleSorting(true);
@@ -204,7 +203,6 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
             <Button
               variant="ghost"
               size="sm"
-              className="-ml-3 h-8 w-fit justify-start bg-transparent hover:bg-transparent px-2"
               onClick={() => {
                 const sorted = column.getIsSorted();
                 if (sorted === "asc") column.toggleSorting(true);
@@ -225,11 +223,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
             </Button>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="h-7 w-full justify-between px-2 text-[10px] bg-muted/50 hover:bg-muted font-normal border-none"
-                >
+                <Button variant="ghost" size="sm">
                   <span className="truncate">
                     {column.getFilterValue() === 0
                       ? "Online"
@@ -279,14 +273,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
           }
           const isOnline = result.isOnline;
           return (
-            <Badge
-              variant={isOnline ? "default" : "destructive"}
-              className={
-                isOnline
-                  ? "bg-emerald-500/10 text-emerald-500 border-emerald-500/20 shadow-none hover:bg-emerald-500/20"
-                  : ""
-              }
-            >
+            <Badge variant={isOnline ? "default" : "destructive"}>
               {isOnline ? "Online" : "Offline"}
             </Badge>
           );
@@ -374,20 +361,13 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
   });
 
   return (
-    <Card className="rounded-xl border bg-card/30 backdrop-blur-sm overflow-hidden shadow-2xl border-white/5">
-      <div className="px-5 py-4 border-b border-white/5 flex items-center justify-between bg-white/[0.02]">
-        <div className="flex items-center gap-3">
-          <div className="p-2 rounded-lg bg-primary/10 text-primary">
-            <Globe className="w-4 h-4" />
-          </div>
-          <div>
-            <h3 className="text-sm font-bold tracking-tight text-foreground/90">
-              Server Directory
-            </h3>
-            <p className="text-[10px] text-muted-foreground/60 font-medium uppercase tracking-widest">
-              {table.getFilteredRowModel().rows.length} Total Servers Found
-            </p>
-          </div>
+    <Card className="overflow-hidden">
+      <div className="px-4 py-3 border-b flex items-center justify-between bg-muted/10">
+        <div className="flex items-center gap-2">
+          <Globe className="w-4 h-4 text-primary" />
+          <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
+            Server Directory
+          </h3>
         </div>
         <div className="flex items-center gap-2">
           {columnFilters.length > 0 && (
@@ -403,17 +383,14 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
         </div>
       </div>
       <Table>
-        <TableHeader className="bg-white/[0.01]">
+        <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow
               key={headerGroup.id}
-              className="hover:bg-transparent border-white/5"
+              className="hover:bg-transparent border-border"
             >
               {headerGroup.headers.map((header) => (
-                <TableHead
-                  key={header.id}
-                  className="p-0 border-r border-white/5 last:border-0 align-top"
-                >
+                <TableHead key={header.id}>
                   {header.isPlaceholder
                     ? null
                     : flexRender(
@@ -428,21 +405,21 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
         <TableBody>
           {isLoading ? (
             Array.from({ length: 5 }).map((_, i) => (
-              <TableRow key={i} className="border-white/5">
+              <TableRow key={i} className="border-border">
                 <TableCell className="pl-6">
-                  <Skeleton className="h-4 w-32 bg-white/5" />
+                  <Skeleton className="h-4 w-32 bg-muted" />
                 </TableCell>
                 <TableCell>
-                  <Skeleton className="h-4 w-40 bg-white/5" />
+                  <Skeleton className="h-4 w-40 bg-muted" />
                 </TableCell>
                 <TableCell>
-                  <Skeleton className="h-4 w-16 bg-white/5" />
+                  <Skeleton className="h-4 w-16 bg-muted" />
                 </TableCell>
                 <TableCell>
-                  <Skeleton className="h-16 w-32 bg-white/5 rounded-lg" />
+                  <Skeleton className="h-16 w-32 bg-muted rounded-lg" />
                 </TableCell>
                 <TableCell>
-                  <Skeleton className="h-8 w-8 ml-auto bg-white/5 rounded-full" />
+                  <Skeleton className="h-8 w-8 ml-auto bg-muted rounded-full" />
                 </TableCell>
               </TableRow>
             ))
@@ -450,7 +427,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
             table.getRowModel().rows.map((row) => (
               <TableRow
                 key={row.id}
-                className="group hover:bg-white/[0.02] border-white/5 transition-colors"
+                className="group border-border transition-colors"
               >
                 {row.getVisibleCells().map((cell) => (
                   <TableCell key={cell.id} className="py-3 px-4">
@@ -461,20 +438,14 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
             ))
           ) : (
             <TableRow>
-              <TableCell
-                colSpan={columns.length}
-                className="h-48 text-center bg-white/1"
-              >
+              <TableCell colSpan={columns.length} className="h-48 text-center">
                 <div className="py-12 space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mx-auto mb-2">
-                    <Search className="w-8 h-8 text-primary/20" />
-                  </div>
-                  <h3 className="text-xl font-bold text-foreground/80">
+                  <div className="text-muted text-6xl opacity-20">🔍</div>
+                  <h3 className="text-xl font-bold text-muted-foreground">
                     No servers found
                   </h3>
-                  <p className="text-muted-foreground/60 text-sm max-w-xs mx-auto">
-                    No results match your current filters. Try resetting or
-                    adjusting your search terms.
+                  <p className="text-muted-foreground/60">
+                    Try refining your search terms.
                   </p>
                   <Button
                     variant="outline"
