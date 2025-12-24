@@ -112,7 +112,6 @@ export default function FtpTesterPage() {
           servers={filteredServers}
           isLoading={isLoading}
           results={results}
-          onTestOne={testOne}
         />
 
         <Footer />

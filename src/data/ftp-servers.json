@@ -1,5 +1,11 @@
 [
   {
+    "id": "google-test",
+    "name": "Google Search (Test)",
+    "url": "https://www.google.com/search?igu=1",
+    "category": "Search"
+  },
+  {
     "id": "1",
     "name": "Local FTP 1",
     "url": "http://103.103.239.66/",

@@ -19,22 +19,17 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { Activity, Globe, Wifi } from "lucide-react";
+import { Activity, ExternalLink, Globe } from "lucide-react";
+import Link from "next/link";
 import { useMemo } from "react";
 
 interface ServerListProps {
   servers: FtpServer[];
   isLoading: boolean;
   results: Record<string, TestResult & { loading: boolean }>;
-  onTestOne: (id: string, url: string) => void;
 }
 
-export function ServerList({
-  servers,
-  isLoading,
-  results,
-  onTestOne,
-}: ServerListProps) {
+export function ServerList({ servers, isLoading, results }: ServerListProps) {
   const columns = useMemo<ColumnDef<FtpServer>[]>(
     () => [
       {
@@ -133,11 +128,11 @@ export function ServerList({
           return (
             <div className="relative group/preview w-40 h-24 rounded-lg border border-border bg-muted/30 overflow-hidden shadow-inner">
               <iframe
-                src="https://www.google.com/search?q=testing+bdix&igu=1"
+                src={row.original.url}
                 className="w-[1000px] h-[600px] origin-top-left scale-[0.16] pointer-events-none"
                 title="Preview"
               />
-              <div className="absolute inset-0 bg-transparent flex items-center justify-center opacity-0 group-hover/preview:opacity-100 transition-opacity bg-black/40">
+              <div className="absolute inset-0 bg-transparent flex items-center justify-center opacity-0 group-hover/preview:opacity-100 transition-opacity">
                 <Globe className="w-4 h-4 text-white animate-pulse" />
               </div>
             </div>
@@ -146,23 +141,17 @@ export function ServerList({
       },
       {
         id: "actions",
-        header: "",
+        header: "Action",
         cell: ({ row }) => (
-          <div className="text-right">
-            <Button
-              size="icon"
-              variant="ghost"
-              onClick={() => onTestOne(row.original.id, row.original.url)}
-              disabled={results[row.original.id]?.loading}
-              className="rounded-full w-8 h-8 hover:bg-muted transition-all opacity-0 group-hover:opacity-100"
-            >
-              <Wifi className="w-4 h-4 text-primary" />
+          <Link href={row.original.url} target="_blank">
+            <Button variant="outline" size="sm">
+              <ExternalLink className="mr-2" /> Visit
             </Button>
-          </div>
+          </Link>
         ),
       },
     ],
-    [results, onTestOne]
+    [results]
   );
 
   const table = useReactTable({
