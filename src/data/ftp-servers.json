@@ -1,39 +1,2091 @@
 [
   {
-    "id": "google-test",
-    "name": "Google Search (Test)",
-    "url": "https://www.google.com/search?igu=1",
-    "category": "Search"
+    "id": "ftp-jxklz6uws",
+    "name": "29COMMUNICATION",
+    "url": "http://www.29com.net",
+    "category": "29COMMUNICATION"
   },
   {
-    "id": "1",
-    "name": "Local FTP 1",
-    "url": "http://103.103.239.66/",
-    "category": "General"
+    "id": "ftp-0nqlg0ha0",
+    "name": "3NET",
+    "url": "http://3netbd.com",
+    "category": "3NET"
   },
   {
-    "id": "2",
-    "name": "Alpha Media Zone",
-    "url": "http://alphamediazone.com/moviedom/",
-    "category": "Movies"
+    "id": "ftp-va3bxio2l",
+    "name": "3RCOMMUNICATION",
+    "url": "https://3rcommunications.com",
+    "category": "3RCOMMUNICATION"
   },
   {
-    "id": "3",
-    "name": "Local FTP 2",
-    "url": "http://172.127.27.102/",
-    "category": "General"
+    "id": "ftp-8f5g3mlal",
+    "name": "4G NETWORK",
+    "url": "https://www.4gnetworkbd.com",
+    "category": "4G NETWORK"
   },
   {
-    "id": "4",
-    "name": "Local FTP 3",
-    "url": "http://103.135.134.226/",
-    "category": "General"
+    "id": "ftp-zx30y6g4e",
+    "name": "A1CYBERLINK",
+    "url": "http://www.a1cyberlinkbd.com",
+    "category": "A1CYBERLINK"
+  },
+  {
+    "id": "ftp-oyeqndlcu",
+    "name": "ABN INTERNET",
+    "url": "https://www.abnctg.net",
+    "category": "ABN INTERNET"
+  },
+  {
+    "id": "ftp-wolrda7br",
+    "name": "ACHIEVER BROADBAND INTERNET",
+    "url": "https://abibd.com",
+    "category": "ACHIEVER BROADBAND INTERNET"
+  },
+  {
+    "id": "ftp-0oucerveq",
+    "name": "ACTIVE MULTIMEDIA",
+    "url": "https://activembd.com",
+    "category": "ACTIVE MULTIMEDIA"
+  },
+  {
+    "id": "ftp-27gf5yjvl",
+    "name": "ACTIVE MULTIMEDIA",
+    "url": "https://activembd.com/internet/ftp-server",
+    "category": "ACTIVE MULTIMEDIA"
+  },
+  {
+    "id": "ftp-te8358e3v",
+    "name": "ACTIVE NETWORK",
+    "url": "http://www.activenetworkbd.com",
+    "category": "ACTIVE NETWORK"
+  },
+  {
+    "id": "ftp-zmq7dld3g",
+    "name": "ADDA NETWORK",
+    "url": "https://addanetwork.net",
+    "category": "ADDA NETWORK"
+  },
+  {
+    "id": "ftp-vy32jxahi",
+    "name": "AFTAB NAGAR ONLINE SERVICE",
+    "url": "https://www.anosbd.com",
+    "category": "AFTAB NAGAR ONLINE SERVICE"
+  },
+  {
+    "id": "ftp-fuf9d6cac",
+    "name": "AFTAB NAGAR ONLINE SERVICE",
+    "url": "https://www.anosbd.com/ftp",
+    "category": "AFTAB NAGAR ONLINE SERVICE"
+  },
+  {
+    "id": "ftp-bdqvt5vtk",
+    "name": "AG COMMUNICATION",
+    "url": "http://www.agcommunication.net",
+    "category": "AG COMMUNICATION"
+  },
+  {
+    "id": "ftp-f28rbp3os",
+    "name": "AKKADUKKA",
+    "url": "http://akkadukka.com",
+    "category": "AKKADUKKA"
+  },
+  {
+    "id": "ftp-rcarx1t1g",
+    "name": "AKKADUKKA",
+    "url": "http://akkadukka.com:8096",
+    "category": "AKKADUKKA"
+  },
+  {
+    "id": "ftp-ue06tz6go",
+    "name": "AKNETWORKS",
+    "url": "http://aknetworksbd.com",
+    "category": "AKNETWORKS"
+  },
+  {
+    "id": "ftp-izpqqdj0n",
+    "name": "AKNETWORKS",
+    "url": "http://aktube.live",
+    "category": "AKNETWORKS"
+  },
+  {
+    "id": "ftp-3v93lh43b",
+    "name": "ALIBABA NETWORK",
+    "url": "https://www.alibabanetwork.net",
+    "category": "ALIBABA NETWORK"
+  },
+  {
+    "id": "ftp-yjsbq84ab",
+    "name": "ALIFANET",
+    "url": "https://alifanet.com",
+    "category": "ALIFANET"
+  },
+  {
+    "id": "ftp-ul0928gse",
+    "name": "ALPHAMEDIAZONE",
+    "url": "http://www.alphabroadway.com",
+    "category": "ALPHAMEDIAZONE"
+  },
+  {
+    "id": "ftp-x391bn5xx",
+    "name": "ALPHAMEDIAZONE",
+    "url": "http://ftp.alphamediazone.com",
+    "category": "ALPHAMEDIAZONE"
+  },
+  {
+    "id": "ftp-v135dqbsf",
+    "name": "AMADER NET ADD COMMUNICATION",
+    "url": "http://amaderftp.net",
+    "category": "AMADER NET ADD COMMUNICATION"
+  },
+  {
+    "id": "ftp-gbisxbadb",
+    "name": "AMARNET SYSTEM (DHAKAFTP)",
+    "url": "http://amarnetsystem.com",
+    "category": "AMARNET SYSTEM (DHAKAFTP)"
+  },
+  {
+    "id": "ftp-c50bp0vzy",
+    "name": "AMARNET SYSTEM (DHAKAFTP)",
+    "url": "http://103.205.233.70",
+    "category": "AMARNET SYSTEM (DHAKAFTP)"
+  },
+  {
+    "id": "ftp-qqs6g61vo",
+    "name": "AMARNET SYSTEM (DHAKAFTP)",
+    "url": "http://103.205.233.70/Data",
+    "category": "AMARNET SYSTEM (DHAKAFTP)"
+  },
+  {
+    "id": "ftp-e7r3r5gtl",
+    "name": "AMARNET SYSTEM (DHAKAFTP)",
+    "url": "http://dhakaftp.com",
+    "category": "AMARNET SYSTEM (DHAKAFTP)"
+  },
+  {
+    "id": "ftp-70j6bfn5j",
+    "name": "AMARNET SYSTEM (DHAKAFTP)",
+    "url": "http://dhakaftp.com/Data",
+    "category": "AMARNET SYSTEM (DHAKAFTP)"
+  },
+  {
+    "id": "ftp-tlxjevohl",
+    "name": "AMBERIT",
+    "url": "http://202.4.96.121",
+    "category": "AMBERIT"
+  },
+  {
+    "id": "ftp-66ziok4na",
+    "name": "AMBERIT",
+    "url": "http://www.binodonmela.net",
+    "category": "AMBERIT"
+  },
+  {
+    "id": "ftp-1a9u15uaa",
+    "name": "AMBERIT",
+    "url": "http://118.179.223.51",
+    "category": "AMBERIT"
+  },
+  {
+    "id": "ftp-z242fseph",
+    "name": "AMBERIT",
+    "url": "http://content2.binodonmela.net",
+    "category": "AMBERIT"
+  },
+  {
+    "id": "ftp-j1g8pl4bc",
+    "name": "ANIK COMPUTER & NETWORKING (MEDIALINK24.NET)",
+    "url": "https://aniknetwork.net",
+    "category": "ANIK COMPUTER & NETWORKING (MEDIALINK24.NET)"
+  },
+  {
+    "id": "ftp-s0qh0el1d",
+    "name": "ANIK COMPUTER & NETWORKING (MEDIALINK24.NET)",
+    "url": "http://medialink24.net",
+    "category": "ANIK COMPUTER & NETWORKING (MEDIALINK24.NET)"
+  },
+  {
+    "id": "ftp-2qb1m7d61",
+    "name": "ANTARANGA DOT COM LIMITED (DHAKAMOVIE)",
+    "url": "https://www.antbd.com",
+    "category": "ANTARANGA DOT COM LIMITED (DHAKAMOVIE)"
+  },
+  {
+    "id": "ftp-lyx4lkbim",
+    "name": "ANTARANGA DOT COM LIMITED (DHAKAMOVIE)",
+    "url": "http://www.antbd.net",
+    "category": "ANTARANGA DOT COM LIMITED (DHAKAMOVIE)"
+  },
+  {
+    "id": "ftp-rpogztd4f",
+    "name": "ANTARANGA DOT COM LIMITED (DHAKAMOVIE)",
+    "url": "http://103.237.37.181",
+    "category": "ANTARANGA DOT COM LIMITED (DHAKAMOVIE)"
+  },
+  {
+    "id": "ftp-4l3ktpxqb",
+    "name": "ANTARANGA DOT COM LIMITED (DHAKAMOVIE)",
+    "url": "http://dhakamovie.com",
+    "category": "ANTARANGA DOT COM LIMITED (DHAKAMOVIE)"
+  },
+  {
+    "id": "ftp-vd8v6kxjl",
+    "name": "APPLELINK INTERNET",
+    "url": "https://applelinkbd.net",
+    "category": "APPLELINK INTERNET"
+  },
+  {
+    "id": "ftp-3930nifib",
+    "name": "APPLENET BROADBAND",
+    "url": "https://www.applenetbd.com",
+    "category": "APPLENET BROADBAND"
+  },
+  {
+    "id": "ftp-en6gtoatc",
+    "name": "ARAF NET",
+    "url": "http://www.arafnetbd.com",
+    "category": "ARAF NET"
+  },
+  {
+    "id": "ftp-drgux61ec",
+    "name": "ARISHA NET",
+    "url": "http://arishabd.net",
+    "category": "ARISHA NET"
+  },
+  {
+    "id": "ftp-5mbqt8tko",
+    "name": "ASB LINK INTERNET",
+    "url": "http://www.asblink.net",
+    "category": "ASB LINK INTERNET"
+  },
+  {
+    "id": "ftp-jgehcb6xm",
+    "name": "ASIAN COMMUNICATION",
+    "url": "http://asiancommunicationbd.com",
+    "category": "ASIAN COMMUNICATION"
+  },
+  {
+    "id": "ftp-d71zukxoh",
+    "name": "ASIAN COMMUNICATION",
+    "url": "http://asianftp.com",
+    "category": "ASIAN COMMUNICATION"
+  },
+  {
+    "id": "ftp-qaia641qi",
+    "name": "ASIAN NETWORK",
+    "url": "https://asiannetworkbd.net",
+    "category": "ASIAN NETWORK"
+  },
+  {
+    "id": "ftp-9ju1yk0ld",
+    "name": "ASMA BROADBAND NETWORK",
+    "url": "http://asmabroadbandnetwork.com",
+    "category": "ASMA BROADBAND NETWORK"
+  },
+  {
+    "id": "ftp-d2x300by3",
+    "name": "ASMA BROADBAND NETWORK",
+    "url": "http://220.152.114.214",
+    "category": "ASMA BROADBAND NETWORK"
+  },
+  {
+    "id": "ftp-zwynpjw0g",
+    "name": "AUTOMATION SYSTEM INTERNET",
+    "url": "http://www.as-bd.net",
+    "category": "AUTOMATION SYSTEM INTERNET"
+  },
+  {
+    "id": "ftp-mdl4rm3gj",
+    "name": "AVABD NETWORK",
+    "url": "http://www.avabdnet.com",
+    "category": "AVABD NETWORK"
+  },
+  {
+    "id": "ftp-xrvt02giq",
+    "name": "BAIZID ONLINE",
+    "url": "http://www.bolbd.net",
+    "category": "BAIZID ONLINE"
+  },
+  {
+    "id": "ftp-no13kc6c0",
+    "name": "BAIZID ONLINE",
+    "url": "http://mars.bolbd.net",
+    "category": "BAIZID ONLINE"
+  },
+  {
+    "id": "ftp-b8vh1r1jm",
+    "name": "BARNALINET",
+    "url": "http://103.112.63.21",
+    "category": "BARNALINET"
+  },
+  {
+    "id": "ftp-bat3uadbp",
+    "name": "BAS NETWORK",
+    "url": "https://basnetbd.com",
+    "category": "BAS NETWORK"
+  },
+  {
+    "id": "ftp-81fv6y7vg",
+    "name": "BAS NETWORK",
+    "url": "http://103.87.212.46",
+    "category": "BAS NETWORK"
+  },
+  {
+    "id": "ftp-iw5q70d72",
+    "name": "BAS NETWORK",
+    "url": "http://10.20.30.40",
+    "category": "BAS NETWORK"
+  },
+  {
+    "id": "ftp-zbaf4st0r",
+    "name": "BAS NETWORK",
+    "url": "http://movie.basnetbd.com",
+    "category": "BAS NETWORK"
+  },
+  {
+    "id": "ftp-gcfhyzm82",
+    "name": "BD NETWORKS (MOVIEBOXBD)",
+    "url": "http://movieboxbd.com",
+    "category": "BD NETWORKS (MOVIEBOXBD)"
+  },
+  {
+    "id": "ftp-46l2fgdd3",
+    "name": "BD NETWORKS (MOVIEBOXBD)",
+    "url": "http://bd-networks.com",
+    "category": "BD NETWORKS (MOVIEBOXBD)"
+  },
+  {
+    "id": "ftp-1eogt7tex",
+    "name": "BDCONNECT.NET LIMITED (HASIKHUSHI)",
+    "url": "https://www.bdconnectctg.net",
+    "category": "BDCONNECT.NET LIMITED (HASIKHUSHI)"
+  },
+  {
+    "id": "ftp-b5721y8jw",
+    "name": "BDCONNECT.NET LIMITED (HASIKHUSHI)",
+    "url": "https://hasikhushi.net",
+    "category": "BDCONNECT.NET LIMITED (HASIKHUSHI)"
+  },
+  {
+    "id": "ftp-hvndqi0q0",
+    "name": "BDFLIX LIVE",
+    "url": "https://bdflixlive.com",
+    "category": "BDFLIX LIVE"
+  },
+  {
+    "id": "ftp-11p6r9kxn",
+    "name": "BDLAN",
+    "url": "http://www.bdlan.net",
+    "category": "BDLAN"
+  },
+  {
+    "id": "ftp-ho4xvfmvf",
+    "name": "BDM INTERNET",
+    "url": "http://www.bdminternet.com",
+    "category": "BDM INTERNET"
+  },
+  {
+    "id": "ftp-z2wjbwzal",
+    "name": "BDPLEX",
+    "url": "http://bdplex.net",
+    "category": "BDPLEX"
+  },
+  {
+    "id": "ftp-z284hyf1o",
+    "name": "BEACONLINK",
+    "url": "http://www.beaconlink.net",
+    "category": "BEACONLINK"
+  },
+  {
+    "id": "ftp-jqogf6qmm",
+    "name": "BEEFLIX",
+    "url": "http://www.beeflix.biz",
+    "category": "BEEFLIX"
+  },
+  {
+    "id": "ftp-niy4ovrdz",
+    "name": "BENGAL BROADBAND LIMITED (FREE MEDIA)",
+    "url": "http://www.bbl.net.bd",
+    "category": "BENGAL BROADBAND LIMITED (FREE MEDIA)"
+  },
+  {
+    "id": "ftp-5p1lq78c4",
+    "name": "BENGAL BROADBAND LIMITED (FREE MEDIA)",
+    "url": "http://www.prisma.net.bd",
+    "category": "BENGAL BROADBAND LIMITED (FREE MEDIA)"
+  },
+  {
+    "id": "ftp-k8icvtelf",
+    "name": "BENGAL BROADBAND LIMITED (FREE MEDIA)",
+    "url": "http://124.6.236.254",
+    "category": "BENGAL BROADBAND LIMITED (FREE MEDIA)"
+  },
+  {
+    "id": "ftp-sopitp15o",
+    "name": "BENGAL BROADBAND LIMITED (FREE MEDIA)",
+    "url": "http://124.6.236.254/ftpdata1",
+    "category": "BENGAL BROADBAND LIMITED (FREE MEDIA)"
+  },
+  {
+    "id": "ftp-4c1459029",
+    "name": "BENGAL BROADBAND LIMITED (FREE MEDIA)",
+    "url": "http://124.6.236.254:8080",
+    "category": "BENGAL BROADBAND LIMITED (FREE MEDIA)"
+  },
+  {
+    "id": "ftp-8wytcl9r1",
+    "name": "BENGAL BROADBAND LIMITED (FREE MEDIA)",
+    "url": "http://www.freemediabd.com",
+    "category": "BENGAL BROADBAND LIMITED (FREE MEDIA)"
+  },
+  {
+    "id": "ftp-86rh1mjhi",
+    "name": "BHALUKA BROADBAND INTERNET",
+    "url": "https://bhalukabroadband.com",
+    "category": "BHALUKA BROADBAND INTERNET"
+  },
+  {
+    "id": "ftp-702fx41so",
+    "name": "BHUIYAN TELECOM",
+    "url": "http://www.bhuiyan-online.com",
+    "category": "BHUIYAN TELECOM"
+  },
+  {
+    "id": "ftp-l38od83m0",
+    "name": "BINIMOY NET",
+    "url": "https://binimoynet.com",
+    "category": "BINIMOY NET"
+  },
+  {
+    "id": "ftp-7myatxmug",
+    "name": "BIT NET BROADBAND",
+    "url": "http://www.bitnetbd.com",
+    "category": "BIT NET BROADBAND"
+  },
+  {
+    "id": "ftp-9imqtkcts",
+    "name": "BMIT",
+    "url": "http://bmitbd.com",
+    "category": "BMIT"
+  },
+  {
+    "id": "ftp-5cdtb7p12",
+    "name": "BOGRA ONLINE",
+    "url": "http://www.bograonlinebd.com",
+    "category": "BOGRA ONLINE"
+  },
+  {
+    "id": "ftp-ba2crz3bc",
+    "name": "BOLMOVIES",
+    "url": "http://www.bolmovies.com",
+    "category": "BOLMOVIES"
+  },
+  {
+    "id": "ftp-4o06oq0qs",
+    "name": "BONDHUIT NET",
+    "url": "https://bondhuitbd.com",
+    "category": "BONDHUIT NET"
+  },
+  {
+    "id": "ftp-vutaxfa3v",
+    "name": "BONSAIHD",
+    "url": "https://bonsaihd.live",
+    "category": "BONSAIHD"
+  },
+  {
+    "id": "ftp-bey2yqe6r",
+    "name": "BOSSBD",
+    "url": "http://www.bossbd.net",
+    "category": "BOSSBD"
+  },
+  {
+    "id": "ftp-1xz1zrmoa",
+    "name": "BOSSBD",
+    "url": "http://bossbd.live",
+    "category": "BOSSBD"
+  },
+  {
+    "id": "ftp-raatkwt5d",
+    "name": "BOSSBD",
+    "url": "http://cdn.bossbd.net",
+    "category": "BOSSBD"
+  },
+  {
+    "id": "ftp-gncnu1ju0",
+    "name": "BOSSBD",
+    "url": "http://cdn1.bossbd.net",
+    "category": "BOSSBD"
+  },
+  {
+    "id": "ftp-713cnof62",
+    "name": "BOSSBD",
+    "url": "http://cdn2.bossbd.net",
+    "category": "BOSSBD"
+  },
+  {
+    "id": "ftp-r6y25ytts",
+    "name": "BOT-TOLA CYBER (FTPMEDIA.NET) NET",
+    "url": "http://10.1.1.1",
+    "category": "BOT-TOLA CYBER (FTPMEDIA.NET) NET"
+  },
+  {
+    "id": "ftp-tp6qxptqc",
+    "name": "BOT-TOLA CYBER (FTPMEDIA.NET) NET",
+    "url": "http://10.1.1.1/Data",
+    "category": "BOT-TOLA CYBER (FTPMEDIA.NET) NET"
+  },
+  {
+    "id": "ftp-h4png9umb",
+    "name": "BRISK SYSTEMS INTERNET",
+    "url": "https://www.briskinternet.com",
+    "category": "BRISK SYSTEMS INTERNET"
+  },
+  {
+    "id": "ftp-nx6q6wvek",
+    "name": "BRISK SYSTEMS INTERNET",
+    "url": "http://smiledotnet.xyz",
+    "category": "BRISK SYSTEMS INTERNET"
+  },
+  {
+    "id": "ftp-0dimx7x9m",
+    "name": "BRISK SYSTEMS INTERNET",
+    "url": "http://blurays2u.smiledotnet.xyz",
+    "category": "BRISK SYSTEMS INTERNET"
+  },
+  {
+    "id": "ftp-nugy9dfh4",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://www.bnet-bd.com",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-k7hmppu8m",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://ftpbd.net",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-qoueeyemb",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://103.58.73.6",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-zofnuvexc",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://103.58.73.7",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-2pno0hnzp",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://103.58.73.8",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-ptnorzf4t",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://103.58.73.9",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-zkkiiibct",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://103.58.73.10",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-jz45i7625",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://103.58.73.10:8096",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-kt5sg1blq",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://server1.ftpbd.net",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-o3okuxhdv",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://server1.ftpbd.net/FTP-1",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-dwsvi9ggm",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://server2.ftpbd.net",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-1u1jhna5t",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://server2.ftpbd.net/FTP-2",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-jxv63nltt",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://server3.ftpbd.net",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-jwclbho9u",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://server3.ftpbd.net/FTP-3",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-zxp8ft9kt",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://server4.ftpbd.net",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-8bnv2zhn9",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://server4.ftpbd.net/FTP-4",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-j4yvjmi1f",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://server5.ftpbd.net",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-lxyujzzk7",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://server5.ftpbd.net/FTP-5",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-x9yypaxn9",
+    "name": "BUSINESS NETWORK (FTPBD)",
+    "url": "http://media.ftpbd.net:8096",
+    "category": "BUSINESS NETWORK (FTPBD)"
+  },
+  {
+    "id": "ftp-brn4kkehz",
+    "name": "BUSINESS ZONE LIMITED",
+    "url": "https://www.businesszone.com.bd",
+    "category": "BUSINESS ZONE LIMITED"
+  },
+  {
+    "id": "ftp-lo8rjimkl",
+    "name": "BUSINESS ZONE LIMITED",
+    "url": "http://103.117.229.242",
+    "category": "BUSINESS ZONE LIMITED"
+  },
+  {
+    "id": "ftp-noqk5b03d",
+    "name": "BUSINESS ZONE LIMITED",
+    "url": "http://103.117.229.242/Data",
+    "category": "BUSINESS ZONE LIMITED"
+  },
+  {
+    "id": "ftp-oddumert6",
+    "name": "BUSINESS ZONE LIMITED",
+    "url": "http://bdcineplex.com",
+    "category": "BUSINESS ZONE LIMITED"
+  },
+  {
+    "id": "ftp-jg9st3l8f",
+    "name": "C&C COMMUNICATION",
+    "url": "http://cnc.net.bd",
+    "category": "C&C COMMUNICATION"
+  },
+  {
+    "id": "ftp-rzug3pmxp",
+    "name": "CARNIVAL INTERNET (NAGORDOLA)",
+    "url": "https://carnival.com.bd",
+    "category": "CARNIVAL INTERNET (NAGORDOLA)"
+  },
+  {
+    "id": "ftp-ap9yy4ebk",
+    "name": "CARNIVAL INTERNET (NAGORDOLA)",
+    "url": "http://103.106.238.74:80/Data",
+    "category": "CARNIVAL INTERNET (NAGORDOLA)"
+  },
+  {
+    "id": "ftp-6bcmuu2sh",
+    "name": "CARNIVAL INTERNET (NAGORDOLA)",
+    "url": "http://103.106.238.74:80/Data4",
+    "category": "CARNIVAL INTERNET (NAGORDOLA)"
+  },
+  {
+    "id": "ftp-ujcvph6tq",
+    "name": "CARNIVAL INTERNET (NAGORDOLA)",
+    "url": "http://www.nagordola.com.bd",
+    "category": "CARNIVAL INTERNET (NAGORDOLA)"
+  },
+  {
+    "id": "ftp-2djey8fg3",
+    "name": "CHITTAGONG MULTI CHANNEL LIMITED",
+    "url": "https://www.cmclbd.com",
+    "category": "CHITTAGONG MULTI CHANNEL LIMITED"
+  },
+  {
+    "id": "ftp-bkum66632",
+    "name": "CHITTAGONG MULTI CHANNEL LIMITED",
+    "url": "http://tokis.xyz",
+    "category": "CHITTAGONG MULTI CHANNEL LIMITED"
+  },
+  {
+    "id": "ftp-bdqeue44c",
+    "name": "CHITTAGONG ONLINE LIMITED",
+    "url": "http://www.colbd.com",
+    "category": "CHITTAGONG ONLINE LIMITED"
+  },
+  {
+    "id": "ftp-hb81e6cmi",
+    "name": "CHITTAGONG ONLINE LIMITED",
+    "url": "https://fiber.colbd.com",
+    "category": "CHITTAGONG ONLINE LIMITED"
+  },
+  {
+    "id": "ftp-5137icc5t",
+    "name": "CHITTAGONG ONLINE LIMITED",
+    "url": "http://www.smartflix.digital",
+    "category": "CHITTAGONG ONLINE LIMITED"
+  },
+  {
+    "id": "ftp-m6k48ahcy",
+    "name": "CHITTAGONG ONLINE LIMITED",
+    "url": "http://www.smartstudio.digital",
+    "category": "CHITTAGONG ONLINE LIMITED"
+  },
+  {
+    "id": "ftp-9blcjjjsv",
+    "name": "CHITTAGONG ONLINE LIMITED",
+    "url": "http://metromedia.digital",
+    "category": "CHITTAGONG ONLINE LIMITED"
+  },
+  {
+    "id": "ftp-os9tun4zc",
+    "name": "CHOCOLATE BROADBAND",
+    "url": "http://cineflixbd.xyz",
+    "category": "CHOCOLATE BROADBAND"
+  },
+  {
+    "id": "ftp-37024wqzj",
+    "name": "CINEBIOSCOPE",
+    "url": "http://www.cinebioscope.com",
+    "category": "CINEBIOSCOPE"
+  },
+  {
+    "id": "ftp-t1bnj0ubr",
+    "name": "CIRCLE NETWORK",
+    "url": "https://circlenetworkbd.net",
+    "category": "CIRCLE NETWORK"
+  },
+  {
+    "id": "ftp-c8piw02hz",
+    "name": "CIRCLE NETWORK",
+    "url": "http://103.170.204.84",
+    "category": "CIRCLE NETWORK"
+  },
+  {
+    "id": "ftp-g4dtcik4c",
+    "name": "CIRCLE NETWORK",
+    "url": "http://new.circleftp.net",
+    "category": "CIRCLE NETWORK"
+  },
+  {
+    "id": "ftp-66pprbq8d",
+    "name": "CIRCLE NETWORK",
+    "url": "http://circleftp.net",
+    "category": "CIRCLE NETWORK"
+  },
+  {
+    "id": "ftp-vc46azck5",
+    "name": "CIRCLE NETWORK",
+    "url": "http://15.1.1.4",
+    "category": "CIRCLE NETWORK"
+  },
+  {
+    "id": "ftp-qf2qvkh82",
+    "name": "CIRCLE NETWORK",
+    "url": "http://ftp4.circleftp.net",
+    "category": "CIRCLE NETWORK"
+  },
+  {
+    "id": "ftp-juk2gxjcf",
+    "name": "CIRCLE NETWORK",
+    "url": "http://15.1.1.5",
+    "category": "CIRCLE NETWORK"
+  },
+  {
+    "id": "ftp-88hd6pm4h",
+    "name": "CIRCLE NETWORK",
+    "url": "http://old.circleftp.net",
+    "category": "CIRCLE NETWORK"
+  },
+  {
+    "id": "ftp-pd84398q7",
+    "name": "CIRCLE NETWORK",
+    "url": "http://emby.circleftp.net:8096",
+    "category": "CIRCLE NETWORK"
+  },
+  {
+    "id": "ftp-e1dutoaio",
+    "name": "CITY ONLINE LIMITED (IBDPLEX)",
+    "url": "https://www.cityonlinebd.net",
+    "category": "CITY ONLINE LIMITED (IBDPLEX)"
+  },
+  {
+    "id": "ftp-ihtfa8euz",
+    "name": "CITY ONLINE LIMITED (IBDPLEX)",
+    "url": "http://moviebazar.net",
+    "category": "CITY ONLINE LIMITED (IBDPLEX)"
+  },
+  {
+    "id": "ftp-b3oecuc25",
+    "name": "CITY ONLINE LIMITED (IBDPLEX)",
+    "url": "https://ibdplex.net",
+    "category": "CITY ONLINE LIMITED (IBDPLEX)"
+  },
+  {
+    "id": "ftp-42x0q4rlu",
+    "name": "CITYCOM NETWORK (CITYCLOUD)",
+    "url": "https://www.citycomnetwork.com.bd",
+    "category": "CITYCOM NETWORK (CITYCLOUD)"
+  },
+  {
+    "id": "ftp-texyvm0uy",
+    "name": "CITYCOM NETWORK (CITYCLOUD)",
+    "url": "http://11.11.11.11",
+    "category": "CITYCOM NETWORK (CITYCLOUD)"
+  },
+  {
+    "id": "ftp-5jxsu8z3k",
+    "name": "CITYCOM NETWORK (CITYCLOUD)",
+    "url": "http://103.204.244.70",
+    "category": "CITYCOM NETWORK (CITYCLOUD)"
+  },
+  {
+    "id": "ftp-enztpivmf",
+    "name": "CITYCOM NETWORK (CITYCLOUD)",
+    "url": "http://103.204.244.70/Data/Data",
+    "category": "CITYCOM NETWORK (CITYCLOUD)"
+  },
+  {
+    "id": "ftp-gbhui2z9m",
+    "name": "CITYNET",
+    "url": "http://citynetbd.com",
+    "category": "CITYNET"
+  },
+  {
+    "id": "ftp-v6mwkqbxs",
+    "name": "CITYNET INTERNET",
+    "url": "https://www.citynet.live",
+    "category": "CITYNET INTERNET"
+  },
+  {
+    "id": "ftp-ondyepy9k",
+    "name": "CLICK ONLINE",
+    "url": "https://clickonlinebd.com",
+    "category": "CLICK ONLINE"
+  },
+  {
+    "id": "ftp-u8wcvq4lj",
+    "name": "CLOUDONE INTERNET",
+    "url": "http://cloudone.com.bd",
+    "category": "CLOUDONE INTERNET"
+  },
+  {
+    "id": "ftp-amvpn456d",
+    "name": "CLOUDONE INTERNET",
+    "url": "http://www.c1movies.com",
+    "category": "CLOUDONE INTERNET"
+  },
+  {
+    "id": "ftp-sfmvjlsun",
+    "name": "CLOUDONE INTERNET",
+    "url": "http://bdmovies.net",
+    "category": "CLOUDONE INTERNET"
+  },
+  {
+    "id": "ftp-1o6qtsdmt",
+    "name": "CNETWORK",
+    "url": "https://cnetworkbd.net",
+    "category": "CNETWORK"
+  },
+  {
+    "id": "ftp-xthwlzmm5",
+    "name": "COGENT BROADBAND (KHULNAFLIX)",
+    "url": "https://www.cogentbroadband.net",
+    "category": "COGENT BROADBAND (KHULNAFLIX)"
+  },
+  {
+    "id": "ftp-ll3xyp87c",
+    "name": "COGENT BROADBAND (KHULNAFLIX)",
+    "url": "http://khulnaflix.net",
+    "category": "COGENT BROADBAND (KHULNAFLIX)"
+  },
+  {
+    "id": "ftp-qom7q6a5r",
+    "name": "COGENT BROADBAND (KHULNAFLIX)",
+    "url": "http://103.153.175.254/NAS1",
+    "category": "COGENT BROADBAND (KHULNAFLIX)"
+  },
+  {
+    "id": "ftp-bjaa4kscs",
+    "name": "COGENT BROADBAND (KHULNAFLIX)",
+    "url": "http://bokasoka.net",
+    "category": "COGENT BROADBAND (KHULNAFLIX)"
   },
   {
     "id": "ftp-0vgprwjx3",
     "name": "COGENT BROADBAND (KHULNAFLIX)",
     "url": "http://bokasoka.net/NAS1",
     "category": "COGENT BROADBAND (KHULNAFLIX)"
+  },
+  {
+    "id": "ftp-l194g7e9a",
+    "name": "COGENT BROADBAND (KHULNAFLIX)",
+    "url": "http://file.khulnaflix.net",
+    "category": "COGENT BROADBAND (KHULNAFLIX)"
+  },
+  {
+    "id": "ftp-zweq196li",
+    "name": "COMPUTER COMPLEX NETWORK (JDIX)",
+    "url": "https://ccnetbd.com",
+    "category": "COMPUTER COMPLEX NETWORK (JDIX)"
+  },
+  {
+    "id": "ftp-um1lq5l82",
+    "name": "COMPUTER COMPLEX NETWORK (JDIX)",
+    "url": "http://162.12.215.254",
+    "category": "COMPUTER COMPLEX NETWORK (JDIX)"
+  },
+  {
+    "id": "ftp-9zyfa44wg",
+    "name": "CRAZYNET",
+    "url": "https://crazynetbd.com",
+    "category": "CRAZYNET"
+  },
+  {
+    "id": "ftp-vq5exrw0u",
+    "name": "CREATIVAIT NET",
+    "url": "http://creativait.net",
+    "category": "CREATIVAIT NET"
+  },
+  {
+    "id": "ftp-mufnsh4qp",
+    "name": "CREATIVAIT NET",
+    "url": "http://10.10.10.10",
+    "category": "CREATIVAIT NET"
+  },
+  {
+    "id": "ftp-ae79ifcz5",
+    "name": "CRESCENT NETWORK SERVICE",
+    "url": "http://cns.net.bd",
+    "category": "CRESCENT NETWORK SERVICE"
+  },
+  {
+    "id": "ftp-c9ku2fc69",
+    "name": "CTGTEL",
+    "url": "http://www.ctgtel.net",
+    "category": "CTGTEL"
+  },
+  {
+    "id": "ftp-ilbn4serj",
+    "name": "CUECLUB TECHNOLOGY",
+    "url": "https://cueclub.com.bd",
+    "category": "CUECLUB TECHNOLOGY"
+  },
+  {
+    "id": "ftp-4uou00kbr",
+    "name": "CYBER NET",
+    "url": "https://www.cybernetbd.com",
+    "category": "CYBER NET"
+  },
+  {
+    "id": "ftp-bguid15j3",
+    "name": "CYBER NET COMMUNICATIONS",
+    "url": "http://www.cybernetcommunications.net",
+    "category": "CYBER NET COMMUNICATIONS"
+  },
+  {
+    "id": "ftp-d8zqxdzfr",
+    "name": "CYBERNEST NETWORK",
+    "url": "http://www.mycybernest.com",
+    "category": "CYBERNEST NETWORK"
+  },
+  {
+    "id": "ftp-db8crm0f3",
+    "name": "CYGNUS.NET",
+    "url": "https://www.cygnusall.com",
+    "category": "CYGNUS.NET"
+  },
+  {
+    "id": "ftp-axo1lu2e6",
+    "name": "DAFFODIL INTERNET",
+    "url": "http://ftp.daffodilnet.com",
+    "category": "DAFFODIL INTERNET"
+  },
+  {
+    "id": "ftp-patgp4dep",
+    "name": "DAULATPUR ONLINE (KHULNAPLEX)",
+    "url": "https://www.daulatpuronline.com",
+    "category": "DAULATPUR ONLINE (KHULNAPLEX)"
+  },
+  {
+    "id": "ftp-zn6cgli99",
+    "name": "DAULATPUR ONLINE (KHULNAPLEX)",
+    "url": "http://khulnaplex.net",
+    "category": "DAULATPUR ONLINE (KHULNAPLEX)"
+  },
+  {
+    "id": "ftp-2zkaat2xy",
+    "name": "DAULATPUR ONLINE (KHULNAPLEX)",
+    "url": "http://khulnaplex.net/Data",
+    "category": "DAULATPUR ONLINE (KHULNAPLEX)"
+  },
+  {
+    "id": "ftp-06guhsjz2",
+    "name": "DEKHO",
+    "url": "https://dekhobd.com",
+    "category": "DEKHO"
+  },
+  {
+    "id": "ftp-8dj3kaegn",
+    "name": "DESHNET BROADBAND",
+    "url": "https://deshnetbd.com",
+    "category": "DESHNET BROADBAND"
+  },
+  {
+    "id": "ftp-a04xfpn44",
+    "name": "DESHNET BROADBAND",
+    "url": "http://103.152.18.18",
+    "category": "DESHNET BROADBAND"
+  },
+  {
+    "id": "ftp-d3l3r9bmk",
+    "name": "DESHNET BROADBAND",
+    "url": "http://103.152.18.18/Data",
+    "category": "DESHNET BROADBAND"
+  },
+  {
+    "id": "ftp-541n4cwhz",
+    "name": "DESHONLINEBD",
+    "url": "http://deshonlinebd.com",
+    "category": "DESHONLINEBD"
+  },
+  {
+    "id": "ftp-n7r809qr7",
+    "name": "DHAKA DOWNLOAD",
+    "url": "http://www.dhakadownload.com",
+    "category": "DHAKA DOWNLOAD"
+  },
+  {
+    "id": "ftp-ni5gvh2dm",
+    "name": "DHAKA DOWNLOAD",
+    "url": "http://dhakaiptv.com",
+    "category": "DHAKA DOWNLOAD"
+  },
+  {
+    "id": "ftp-2pgnb5bww",
+    "name": "DHAKA FIBER NET",
+    "url": "https://www.dfnbd.net",
+    "category": "DHAKA FIBER NET"
+  },
+  {
+    "id": "ftp-kvr56e2j7",
+    "name": "DHAKA FIBER NET",
+    "url": "http://media.dfnbd.net",
+    "category": "DHAKA FIBER NET"
+  },
+  {
+    "id": "ftp-zqhlnct9m",
+    "name": "DIDAR IT",
+    "url": "https://www.didarit.com",
+    "category": "DIDAR IT"
+  },
+  {
+    "id": "ftp-r5lw44pd4",
+    "name": "DIGINET INTERNET",
+    "url": "http://diginetbd.net",
+    "category": "DIGINET INTERNET"
+  },
+  {
+    "id": "ftp-gqb6pewi7",
+    "name": "DIGITAL COMMUNCATION",
+    "url": "https://digitalbroadband.com.bd",
+    "category": "DIGITAL COMMUNCATION"
+  },
+  {
+    "id": "ftp-1boccjb6n",
+    "name": "DIGITAL DOT NET (CTGMOVIES)",
+    "url": "https://ddnbd.com",
+    "category": "DIGITAL DOT NET (CTGMOVIES)"
+  },
+  {
+    "id": "ftp-rb2nooygm",
+    "name": "DIGITAL DOT NET (CTGMOVIES)",
+    "url": "http://www.ddnbd.fun",
+    "category": "DIGITAL DOT NET (CTGMOVIES)"
+  },
+  {
+    "id": "ftp-eusefyo55",
+    "name": "DIGITAL DOT NET (CTGMOVIES)",
+    "url": "http://ctgmovies.com",
+    "category": "DIGITAL DOT NET (CTGMOVIES)"
+  },
+  {
+    "id": "ftp-0tdkvlfs9",
+    "name": "DIGITAL DOT NET (CTGMOVIES)",
+    "url": "http://crazyctg.com",
+    "category": "DIGITAL DOT NET (CTGMOVIES)"
+  },
+  {
+    "id": "ftp-w0stzsiab",
+    "name": "DIGITAL DOT NET (CTGMOVIES)",
+    "url": "http://media.ctgfun.com",
+    "category": "DIGITAL DOT NET (CTGMOVIES)"
+  },
+  {
+    "id": "ftp-czygl6zzx",
+    "name": "DISCOVERY INTERNET",
+    "url": "https://www.discoverynetbd.com",
+    "category": "DISCOVERY INTERNET"
+  },
+  {
+    "id": "ftp-wugt9r5r0",
+    "name": "DISCOVERY INTERNET",
+    "url": "http://103.120.165.196",
+    "category": "DISCOVERY INTERNET"
+  },
+  {
+    "id": "ftp-1v1o5bsis",
+    "name": "DISCOVERY INTERNET",
+    "url": "http://discoveryftp.net",
+    "category": "DISCOVERY INTERNET"
+  },
+  {
+    "id": "ftp-w22mqwcga",
+    "name": "DISCOVERY INTERNET",
+    "url": "http://dflix.discoveryftp.net",
+    "category": "DISCOVERY INTERNET"
+  },
+  {
+    "id": "ftp-ytmrhmspp",
+    "name": "DISCOVERY INTERNET",
+    "url": "http://cds1.discoveryftp.net",
+    "category": "DISCOVERY INTERNET"
+  },
+  {
+    "id": "ftp-0ycb7ob2h",
+    "name": "DISCOVERY INTERNET",
+    "url": "http://cds2.discoveryftp.net",
+    "category": "DISCOVERY INTERNET"
+  },
+  {
+    "id": "ftp-bamm3t8xz",
+    "name": "DISCOVERY INTERNET",
+    "url": "http://cds3.discoveryftp.net",
+    "category": "DISCOVERY INTERNET"
+  },
+  {
+    "id": "ftp-et8vr8tlb",
+    "name": "DIT NET",
+    "url": "https://ditbd.net",
+    "category": "DIT NET"
+  },
+  {
+    "id": "ftp-fdt8odkbi",
+    "name": "DIT NET",
+    "url": "http://172.27.100.3",
+    "category": "DIT NET"
+  },
+  {
+    "id": "ftp-5744a5klo",
+    "name": "DL NETWORK SERVICES",
+    "url": "http://dlnsbd.net",
+    "category": "DL NETWORK SERVICES"
+  },
+  {
+    "id": "ftp-52pmuz644",
+    "name": "DNETBD",
+    "url": "https://dnetbd.com",
+    "category": "DNETBD"
+  },
+  {
+    "id": "ftp-mzssi1vj4",
+    "name": "DNETBD",
+    "url": "http://103.76.196.90",
+    "category": "DNETBD"
+  },
+  {
+    "id": "ftp-am91pgbhc",
+    "name": "DNETBD",
+    "url": "https://dnetdrive.com",
+    "category": "DNETBD"
+  },
+  {
+    "id": "ftp-ttfzn9v8q",
+    "name": "DOLY IT CORNER",
+    "url": "https://www.dolyitcorner.net",
+    "category": "DOLY IT CORNER"
+  },
+  {
+    "id": "ftp-ig5v2kfag",
+    "name": "DOLY IT CORNER",
+    "url": "http://172.17.17.17",
+    "category": "DOLY IT CORNER"
+  },
+  {
+    "id": "ftp-09ljjdi9c",
+    "name": "DOT INTERNET",
+    "url": "http://www.dotinternetbd.com",
+    "category": "DOT INTERNET"
+  },
+  {
+    "id": "ftp-2vuqtbgbz",
+    "name": "DOT INTERNET",
+    "url": "http://dflix.live",
+    "category": "DOT INTERNET"
+  },
+  {
+    "id": "ftp-5qkteqnva",
+    "name": "DOT INTERNET",
+    "url": "http://fs1.dflix.live",
+    "category": "DOT INTERNET"
+  },
+  {
+    "id": "ftp-afm8dln7j",
+    "name": "DREAMNET",
+    "url": "https://dreamnetbd.com",
+    "category": "DREAMNET"
+  },
+  {
+    "id": "ftp-sx2lf4dmy",
+    "name": "DURANTO BROADBAND NETWORK",
+    "url": "http://www.durantonetworkbd.com",
+    "category": "DURANTO BROADBAND NETWORK"
+  },
+  {
+    "id": "ftp-oin864q22",
+    "name": "E-VILLAGE INTERNET",
+    "url": "http://www.evillagectg.com",
+    "category": "E-VILLAGE INTERNET"
+  },
+  {
+    "id": "ftp-p03xek3hv",
+    "name": "E-VILLAGE INTERNET",
+    "url": "http://www.ctgflix.com",
+    "category": "E-VILLAGE INTERNET"
+  },
+  {
+    "id": "ftp-3ix1q3968",
+    "name": "E-VILLAGE INTERNET",
+    "url": "http://fs.evillagectg.com",
+    "category": "E-VILLAGE INTERNET"
+  },
+  {
+    "id": "ftp-lqyjwwjz2",
+    "name": "E-VILLAGE INTERNET",
+    "url": "http://www.ctghall.com",
+    "category": "E-VILLAGE INTERNET"
+  },
+  {
+    "id": "ftp-14kjm1sd2",
+    "name": "E-VILLAGE INTERNET",
+    "url": "http://www.ctgstream.com",
+    "category": "E-VILLAGE INTERNET"
+  },
+  {
+    "id": "ftp-wbtifids9",
+    "name": "EARTH ZONE INTERNET",
+    "url": "http://ezisbd.com",
+    "category": "EARTH ZONE INTERNET"
+  },
+  {
+    "id": "ftp-7louki08p",
+    "name": "EARTH ZONE INTERNET",
+    "url": "http://43.246.200.82:8081",
+    "category": "EARTH ZONE INTERNET"
+  },
+  {
+    "id": "ftp-j2m340676",
+    "name": "EASYIT",
+    "url": "https://easyitbd.com",
+    "category": "EASYIT"
+  },
+  {
+    "id": "ftp-vkq8lbsgg",
+    "name": "ECTLINK",
+    "url": "http://www.ectlink.com",
+    "category": "ECTLINK"
+  },
+  {
+    "id": "ftp-rf7jgqvbo",
+    "name": "ECTLINK",
+    "url": "http://download.ectlink.com",
+    "category": "ECTLINK"
+  },
+  {
+    "id": "ftp-jlc1allda",
+    "name": "EKUSHE NET",
+    "url": "https://ekushe.net",
+    "category": "EKUSHE NET"
+  },
+  {
+    "id": "ftp-chye73c9n",
+    "name": "EKUSHE NET",
+    "url": "http://10.100.100.2:8096",
+    "category": "EKUSHE NET"
+  },
+  {
+    "id": "ftp-degt0mr9j",
+    "name": "ELITE COMMUNICATION (JUSTMOVIE)",
+    "url": "https://www.elite.net.bd",
+    "category": "ELITE COMMUNICATION (JUSTMOVIE)"
+  },
+  {
+    "id": "ftp-9jy3o5cjf",
+    "name": "ELITE COMMUNICATION (JUSTMOVIE)",
+    "url": "http://15.20.20.20",
+    "category": "ELITE COMMUNICATION (JUSTMOVIE)"
+  },
+  {
+    "id": "ftp-u1jeo8wl1",
+    "name": "ELITE COMMUNICATION (JUSTMOVIE)",
+    "url": "https://genvideos.org",
+    "category": "ELITE COMMUNICATION (JUSTMOVIE)"
+  },
+  {
+    "id": "ftp-dtlg4spi9",
+    "name": "EMPOWERING NET (ABCMOVIES)",
+    "url": "https://epnetbd.com",
+    "category": "EMPOWERING NET (ABCMOVIES)"
+  },
+  {
+    "id": "ftp-muos2p5bh",
+    "name": "EMPOWERING NET (ABCMOVIES)",
+    "url": "http://103.103.239.66",
+    "category": "EMPOWERING NET (ABCMOVIES)"
+  },
+  {
+    "id": "ftp-45y1ybb90",
+    "name": "EMPOWERING NET (ABCMOVIES)",
+    "url": "http://abcmoviesbd.com",
+    "category": "EMPOWERING NET (ABCMOVIES)"
+  },
+  {
+    "id": "ftp-owr1m8s6g",
+    "name": "EMPOWERING NET (ABCMOVIES)",
+    "url": "http://abcflixbd.com",
+    "category": "EMPOWERING NET (ABCMOVIES)"
+  },
+  {
+    "id": "ftp-cueae5he2",
+    "name": "ENJOY NETWORK",
+    "url": "http://www.enjoy.net.bd",
+    "category": "ENJOY NETWORK"
+  },
+  {
+    "id": "ftp-qy8l98hqv",
+    "name": "ENJOY NETWORK",
+    "url": "http://103.115.82.254",
+    "category": "ENJOY NETWORK"
+  },
+  {
+    "id": "ftp-z4925x5ay",
+    "name": "EVOLUTION",
+    "url": "http://evolutionnet.info",
+    "category": "EVOLUTION"
+  },
+  {
+    "id": "ftp-8clgyxc36",
+    "name": "EVOLUTION",
+    "url": "http://www.evonetbd.com",
+    "category": "EVOLUTION"
+  },
+  {
+    "id": "ftp-6yo401koh",
+    "name": "EVOLUTION",
+    "url": "http://103.25.120.118",
+    "category": "EVOLUTION"
+  },
+  {
+    "id": "ftp-xhqpugsue",
+    "name": "EVOLUTION",
+    "url": "http://fs.evonetbd.com",
+    "category": "EVOLUTION"
+  },
+  {
+    "id": "ftp-4dypamj2y",
+    "name": "EXORD ONLINE (E-BOX LIVE)",
+    "url": "http://www.exordonline.com",
+    "category": "EXORD ONLINE (E-BOX LIVE)"
+  },
+  {
+    "id": "ftp-3olpeqzw3",
+    "name": "EXORD ONLINE (E-BOX LIVE)",
+    "url": "http://fs.ebox.live",
+    "category": "EXORD ONLINE (E-BOX LIVE)"
+  },
+  {
+    "id": "ftp-jja94ggvc",
+    "name": "EXORD ONLINE (E-BOX LIVE)",
+    "url": "http://103.49.168.107",
+    "category": "EXORD ONLINE (E-BOX LIVE)"
+  },
+  {
+    "id": "ftp-5jnlzi0ex",
+    "name": "EXORD ONLINE (E-BOX LIVE)",
+    "url": "http://fileserver.ebox.live",
+    "category": "EXORD ONLINE (E-BOX LIVE)"
+  },
+  {
+    "id": "ftp-m3k9c1uah",
+    "name": "EXORD ONLINE (E-BOX LIVE)",
+    "url": "http://play.ebox.live",
+    "category": "EXORD ONLINE (E-BOX LIVE)"
+  },
+  {
+    "id": "ftp-95mi95gvn",
+    "name": "EXPLORE ONLINE",
+    "url": "http://exploreonlinebd.net",
+    "category": "EXPLORE ONLINE"
+  },
+  {
+    "id": "ftp-xfupc8hnt",
+    "name": "EXPLORE ONLINE",
+    "url": "http://103.222.20.150",
+    "category": "EXPLORE ONLINE"
+  },
+  {
+    "id": "ftp-1dy2xqys9",
+    "name": "EXPLORE ONLINE",
+    "url": "http://103.222.20.150/ftpdata",
+    "category": "EXPLORE ONLINE"
+  },
+  {
+    "id": "ftp-zlu14okub",
+    "name": "EXTREME NET",
+    "url": "http://extremenetbd.com",
+    "category": "EXTREME NET"
+  },
+  {
+    "id": "ftp-ndy0doj2p",
+    "name": "EXTREME NET",
+    "url": "http://203.96.191.70",
+    "category": "EXTREME NET"
+  },
+  {
+    "id": "ftp-qzrbmjlzc",
+    "name": "EXTREME NET",
+    "url": "http://203.96.191.70/Data",
+    "category": "EXTREME NET"
+  },
+  {
+    "id": "ftp-5yjyv03bj",
+    "name": "EXTREME NET",
+    "url": "http://plexbd.net",
+    "category": "EXTREME NET"
+  },
+  {
+    "id": "ftp-fft61cpvd",
+    "name": "EXTREME NET",
+    "url": "http://plexbd.net/Data",
+    "category": "EXTREME NET"
+  },
+  {
+    "id": "ftp-5bosblfle",
+    "name": "F4 INTERNET SOLUTIONS",
+    "url": "https://f4internetsolution.com",
+    "category": "F4 INTERNET SOLUTIONS"
+  },
+  {
+    "id": "ftp-nsxj5zp5a",
+    "name": "F4 INTERNET SOLUTIONS",
+    "url": "http://172.2.2.2",
+    "category": "F4 INTERNET SOLUTIONS"
+  },
+  {
+    "id": "ftp-1wkwqwlph",
+    "name": "F4 INTERNET SOLUTIONS",
+    "url": "http://f4cineplex.myftp.org",
+    "category": "F4 INTERNET SOLUTIONS"
+  },
+  {
+    "id": "ftp-a6ccq2xg7",
+    "name": "FASTCYBER NETWORK",
+    "url": "https://www.fastcyber.net",
+    "category": "FASTCYBER NETWORK"
+  },
+  {
+    "id": "ftp-j7aiov6yy",
+    "name": "FASTNET",
+    "url": "https://fastnetbd.org",
+    "category": "FASTNET"
+  },
+  {
+    "id": "ftp-fvxjm2wef",
+    "name": "FASTNET BD",
+    "url": "https://fastnetbd.com",
+    "category": "FASTNET BD"
+  },
+  {
+    "id": "ftp-0oj1aoir5",
+    "name": "FASTNET BD",
+    "url": "https://fastplex.net",
+    "category": "FASTNET BD"
+  },
+  {
+    "id": "ftp-viykgvmq5",
+    "name": "FASTNET ONLINE",
+    "url": "http://192.168.100.5/fastnet",
+    "category": "FASTNET ONLINE"
+  },
+  {
+    "id": "ftp-khkf1hv76",
+    "name": "FASTWAY",
+    "url": "http://ftp.com.bd",
+    "category": "FASTWAY"
+  },
+  {
+    "id": "ftp-09odrx9ul",
+    "name": "FIBERNET NETWORK",
+    "url": "http://www.fnet.com.bd",
+    "category": "FIBERNET NETWORK"
+  },
+  {
+    "id": "ftp-3agn2rzvy",
+    "name": "FIBERX",
+    "url": "http://fiberx.me",
+    "category": "FIBERX"
+  },
+  {
+    "id": "ftp-9y9ebedph",
+    "name": "FILMGURO",
+    "url": "http://filmguro.site",
+    "category": "FILMGURO"
+  },
+  {
+    "id": "ftp-25wcl528f",
+    "name": "FIS NETWORK",
+    "url": "https://istiak-tushar42.github.io/FIS-Network",
+    "category": "FIS NETWORK"
+  },
+  {
+    "id": "ftp-5qwmvlp9s",
+    "name": "FLASHNET",
+    "url": "http://flashnetbd.com",
+    "category": "FLASHNET"
+  },
+  {
+    "id": "ftp-irrcyg2t8",
+    "name": "FLIXJAR",
+    "url": "https://www.flixjar.com",
+    "category": "FLIXJAR"
+  },
+  {
+    "id": "ftp-5odencco5",
+    "name": "FLYNET INTERNET",
+    "url": "https://www.flynetbd.com",
+    "category": "FLYNET INTERNET"
+  },
+  {
+    "id": "ftp-6r7j3k0xp",
+    "name": "FM NETWORK",
+    "url": "https://fmnetworks.net",
+    "category": "FM NETWORK"
+  },
+  {
+    "id": "ftp-px6uhqveq",
+    "name": "FNF ONLINE CTG",
+    "url": "http://www.fnfbd.net",
+    "category": "FNF ONLINE CTG"
+  },
+  {
+    "id": "ftp-szfb7gm8u",
+    "name": "FNFONLINE",
+    "url": "http://www.fnfonlinebd.com",
+    "category": "FNFONLINE"
+  },
+  {
+    "id": "ftp-nw8g0qrt2",
+    "name": "FNFONLINE",
+    "url": "http://103.82.8.194",
+    "category": "FNFONLINE"
+  },
+  {
+    "id": "ftp-ddoj4qtw1",
+    "name": "FNFONLINE",
+    "url": "http://103.82.8.194/Data",
+    "category": "FNFONLINE"
+  },
+  {
+    "id": "ftp-fk2nleuh3",
+    "name": "FNFONLINE",
+    "url": "http://movies.fnfonlinebd.com",
+    "category": "FNFONLINE"
+  },
+  {
+    "id": "ftp-qp1v45kou",
+    "name": "FOCUS ONLINE",
+    "url": "http://www.focusonlinectg.com",
+    "category": "FOCUS ONLINE"
+  },
+  {
+    "id": "ftp-wt1d37lye",
+    "name": "FRC BROADBAND INTERNET",
+    "url": "https://frcbd.xyz",
+    "category": "FRC BROADBAND INTERNET"
+  },
+  {
+    "id": "ftp-hw3z50bas",
+    "name": "FRC BROADBAND INTERNET",
+    "url": "https://frcbd.net",
+    "category": "FRC BROADBAND INTERNET"
+  },
+  {
+    "id": "ftp-6t0r1vgc4",
+    "name": "FRC BROADBAND INTERNET",
+    "url": "http://s-flix.live",
+    "category": "FRC BROADBAND INTERNET"
+  },
+  {
+    "id": "ftp-bgfc11265",
+    "name": "FRC BROADBAND INTERNET",
+    "url": "http://play.s-flix.live",
+    "category": "FRC BROADBAND INTERNET"
+  },
+  {
+    "id": "ftp-tbgbbojyw",
+    "name": "FRC BROADBAND INTERNET",
+    "url": "http://cdn.s-flix.live",
+    "category": "FRC BROADBAND INTERNET"
+  },
+  {
+    "id": "ftp-ddstrpiud",
+    "name": "FREEDOM ONLINE",
+    "url": "http://www.freedomonlinebd.com",
+    "category": "FREEDOM ONLINE"
+  },
+  {
+    "id": "ftp-7yzt6y2lp",
+    "name": "FREEDOWNLOADBD",
+    "url": "http://172.17.172.242",
+    "category": "FREEDOWNLOADBD"
+  },
+  {
+    "id": "ftp-2e7n1d2fd",
+    "name": "FREEDOWNLOADBD",
+    "url": "http://www.freedownloadbd.com",
+    "category": "FREEDOWNLOADBD"
+  },
+  {
+    "id": "ftp-j9t92che8",
+    "name": "FRIENDS CABLE NET",
+    "url": "http://fcnetbd.net",
+    "category": "FRIENDS CABLE NET"
+  },
+  {
+    "id": "ftp-8bxjj3ccq",
+    "name": "FRIENDS ONLINE",
+    "url": "http://www.friendsonlinebd.com",
+    "category": "FRIENDS ONLINE"
+  },
+  {
+    "id": "ftp-7s6shlz54",
+    "name": "FURIOUS INTERNET",
+    "url": "http://www.furiousnet.net",
+    "category": "FURIOUS INTERNET"
+  },
+  {
+    "id": "ftp-9a5g0male",
+    "name": "FURIOUS INTERNET",
+    "url": "http://media.furiousnet.net",
+    "category": "FURIOUS INTERNET"
+  },
+  {
+    "id": "ftp-sekuwxmf8",
+    "name": "FUTURE NET SOLUTION",
+    "url": "http://www.futurenet-bd.com",
+    "category": "FUTURE NET SOLUTION"
+  },
+  {
+    "id": "ftp-up1fjst84",
+    "name": "FUTURE TECH INTERNET",
+    "url": "https://fti.com.bd",
+    "category": "FUTURE TECH INTERNET"
+  },
+  {
+    "id": "ftp-hjziae5kf",
+    "name": "FUTURE.NET (MOVIEMELA)",
+    "url": "http://fn-bd.com",
+    "category": "FUTURE.NET (MOVIEMELA)"
+  },
+  {
+    "id": "ftp-nxc148214",
+    "name": "FUTURE.NET (MOVIEMELA)",
+    "url": "http://www.moviemela.live",
+    "category": "FUTURE.NET (MOVIEMELA)"
+  },
+  {
+    "id": "ftp-0ew0213jy",
+    "name": "FUTURENET",
+    "url": "http://www.fnetctg.com/index.php/bdix-list",
+    "category": "FUTURENET"
+  },
+  {
+    "id": "ftp-ztugemm1j",
+    "name": "GAIBANDHA ONLINE",
+    "url": "https://103.91.53.248",
+    "category": "GAIBANDHA ONLINE"
+  },
+  {
+    "id": "ftp-2rg1axxew",
+    "name": "GALAXY NETWORK",
+    "url": "https://www.gnetworkbd.com",
+    "category": "GALAXY NETWORK"
+  },
+  {
+    "id": "ftp-p5uksfk27",
+    "name": "GAZIPUR NETWORK SYSTEM",
+    "url": "https://gazipurns.com",
+    "category": "GAZIPUR NETWORK SYSTEM"
+  },
+  {
+    "id": "ftp-x7gcyim9k",
+    "name": "GAZIPUR NETWORK SYSTEM",
+    "url": "https://gazipurns.webs.com",
+    "category": "GAZIPUR NETWORK SYSTEM"
+  },
+  {
+    "id": "ftp-h6964bffp",
+    "name": "GENIOUS NET",
+    "url": "http://www.geniousnet.com",
+    "category": "GENIOUS NET"
+  },
+  {
+    "id": "ftp-aj9et3f9m",
+    "name": "GENIOUS NET",
+    "url": "http://downloads.geniousnet.com",
+    "category": "GENIOUS NET"
+  },
+  {
+    "id": "ftp-cdp56nf2h",
+    "name": "GHATAIL ONLINE",
+    "url": "http://ghatailonline.net",
+    "category": "GHATAIL ONLINE"
+  },
+  {
+    "id": "ftp-zdght3otn",
+    "name": "GK NETWORK",
+    "url": "https://gk-network.net",
+    "category": "GK NETWORK"
+  },
+  {
+    "id": "ftp-g1azm2kiu",
+    "name": "GLOBAL COMMUNICATION",
+    "url": "http://globalcommunicationbd.com",
+    "category": "GLOBAL COMMUNICATION"
+  },
+  {
+    "id": "ftp-20d00ffiv",
+    "name": "GLOBAL COMMUNICATION",
+    "url": "http://103.113.16.46",
+    "category": "GLOBAL COMMUNICATION"
+  },
+  {
+    "id": "ftp-rbwly99nv",
+    "name": "GLOBAL COMMUNICATION",
+    "url": "http://103.113.16.46/Data",
+    "category": "GLOBAL COMMUNICATION"
+  },
+  {
+    "id": "ftp-4wsjwlw7y",
+    "name": "GNET INTERNET",
+    "url": "https://www.gnetinternet.com",
+    "category": "GNET INTERNET"
+  },
+  {
+    "id": "ftp-ism5yw4x4",
+    "name": "GPISP",
+    "url": "http://gpisp.net",
+    "category": "GPISP"
+  },
+  {
+    "id": "ftp-i0535lups",
+    "name": "GRAMEEN CYBERNET LIMITED (MOVIEHUB)",
+    "url": "https://www.citechco.net",
+    "category": "GRAMEEN CYBERNET LIMITED (MOVIEHUB)"
+  },
+  {
+    "id": "ftp-fdi2ejhmw",
+    "name": "GRAMEEN CYBERNET LIMITED (MOVIEHUB)",
+    "url": "http://203.83.177.225",
+    "category": "GRAMEEN CYBERNET LIMITED (MOVIEHUB)"
+  },
+  {
+    "id": "ftp-16x2ei8ti",
+    "name": "GREEN BYTES",
+    "url": "https://greenbytes.net.bd",
+    "category": "GREEN BYTES"
+  },
+  {
+    "id": "ftp-kjehhxb5r",
+    "name": "GREEN BYTES",
+    "url": "https://greenbytes.net.bd/ftp-bdix",
+    "category": "GREEN BYTES"
+  },
+  {
+    "id": "ftp-h0i0wnkzl",
+    "name": "GREETINGS ONLINE",
+    "url": "http://greetingsonlinebd.com",
+    "category": "GREETINGS ONLINE"
+  },
+  {
+    "id": "ftp-4zhtcgu2a",
+    "name": "GREETINGS ONLINE",
+    "url": "http://103.133.175.242/80",
+    "category": "GREETINGS ONLINE"
+  },
+  {
+    "id": "ftp-vhk3225fe",
+    "name": "GREETINGS ONLINE",
+    "url": "http://103.133.175.242/80/wp-content",
+    "category": "GREETINGS ONLINE"
+  },
+  {
+    "id": "ftp-3a8nqumxb",
+    "name": "GUNGCHIL BROADBAND INTERNET",
+    "url": "https://www.gungchil.net",
+    "category": "GUNGCHIL BROADBAND INTERNET"
+  },
+  {
+    "id": "ftp-z6aejm3qh",
+    "name": "HALUM",
+    "url": "http://103.156.66.45",
+    "category": "HALUM"
+  },
+  {
+    "id": "ftp-z61bvx7ea",
+    "name": "HALUM",
+    "url": "http://103.156.66.58/m4t1",
+    "category": "HALUM"
+  },
+  {
+    "id": "ftp-c956i0si1",
+    "name": "HALUM",
+    "url": "http://halum.net",
+    "category": "HALUM"
+  },
+  {
+    "id": "ftp-abeyyvzer",
+    "name": "HELLO IT",
+    "url": "https://helloitbd.com",
+    "category": "HELLO IT"
+  },
+  {
+    "id": "ftp-f91skcipu",
+    "name": "HELLO IT",
+    "url": "https://helloitbd.com/category/all-server-list",
+    "category": "HELLO IT"
+  },
+  {
+    "id": "ftp-ru812tqew",
+    "name": "HILSABD BROADBAND NETWORK",
+    "url": "http://www.hilsabd.com",
+    "category": "HILSABD BROADBAND NETWORK"
+  },
+  {
+    "id": "ftp-5652mfxn0",
+    "name": "HILSABD BROADBAND NETWORK",
+    "url": "http://203.190.8.210",
+    "category": "HILSABD BROADBAND NETWORK"
+  },
+  {
+    "id": "ftp-ygbmdb6ba",
+    "name": "HITECH ONLINE",
+    "url": "http://bdix.hitechisp.com",
+    "category": "HITECH ONLINE"
+  },
+  {
+    "id": "ftp-cbg4kyemv",
+    "name": "HK ONLINE",
+    "url": "https://www.hkonline.com.bd",
+    "category": "HK ONLINE"
+  },
+  {
+    "id": "ftp-k7cy11uck",
+    "name": "HORIZON & ASSOCIATES INTERNET",
+    "url": "http://www.net2bd.com",
+    "category": "HORIZON & ASSOCIATES INTERNET"
+  },
+  {
+    "id": "ftp-4or2mbg3h",
+    "name": "HOST XY",
+    "url": "http://hostxy.com",
+    "category": "HOST XY"
+  },
+  {
+    "id": "ftp-8mqqzxzox",
+    "name": "IBD COMMUNICATION",
+    "url": "http://www.ibd.net.bd",
+    "category": "IBD COMMUNICATION"
+  },
+  {
+    "id": "ftp-cpwtpuauj",
+    "name": "ICC COMMUNICATION LIMITED",
+    "url": "https://icc.com.bd",
+    "category": "ICC COMMUNICATION LIMITED"
+  },
+  {
+    "id": "ftp-3rfbsrufy",
+    "name": "ICC COMMUNICATION LIMITED",
+    "url": "https://iccfios.net",
+    "category": "ICC COMMUNICATION LIMITED"
+  },
+  {
+    "id": "ftp-kc0xmd3r9",
+    "name": "ICC COMMUNICATION LIMITED",
+    "url": "https://icctalk.com",
+    "category": "ICC COMMUNICATION LIMITED"
+  },
+  {
+    "id": "ftp-2jhi8w8wq",
+    "name": "ICC COMMUNICATION LIMITED",
+    "url": "http://10.16.100.244",
+    "category": "ICC COMMUNICATION LIMITED"
+  },
+  {
+    "id": "ftp-ghowlyaze",
+    "name": "ICC COMMUNICATION LIMITED",
+    "url": "http://10.16.100.202/ftps10",
+    "category": "ICC COMMUNICATION LIMITED"
+  },
+  {
+    "id": "ftp-zs36jzdsb",
+    "name": "ICC COMMUNICATION LIMITED",
+    "url": "http://10.16.100.206/ftps3",
+    "category": "ICC COMMUNICATION LIMITED"
+  },
+  {
+    "id": "ftp-ma3exnutn",
+    "name": "ICOMMUNICATION BROADBAND (IBOX)",
+    "url": "http://www.icommunicationbd.net",
+    "category": "ICOMMUNICATION BROADBAND (IBOX)"
+  },
+  {
+    "id": "ftp-ohhs4meec",
+    "name": "ICOMMUNICATION BROADBAND (IBOX)",
+    "url": "https://iboxbd.club",
+    "category": "ICOMMUNICATION BROADBAND (IBOX)"
+  },
+  {
+    "id": "ftp-vpmaau3n8",
+    "name": "ICOMMUNICATION BROADBAND (IBOX)",
+    "url": "http://103.135.208.2",
+    "category": "ICOMMUNICATION BROADBAND (IBOX)"
+  },
+  {
+    "id": "ftp-b00ya8kqf",
+    "name": "ICOMMUNICATION BROADBAND (IBOX)",
+    "url": "http://103.135.208.2/Data",
+    "category": "ICOMMUNICATION BROADBAND (IBOX)"
+  },
+  {
+    "id": "ftp-fkfscy9cr",
+    "name": "ICOMMUNICATION BROADBAND (IBOX)",
+    "url": "http://iboxbd.online",
+    "category": "ICOMMUNICATION BROADBAND (IBOX)"
+  },
+  {
+    "id": "ftp-jkzo1evka",
+    "name": "ICOMMUNICATION BROADBAND (IBOX)",
+    "url": "http://iboxbd.online/Data",
+    "category": "ICOMMUNICATION BROADBAND (IBOX)"
+  },
+  {
+    "id": "ftp-024rhi9sw",
+    "name": "IFLIX",
+    "url": "https://www.iflix.com",
+    "category": "IFLIX"
+  },
+  {
+    "id": "ftp-l0d3vxcja",
+    "name": "IFRA NETWORK",
+    "url": "https://ifra.network",
+    "category": "IFRA NETWORK"
+  },
+  {
+    "id": "ftp-lo66pamiz",
+    "name": "IFRA NETWORK",
+    "url": "http://103.110.126.146:8000",
+    "category": "IFRA NETWORK"
+  },
+  {
+    "id": "ftp-hpvt7d62v",
+    "name": "IM ONLINE",
+    "url": "http://imonlineisp.net",
+    "category": "IM ONLINE"
+  },
+  {
+    "id": "ftp-h1lctq8ic",
+    "name": "INET",
+    "url": "https://inetisp.net",
+    "category": "INET"
+  },
+  {
+    "id": "ftp-y3n90z5fg",
+    "name": "INFO INTERNET SERVICE",
+    "url": "https://infointernetservice.com",
+    "category": "INFO INTERNET SERVICE"
+  },
+  {
+    "id": "ftp-m6uqero2p",
+    "name": "INFO INTERNET SERVICE",
+    "url": "http://10.28.22.2",
+    "category": "INFO INTERNET SERVICE"
+  },
+  {
+    "id": "ftp-j0cz47z47",
+    "name": "INFOBD24 SYSTEMS",
+    "url": "http://ibds.net.bd",
+    "category": "INFOBD24 SYSTEMS"
+  },
+  {
+    "id": "ftp-myac4ecfj",
+    "name": "INFOBD24 SYSTEMS",
+    "url": "http://chayachobi.net",
+    "category": "INFOBD24 SYSTEMS"
+  },
+  {
+    "id": "ftp-t89kh6laz",
+    "name": "INFOLINK",
+    "url": "https://infolinkbd.com",
+    "category": "INFOLINK"
+  },
+  {
+    "id": "ftp-kq02xb9g1",
+    "name": "INOX NET COMMUNICATION",
+    "url": "http://inoxbd.com",
+    "category": "INOX NET COMMUNICATION"
+  },
+  {
+    "id": "ftp-8s0k5nxdi",
+    "name": "INSPIRE BROADBAND (IHUB)",
+    "url": "https://inspirebroadband.net",
+    "category": "INSPIRE BROADBAND (IHUB)"
+  },
+  {
+    "id": "ftp-wte4kz87y",
+    "name": "INSPIRE BROADBAND (IHUB)",
+    "url": "http://ihub.live",
+    "category": "INSPIRE BROADBAND (IHUB)"
+  },
+  {
+    "id": "ftp-5ed4aobcb",
+    "name": "INSPIRE BROADBAND (IHUB)",
+    "url": "http://sg-cdn.ihub.live:8787/download/games",
+    "category": "INSPIRE BROADBAND (IHUB)"
   },
   {
     "id": "ftp-zyf5hzw55",
@@ -46,5 +2098,2195 @@
     "name": "INTEPID BROADBAND COMMUNICATION COMPANY LIMITED",
     "url": "http://103.203.94.1:8065",
     "category": "INTEPID BROADBAND COMMUNICATION COMPANY LIMITED"
+  },
+  {
+    "id": "ftp-hjkibn5kj",
+    "name": "INTERNET ZONE",
+    "url": "https://internetzonebd.com",
+    "category": "INTERNET ZONE"
+  },
+  {
+    "id": "ftp-wf3q5o7jc",
+    "name": "INTREPID INTERNET",
+    "url": "http://192.168.100.16",
+    "category": "INTREPID INTERNET"
+  },
+  {
+    "id": "ftp-pq35tcgp2",
+    "name": "INTREPID INTERNET",
+    "url": "http://192.168.100.16:8096",
+    "category": "INTREPID INTERNET"
+  },
+  {
+    "id": "ftp-1em45kfho",
+    "name": "IRANET",
+    "url": "https://www.iranetbd.com",
+    "category": "IRANET"
+  },
+  {
+    "id": "ftp-d1xlihk24",
+    "name": "ISMART BROADBAND",
+    "url": "https://ismart.net.bd",
+    "category": "ISMART BROADBAND"
+  },
+  {
+    "id": "ftp-01sw9hakl",
+    "name": "IT CONNECTION",
+    "url": "https://www.itcnbd.com",
+    "category": "IT CONNECTION"
+  },
+  {
+    "id": "ftp-v1zcvwc91",
+    "name": "IT CONNECTION",
+    "url": "http://bdix.itcnbd.com",
+    "category": "IT CONNECTION"
+  },
+  {
+    "id": "ftp-jnvkiz105",
+    "name": "ITBASE ISP",
+    "url": "http://www.itbasebd.com",
+    "category": "ITBASE ISP"
+  },
+  {
+    "id": "ftp-rjaeruj5j",
+    "name": "ITM AND COMMUNICATIONS",
+    "url": "http://www.itmandcommunication.com",
+    "category": "ITM AND COMMUNICATIONS"
+  },
+  {
+    "id": "ftp-6i2uh1lon",
+    "name": "ITM AND COMMUNICATIONS",
+    "url": "http://103.151.118.10",
+    "category": "ITM AND COMMUNICATIONS"
+  },
+  {
+    "id": "ftp-y02jl4rth",
+    "name": "ITNETZONE",
+    "url": "https://itnetzone.com",
+    "category": "ITNETZONE"
+  },
+  {
+    "id": "ftp-7i82tle5f",
+    "name": "JAKIA NET",
+    "url": "http://jakianetbd.com",
+    "category": "JAKIA NET"
+  },
+  {
+    "id": "ftp-b3nrzgun1",
+    "name": "JANANI TECHNOLOGY",
+    "url": "https://www.jananibd.com",
+    "category": "JANANI TECHNOLOGY"
+  },
+  {
+    "id": "ftp-380sa06ox",
+    "name": "JHENUK DOT NET",
+    "url": "https://jhenuk.net",
+    "category": "JHENUK DOT NET"
+  },
+  {
+    "id": "ftp-w7i4153f4",
+    "name": "JMIS INTERNET",
+    "url": "http://www.jannatmirinternetservice.com",
+    "category": "JMIS INTERNET"
+  },
+  {
+    "id": "ftp-cgl3e07we",
+    "name": "JONYCABLE NETWORK",
+    "url": "https://jonycable.com",
+    "category": "JONYCABLE NETWORK"
+  },
+  {
+    "id": "ftp-9u93dn896",
+    "name": "KARSAN NET",
+    "url": "http://karsannet.com",
+    "category": "KARSAN NET"
+  },
+  {
+    "id": "ftp-o0syn2398",
+    "name": "KARSAN NET",
+    "url": "http://103.219.232.190",
+    "category": "KARSAN NET"
+  },
+  {
+    "id": "ftp-hp5dndktt",
+    "name": "KAWSAR IT",
+    "url": "https://kawsarit.net",
+    "category": "KAWSAR IT"
+  },
+  {
+    "id": "ftp-rzv7tzks1",
+    "name": "KAZI NETWORKS",
+    "url": "http://www.kazinetwork.net",
+    "category": "KAZI NETWORKS"
+  },
+  {
+    "id": "ftp-a8en6gyf5",
+    "name": "KBN ONLINE",
+    "url": "https://kbnonlinebd.net",
+    "category": "KBN ONLINE"
+  },
+  {
+    "id": "ftp-ubp2r60kx",
+    "name": "KHULNA NET 24",
+    "url": "https://khulnanet24.com",
+    "category": "KHULNA NET 24"
+  },
+  {
+    "id": "ftp-hjvnwnq8r",
+    "name": "KLOUD TECHNOLOGIES LIMITED",
+    "url": "https://kloud.com.bd",
+    "category": "KLOUD TECHNOLOGIES LIMITED"
+  },
+  {
+    "id": "ftp-c0jmxha09",
+    "name": "KLOUD TECHNOLOGIES LIMITED",
+    "url": "http://movies.kloud.com.bd",
+    "category": "KLOUD TECHNOLOGIES LIMITED"
+  },
+  {
+    "id": "ftp-cwoiku1dt",
+    "name": "KM NETWORK",
+    "url": "https://kmnbd.net",
+    "category": "KM NETWORK"
+  },
+  {
+    "id": "ftp-khs2vws42",
+    "name": "KS NETWORK LIMITED (WOW MOVIE ZONE)",
+    "url": "https://ksnetworkbd.com",
+    "category": "KS NETWORK LIMITED (WOW MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-9tgwosfw0",
+    "name": "KS NETWORK LIMITED (WOW MOVIE ZONE)",
+    "url": "http://172.27.27.83",
+    "category": "KS NETWORK LIMITED (WOW MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-q5sxqwwqg",
+    "name": "KS NETWORK LIMITED (WOW MOVIE ZONE)",
+    "url": "http://172.27.27.84",
+    "category": "KS NETWORK LIMITED (WOW MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-3drzsbuaw",
+    "name": "KS NETWORK LIMITED (WOW MOVIE ZONE)",
+    "url": "http://172.27.27.26//2TB4",
+    "category": "KS NETWORK LIMITED (WOW MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-q6stxrbjx",
+    "name": "KS NETWORK LIMITED (WOW MOVIE ZONE)",
+    "url": "http://172.27.27.124/s1d1",
+    "category": "KS NETWORK LIMITED (WOW MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-lc1el96w2",
+    "name": "KS NETWORK LIMITED (WOW MOVIE ZONE)",
+    "url": "http://172.27.27.244/2TB1",
+    "category": "KS NETWORK LIMITED (WOW MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-gqlmtipwb",
+    "name": "KS NETWORK LIMITED (WOW MOVIE ZONE)",
+    "url": "http://172.27.27.245/2TB1",
+    "category": "KS NETWORK LIMITED (WOW MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-qsheaavo0",
+    "name": "KS NETWORK LIMITED (WOW MOVIE ZONE)",
+    "url": "http://172.27.27.248/2TB1",
+    "category": "KS NETWORK LIMITED (WOW MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-efdmiz46j",
+    "name": "KS NETWORK LIMITED (WOW MOVIE ZONE)",
+    "url": "http://172.27.27.250/2TB1",
+    "category": "KS NETWORK LIMITED (WOW MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-bz43a4osq",
+    "name": "KS NETWORK LIMITED (WOW MOVIE ZONE)",
+    "url": "http://172.27.27.251/2TB2",
+    "category": "KS NETWORK LIMITED (WOW MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-0s9okar0v",
+    "name": "KS NETWORK LIMITED (WOW MOVIE ZONE)",
+    "url": "http://172.27.27.252/2TB2",
+    "category": "KS NETWORK LIMITED (WOW MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-t2yjy9g09",
+    "name": "LEADTECHNOLOGY",
+    "url": "http://leadtechnologybd.com",
+    "category": "LEADTECHNOLOGY"
+  },
+  {
+    "id": "ftp-bdmujdm75",
+    "name": "LINK TECHNOLOGIES",
+    "url": "https://linktech.net.bd",
+    "category": "LINK TECHNOLOGIES"
+  },
+  {
+    "id": "ftp-2qm7gicnv",
+    "name": "LINK TECHNOLOGIES",
+    "url": "http://play.linkftp.com",
+    "category": "LINK TECHNOLOGIES"
+  },
+  {
+    "id": "ftp-d5xldv0qm",
+    "name": "LINK TECHNOLOGIES",
+    "url": "http://cdn.linkftp.com",
+    "category": "LINK TECHNOLOGIES"
+  },
+  {
+    "id": "ftp-tih1rzvjq",
+    "name": "LINK3 INTERNET",
+    "url": "http://www.cinehub24.com",
+    "category": "LINK3 INTERNET"
+  },
+  {
+    "id": "ftp-7v39qil4b",
+    "name": "LINKIN NET",
+    "url": "http://www.linkinnet.net",
+    "category": "LINKIN NET"
+  },
+  {
+    "id": "ftp-908yb3ehi",
+    "name": "LIZA ONLINE",
+    "url": "https://www.lizaonlinebd.com",
+    "category": "LIZA ONLINE"
+  },
+  {
+    "id": "ftp-s33jt06lc",
+    "name": "MA NETWORK",
+    "url": "https://manetbd.com",
+    "category": "MA NETWORK"
+  },
+  {
+    "id": "ftp-ouhkuodga",
+    "name": "MAHIR NET",
+    "url": "http://mahirbd.com",
+    "category": "MAHIR NET"
+  },
+  {
+    "id": "ftp-gd28xc9bk",
+    "name": "MAHIR NET",
+    "url": "http://45.118.247.178",
+    "category": "MAHIR NET"
+  },
+  {
+    "id": "ftp-ihmmmgthz",
+    "name": "MAHIR NET",
+    "url": "http://45.118.247.178:8096",
+    "category": "MAHIR NET"
+  },
+  {
+    "id": "ftp-8ir1gkan4",
+    "name": "MANIKDI COMMUNICATION",
+    "url": "https://www.manikdicommunication.com",
+    "category": "MANIKDI COMMUNICATION"
+  },
+  {
+    "id": "ftp-tk95vok4q",
+    "name": "MARIUM NETWORK",
+    "url": "http://www.mariumnetwork.com",
+    "category": "MARIUM NETWORK"
+  },
+  {
+    "id": "ftp-lyp776jjq",
+    "name": "MASTER NET",
+    "url": "https://masternetbd.net",
+    "category": "MASTER NET"
+  },
+  {
+    "id": "ftp-pcl0umfxd",
+    "name": "MATHANOSTO",
+    "url": "http://mathanosto.top",
+    "category": "MATHANOSTO"
+  },
+  {
+    "id": "ftp-zbw6tfvkb",
+    "name": "MATHANOSTO",
+    "url": "http://mathanosto.top/Data",
+    "category": "MATHANOSTO"
+  },
+  {
+    "id": "ftp-rqay1xexz",
+    "name": "MAYASOFT",
+    "url": "https://www.mayasoftbd.net",
+    "category": "MAYASOFT"
+  },
+  {
+    "id": "ftp-ho57i7qbd",
+    "name": "MAZEDA NETWORK",
+    "url": "https://www.mazedanetworks.net",
+    "category": "MAZEDA NETWORK"
+  },
+  {
+    "id": "ftp-vfji4ykqc",
+    "name": "MAZEDA NETWORK",
+    "url": "http://172.22.22.100",
+    "category": "MAZEDA NETWORK"
+  },
+  {
+    "id": "ftp-a4o81a59a",
+    "name": "MAZEDA NETWORK",
+    "url": "http://172.22.22.101",
+    "category": "MAZEDA NETWORK"
+  },
+  {
+    "id": "ftp-72bsvygiu",
+    "name": "MAZEDA NETWORK",
+    "url": "http://ftpweb.mazedanetworks.net",
+    "category": "MAZEDA NETWORK"
+  },
+  {
+    "id": "ftp-adqqjtxu1",
+    "name": "MAZEDA NETWORK",
+    "url": "http://172.22.22.105:8096",
+    "category": "MAZEDA NETWORK"
+  },
+  {
+    "id": "ftp-gw9xqesqf",
+    "name": "MC BROADBAND",
+    "url": "http://mcbroadbandbd.com",
+    "category": "MC BROADBAND"
+  },
+  {
+    "id": "ftp-zrrrsav5h",
+    "name": "MC BROADBAND",
+    "url": "http://172.17.254.2",
+    "category": "MC BROADBAND"
+  },
+  {
+    "id": "ftp-yc9gfbe4p",
+    "name": "MEDIA ONLINE (MOVIEBAZER)",
+    "url": "https://mediaonlinebd.com",
+    "category": "MEDIA ONLINE (MOVIEBAZER)"
+  },
+  {
+    "id": "ftp-1yejshmt5",
+    "name": "MEDIA ONLINE (MOVIEBAZER)",
+    "url": "http://mymoviebazar.net",
+    "category": "MEDIA ONLINE (MOVIEBAZER)"
+  },
+  {
+    "id": "ftp-8upem7e8v",
+    "name": "MEDIA ONLINE (MOVIEBAZER)",
+    "url": "http://mymoviebazar.net/Data",
+    "category": "MEDIA ONLINE (MOVIEBAZER)"
+  },
+  {
+    "id": "ftp-y3e4tb5ob",
+    "name": "MEGA SPEED NET",
+    "url": "https://megaspeednet.com",
+    "category": "MEGA SPEED NET"
+  },
+  {
+    "id": "ftp-pkx4foq9a",
+    "name": "MEGAPLEX",
+    "url": "http://www.megaplexbd.com",
+    "category": "MEGAPLEX"
+  },
+  {
+    "id": "ftp-xqxdbpxdu",
+    "name": "METAPHOR INTERNET",
+    "url": "http://www.metaphornet.net",
+    "category": "METAPHOR INTERNET"
+  },
+  {
+    "id": "ftp-sge1jx91o",
+    "name": "MICN",
+    "url": "http://micnbd.com",
+    "category": "MICN"
+  },
+  {
+    "id": "ftp-qy29pnap7",
+    "name": "MICROLINK TECHNOLOGY",
+    "url": "https://microlinkbd.net",
+    "category": "MICROLINK TECHNOLOGY"
+  },
+  {
+    "id": "ftp-1no5hzaqo",
+    "name": "MIDIPLEX",
+    "url": "http://midiplex.net",
+    "category": "MIDIPLEX"
+  },
+  {
+    "id": "ftp-0s0vdnpn4",
+    "name": "MIDIPLEX",
+    "url": "http://cdn.midiplex.net",
+    "category": "MIDIPLEX"
+  },
+  {
+    "id": "ftp-gcgva7ysc",
+    "name": "MILLENNIUM COMPUTERS & NETWORK",
+    "url": "https://www.mcnbd.com",
+    "category": "MILLENNIUM COMPUTERS & NETWORK"
+  },
+  {
+    "id": "ftp-o2xels6st",
+    "name": "MILLENNIUM COMPUTERS & NETWORK",
+    "url": "http://ftp.mcnbd.com",
+    "category": "MILLENNIUM COMPUTERS & NETWORK"
+  },
+  {
+    "id": "ftp-sg6f34yfy",
+    "name": "MILLENNIUM COMPUTERS & NETWORK",
+    "url": "http://fun.mcnbd.com",
+    "category": "MILLENNIUM COMPUTERS & NETWORK"
+  },
+  {
+    "id": "ftp-okls8liug",
+    "name": "MIRPUR NET",
+    "url": "http://mirpurnetbd.com",
+    "category": "MIRPUR NET"
+  },
+  {
+    "id": "ftp-zkqzn3ucs",
+    "name": "MIRPUR TECH INTERNET",
+    "url": "http://www.mirpurtech.com",
+    "category": "MIRPUR TECH INTERNET"
+  },
+  {
+    "id": "ftp-lw82rby9g",
+    "name": "MIXON ONLINE",
+    "url": "http://www.mixonbd.com",
+    "category": "MIXON ONLINE"
+  },
+  {
+    "id": "ftp-0s0ii32wl",
+    "name": "MLWBD",
+    "url": "https://mlwbd.mobi",
+    "category": "MLWBD"
+  },
+  {
+    "id": "ftp-tjphncmx4",
+    "name": "MOGHBAZER DOT NET",
+    "url": "https://moghbazar.net",
+    "category": "MOGHBAZER DOT NET"
+  },
+  {
+    "id": "ftp-kos293pjy",
+    "name": "MOJALOSS",
+    "url": "https://www.mojaloss.stream",
+    "category": "MOJALOSS"
+  },
+  {
+    "id": "ftp-mtsxyovjz",
+    "name": "MOON CABLE TV",
+    "url": "https://moon2tv.webs.com",
+    "category": "MOON CABLE TV"
+  },
+  {
+    "id": "ftp-hy1u1ftio",
+    "name": "MOVIECOUNTER",
+    "url": "https://moviescounterhd.club",
+    "category": "MOVIECOUNTER"
+  },
+  {
+    "id": "ftp-m616wdv2u",
+    "name": "MOVIEFREAK",
+    "url": "https://moviefreak.xyz",
+    "category": "MOVIEFREAK"
+  },
+  {
+    "id": "ftp-o2cu16p7d",
+    "name": "MOVIESERVER",
+    "url": "http://www.movieserver.net",
+    "category": "MOVIESERVER"
+  },
+  {
+    "id": "ftp-976gjgyax",
+    "name": "MSM ONLINE",
+    "url": "https://msmonlinebd.com",
+    "category": "MSM ONLINE"
+  },
+  {
+    "id": "ftp-1nh22acfh",
+    "name": "MTBSL",
+    "url": "http://mtbsl.com",
+    "category": "MTBSL"
+  },
+  {
+    "id": "ftp-4wzcj8m9z",
+    "name": "MTBSL",
+    "url": "http://bdix.mtbsl.com/server.php",
+    "category": "MTBSL"
+  },
+  {
+    "id": "ftp-z63wsjkc9",
+    "name": "MTN BROADBAND",
+    "url": "http://www.mtnbd.net",
+    "category": "MTN BROADBAND"
+  },
+  {
+    "id": "ftp-ng4kjv53q",
+    "name": "MYBDIX",
+    "url": "http://mybdix.com",
+    "category": "MYBDIX"
+  },
+  {
+    "id": "ftp-1ggeiqr0e",
+    "name": "MYBDPLEX",
+    "url": "http://mybdplex.com",
+    "category": "MYBDPLEX"
+  },
+  {
+    "id": "ftp-drnimnqzp",
+    "name": "N-SOLUTION (MOVIE MELA)",
+    "url": "http://nsolution.com.bd",
+    "category": "N-SOLUTION (MOVIE MELA)"
+  },
+  {
+    "id": "ftp-vmj5oetmu",
+    "name": "N-SOLUTION (MOVIE MELA)",
+    "url": "http://103.144.200.9",
+    "category": "N-SOLUTION (MOVIE MELA)"
+  },
+  {
+    "id": "ftp-gqfvli8xm",
+    "name": "N-SOLUTION (MOVIE MELA)",
+    "url": "http://moviemela.xyz",
+    "category": "N-SOLUTION (MOVIE MELA)"
+  },
+  {
+    "id": "ftp-vz4riavcu",
+    "name": "NEDASA BROADBAND",
+    "url": "http://nedasabd.net",
+    "category": "NEDASA BROADBAND"
+  },
+  {
+    "id": "ftp-mgugmgg33",
+    "name": "NEEF IT",
+    "url": "http://neefit.net",
+    "category": "NEEF IT"
+  },
+  {
+    "id": "ftp-hqsdk1q67",
+    "name": "NET CAFE",
+    "url": "https://netcafe-bd.com",
+    "category": "NET CAFE"
+  },
+  {
+    "id": "ftp-m1etnhz25",
+    "name": "NET CAFE",
+    "url": "http://100.100.100.100",
+    "category": "NET CAFE"
+  },
+  {
+    "id": "ftp-98tb0ejo7",
+    "name": "NET CONNECT",
+    "url": "https://www.netconnectbd.com",
+    "category": "NET CONNECT"
+  },
+  {
+    "id": "ftp-o0534q631",
+    "name": "NET IT SOLUTION",
+    "url": "https://nis.com.bd",
+    "category": "NET IT SOLUTION"
+  },
+  {
+    "id": "ftp-0yubsyyuk",
+    "name": "NET ONLINE",
+    "url": "http://www.netonlinebd.com",
+    "category": "NET ONLINE"
+  },
+  {
+    "id": "ftp-dw2kcbry9",
+    "name": "NET PLUS ONLINE",
+    "url": "http://www.netplusbd.com",
+    "category": "NET PLUS ONLINE"
+  },
+  {
+    "id": "ftp-3ovrb2gaf",
+    "name": "NET-POINTBD",
+    "url": "https://netpoint.com.bd",
+    "category": "NET-POINTBD"
+  },
+  {
+    "id": "ftp-3iduz89z7",
+    "name": "NETATHOMEBD",
+    "url": "https://www.netathomebd.com",
+    "category": "NETATHOMEBD"
+  },
+  {
+    "id": "ftp-ccxurke04",
+    "name": "NETCODE",
+    "url": "http://103.85.160.7",
+    "category": "NETCODE"
+  },
+  {
+    "id": "ftp-skbtzbp55",
+    "name": "NETCODE",
+    "url": "http://netcode.live/netcodemedia",
+    "category": "NETCODE"
+  },
+  {
+    "id": "ftp-n547bh17k",
+    "name": "NETCOM INTERNET",
+    "url": "https://netcomisp.net",
+    "category": "NETCOM INTERNET"
+  },
+  {
+    "id": "ftp-040ssfujk",
+    "name": "NETEXPRESS ONLINE",
+    "url": "http://www.neobd.net",
+    "category": "NETEXPRESS ONLINE"
+  },
+  {
+    "id": "ftp-3f7d2ttte",
+    "name": "NETMATRIX",
+    "url": "http://www.netmatrixbd.com",
+    "category": "NETMATRIX"
+  },
+  {
+    "id": "ftp-i6z9vhr9w",
+    "name": "NETTIG INTERNET",
+    "url": "http://nettig.net",
+    "category": "NETTIG INTERNET"
+  },
+  {
+    "id": "ftp-r1ted2ahc",
+    "name": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)",
+    "url": "http://nms-bd.com",
+    "category": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)"
+  },
+  {
+    "id": "ftp-g1n9fb1it",
+    "name": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)",
+    "url": "http://fs1.mebd.net",
+    "category": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)"
+  },
+  {
+    "id": "ftp-w1n66dzkt",
+    "name": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)",
+    "url": "http://103.56.6.6",
+    "category": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)"
+  },
+  {
+    "id": "ftp-cfeexo9pd",
+    "name": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)",
+    "url": "http://103.56.6.6/Data",
+    "category": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)"
+  },
+  {
+    "id": "ftp-6ywxodqbi",
+    "name": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)",
+    "url": "http://jhakkas.live",
+    "category": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)"
+  },
+  {
+    "id": "ftp-qjm5teuvh",
+    "name": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)",
+    "url": "http://jhakkas.live/Data",
+    "category": "NMS TECHNOLOGIES LIMITED (JHAKKAS.LIVE)"
+  },
+  {
+    "id": "ftp-7z27xnd5u",
+    "name": "NOVUS NETWORK",
+    "url": "https://www.novusnetworkbd.com",
+    "category": "NOVUS NETWORK"
+  },
+  {
+    "id": "ftp-ahy1ecbfd",
+    "name": "NOVUS NETWORK",
+    "url": "http://nbox.live",
+    "category": "NOVUS NETWORK"
+  },
+  {
+    "id": "ftp-tx3ccif3j",
+    "name": "NOVUS NETWORK",
+    "url": "http://play.nbox.live",
+    "category": "NOVUS NETWORK"
+  },
+  {
+    "id": "ftp-rw3tzztg3",
+    "name": "NOVUS NETWORK",
+    "url": "http://fs.nbox.live",
+    "category": "NOVUS NETWORK"
+  },
+  {
+    "id": "ftp-9s25l6gdk",
+    "name": "NOW HD TIME",
+    "url": "http://nowhdtime.com.bd",
+    "category": "NOW HD TIME"
+  },
+  {
+    "id": "ftp-wgiphkky9",
+    "name": "NTECH COMMUNICATION",
+    "url": "http://www.ntech-bd.com",
+    "category": "NTECH COMMUNICATION"
+  },
+  {
+    "id": "ftp-jny80shaf",
+    "name": "OCTATECH ONLINE",
+    "url": "http://www.oitbd.net",
+    "category": "OCTATECH ONLINE"
+  },
+  {
+    "id": "ftp-jk2j5ddvw",
+    "name": "OCTATECH ONLINE",
+    "url": "http://www.oitbd.net/ftp",
+    "category": "OCTATECH ONLINE"
+  },
+  {
+    "id": "ftp-y3esgekvu",
+    "name": "OK NETWORK & COMMUNICATIONS",
+    "url": "https://www.okay.net.bd",
+    "category": "OK NETWORK & COMMUNICATIONS"
+  },
+  {
+    "id": "ftp-6ok3q4iu5",
+    "name": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)",
+    "url": "http://www.onesky.com.bd",
+    "category": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)"
+  },
+  {
+    "id": "ftp-c12vof8qm",
+    "name": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)",
+    "url": "https://www.1netbd.com",
+    "category": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)"
+  },
+  {
+    "id": "ftp-eutgz3kow",
+    "name": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)",
+    "url": "http://10.100.100.10",
+    "category": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)"
+  },
+  {
+    "id": "ftp-jzr50us48",
+    "name": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)",
+    "url": "http://103.77.252.113",
+    "category": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)"
+  },
+  {
+    "id": "ftp-gpyq80a3u",
+    "name": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)",
+    "url": "http://www.showtimebd.com",
+    "category": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)"
+  },
+  {
+    "id": "ftp-yne75vlik",
+    "name": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)",
+    "url": "http://10.100.100.12",
+    "category": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)"
+  },
+  {
+    "id": "ftp-pl39tr75o",
+    "name": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)",
+    "url": "http://10.100.100.13",
+    "category": "ONE NET COMMUNICATIONS LIMITED (SHOWTIME)"
+  },
+  {
+    "id": "ftp-yvwtxdaqk",
+    "name": "ONNOSOMOY",
+    "url": "http://www.onnosomoy.com:8096",
+    "category": "ONNOSOMOY"
+  },
+  {
+    "id": "ftp-b6k7hyh8h",
+    "name": "ONS",
+    "url": "https://onsbd.net",
+    "category": "ONS"
+  },
+  {
+    "id": "ftp-wynatuvli",
+    "name": "ONS",
+    "url": "http://202.94.164.102",
+    "category": "ONS"
+  },
+  {
+    "id": "ftp-jglvj9omh",
+    "name": "OSTHIR NET",
+    "url": "http://osthir.net",
+    "category": "OSTHIR NET"
+  },
+  {
+    "id": "ftp-wp96ybhqq",
+    "name": "PCV DOT NET",
+    "url": "http://172.16.16.16",
+    "category": "PCV DOT NET"
+  },
+  {
+    "id": "ftp-cibv8emp7",
+    "name": "PLANET 3 COMMUNICATION (CANDYBD)",
+    "url": "https://planet3communication.com",
+    "category": "PLANET 3 COMMUNICATION (CANDYBD)"
+  },
+  {
+    "id": "ftp-v7hkj3t5n",
+    "name": "PLANET 3 COMMUNICATION (CANDYBD)",
+    "url": "http://www.candybd.net",
+    "category": "PLANET 3 COMMUNICATION (CANDYBD)"
+  },
+  {
+    "id": "ftp-5ztrf0udw",
+    "name": "PLANET 3 COMMUNICATION (CANDYBD)",
+    "url": "http://candybd.net/upload/source/movies",
+    "category": "PLANET 3 COMMUNICATION (CANDYBD)"
+  },
+  {
+    "id": "ftp-mgpoeze2l",
+    "name": "PLUSNET COMMUNICATION",
+    "url": "http://www.plus.net.bd",
+    "category": "PLUSNET COMMUNICATION"
+  },
+  {
+    "id": "ftp-aisiogjaj",
+    "name": "PLUSNETBD",
+    "url": "http://plusnetbd.com",
+    "category": "PLUSNETBD"
+  },
+  {
+    "id": "ftp-nszgfoiu5",
+    "name": "POLLYFLIX & AMRBD",
+    "url": "http://12.1.1.2",
+    "category": "POLLYFLIX & AMRBD"
+  },
+  {
+    "id": "ftp-wwr53ftn5",
+    "name": "POLLYFLIX & AMRBD",
+    "url": "http://12.1.1.3/flix",
+    "category": "POLLYFLIX & AMRBD"
+  },
+  {
+    "id": "ftp-h813czh02",
+    "name": "POLLYFLIX & AMRBD",
+    "url": "http://pollyflix.com",
+    "category": "POLLYFLIX & AMRBD"
+  },
+  {
+    "id": "ftp-1a08khgc3",
+    "name": "POLLYFLIX & AMRBD",
+    "url": "http://fs.amrbd.com",
+    "category": "POLLYFLIX & AMRBD"
+  },
+  {
+    "id": "ftp-gc8w9h711",
+    "name": "POLLYFLIX & AMRBD",
+    "url": "http://fs2.amrbd.com",
+    "category": "POLLYFLIX & AMRBD"
+  },
+  {
+    "id": "ftp-bm2n8h95y",
+    "name": "POSH INTERNET",
+    "url": "http://www.poshbd.net",
+    "category": "POSH INTERNET"
+  },
+  {
+    "id": "ftp-3rnmnt7es",
+    "name": "POTATO INTERNET",
+    "url": "https://the-potato.net",
+    "category": "POTATO INTERNET"
+  },
+  {
+    "id": "ftp-eplj7ke9m",
+    "name": "POWERNET",
+    "url": "https://www.powernetbd.com",
+    "category": "POWERNET"
+  },
+  {
+    "id": "ftp-bmhq925i1",
+    "name": "PRESS LINK COMMUNICATION",
+    "url": "https://presslinkbd.net",
+    "category": "PRESS LINK COMMUNICATION"
+  },
+  {
+    "id": "ftp-rfjzpiw64",
+    "name": "PROGOTI IT",
+    "url": "https://progotiit.com",
+    "category": "PROGOTI IT"
+  },
+  {
+    "id": "ftp-a0ar0qfd6",
+    "name": "QUETELBD INTERNET",
+    "url": "https://quetelbd.net",
+    "category": "QUETELBD INTERNET"
+  },
+  {
+    "id": "ftp-yb2qft70w",
+    "name": "QUICKONLINE",
+    "url": "http://quickonlineftp.com",
+    "category": "QUICKONLINE"
+  },
+  {
+    "id": "ftp-dvvhajwkt",
+    "name": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)",
+    "url": "https://www.race.net.bd",
+    "category": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)"
+  },
+  {
+    "id": "ftp-xmbd90zwk",
+    "name": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)",
+    "url": "http://moviedom.live",
+    "category": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)"
+  },
+  {
+    "id": "ftp-6j2vcmh1k",
+    "name": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)",
+    "url": "http://movie.moviedom.live",
+    "category": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)"
+  },
+  {
+    "id": "ftp-arse5hs2v",
+    "name": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)",
+    "url": "http://movie.moviedom.live/Data",
+    "category": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)"
+  },
+  {
+    "id": "ftp-9lxpp17r3",
+    "name": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)",
+    "url": "http://59.152.101.198",
+    "category": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)"
+  },
+  {
+    "id": "ftp-kxu5mltag",
+    "name": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)",
+    "url": "http://moviehaat.net",
+    "category": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)"
+  },
+  {
+    "id": "ftp-4doi8y6z0",
+    "name": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)",
+    "url": "http://cdn2.moviehaat.net:8080/Upload",
+    "category": "RACE ONLINE LIMITED (MOVIEDOM & MOVIEHAAT)"
+  },
+  {
+    "id": "ftp-cv160ovxa",
+    "name": "RADIANT COMMUNICATION & ZERO INTERNET",
+    "url": "http://103.29.127.14",
+    "category": "RADIANT COMMUNICATION & ZERO INTERNET"
+  },
+  {
+    "id": "ftp-qg0j80g32",
+    "name": "RADIANT COMMUNICATION & ZERO INTERNET",
+    "url": "http://media.zerointernet.net",
+    "category": "RADIANT COMMUNICATION & ZERO INTERNET"
+  },
+  {
+    "id": "ftp-efx3okit7",
+    "name": "RADIANT COMMUNICATION & ZERO INTERNET",
+    "url": "http://media.radiantbd.com",
+    "category": "RADIANT COMMUNICATION & ZERO INTERNET"
+  },
+  {
+    "id": "ftp-pci8q1ft7",
+    "name": "RADIANT COMMUNICATION & ZERO INTERNET",
+    "url": "http://www.radiantbd.net",
+    "category": "RADIANT COMMUNICATION & ZERO INTERNET"
+  },
+  {
+    "id": "ftp-1f57btx3e",
+    "name": "RADIANT COMMUNICATION & ZERO INTERNET",
+    "url": "http://cdn2.radiantbd.com",
+    "category": "RADIANT COMMUNICATION & ZERO INTERNET"
+  },
+  {
+    "id": "ftp-l3uwrzc85",
+    "name": "RADISSON TECHNOLOGIES (FLIXHUB)",
+    "url": "https://www.radisson-bd.net",
+    "category": "RADISSON TECHNOLOGIES (FLIXHUB)"
+  },
+  {
+    "id": "ftp-i44p7c5qw",
+    "name": "RADISSON TECHNOLOGIES (FLIXHUB)",
+    "url": "http://45.123.41.54",
+    "category": "RADISSON TECHNOLOGIES (FLIXHUB)"
+  },
+  {
+    "id": "ftp-2nvykchjc",
+    "name": "RADISSON TECHNOLOGIES (FLIXHUB)",
+    "url": "http://45.123.41.54/Data",
+    "category": "RADISSON TECHNOLOGIES (FLIXHUB)"
+  },
+  {
+    "id": "ftp-x5wf94w23",
+    "name": "RADISSON TECHNOLOGIES (FLIXHUB)",
+    "url": "http://flixhub.net",
+    "category": "RADISSON TECHNOLOGIES (FLIXHUB)"
+  },
+  {
+    "id": "ftp-dxy9mydot",
+    "name": "RADISSON TECHNOLOGIES (FLIXHUB)",
+    "url": "http://flixhub.net/Data",
+    "category": "RADISSON TECHNOLOGIES (FLIXHUB)"
+  },
+  {
+    "id": "ftp-nb9oal628",
+    "name": "RAHUL ENTERPRISE INTERNET",
+    "url": "http://www.rahulenterprise.com.bd",
+    "category": "RAHUL ENTERPRISE INTERNET"
+  },
+  {
+    "id": "ftp-gxefvp8at",
+    "name": "RAINBOW D NET",
+    "url": "https://www.rainbowd.net",
+    "category": "RAINBOW D NET"
+  },
+  {
+    "id": "ftp-zcpq0wpzt",
+    "name": "RAINBOW NETWORK",
+    "url": "https://www.rainbownetworkbd.com",
+    "category": "RAINBOW NETWORK"
+  },
+  {
+    "id": "ftp-e453g74a7",
+    "name": "RAINBOW NETWORK",
+    "url": "http://cinemacity.live",
+    "category": "RAINBOW NETWORK"
+  },
+  {
+    "id": "ftp-q3e0ubehn",
+    "name": "RAN ONLINE",
+    "url": "https://ranonline.com.bd",
+    "category": "RAN ONLINE"
+  },
+  {
+    "id": "ftp-xcp6i0okj",
+    "name": "RANGDHANU LIVE",
+    "url": "https://www.rangdhanu.live",
+    "category": "RANGDHANU LIVE"
+  },
+  {
+    "id": "ftp-m70v7amnd",
+    "name": "RANGDHANU LIVE",
+    "url": "http://fs.rangdhanu.live",
+    "category": "RANGDHANU LIVE"
+  },
+  {
+    "id": "ftp-xu0ybo5mw",
+    "name": "RANGDHANU LIVE",
+    "url": "http://emby.rangdhanu.live",
+    "category": "RANGDHANU LIVE"
+  },
+  {
+    "id": "ftp-oz3cs4yd7",
+    "name": "RAPIDNET",
+    "url": "https://www.rapid.net.bd",
+    "category": "RAPIDNET"
+  },
+  {
+    "id": "ftp-gq8is7idc",
+    "name": "RAPIDNET",
+    "url": "https://rapidnetworkbd.wordpress.com",
+    "category": "RAPIDNET"
+  },
+  {
+    "id": "ftp-bt68915yp",
+    "name": "RAWSHANARA INTERNET",
+    "url": "http://rawshanarainternet.com",
+    "category": "RAWSHANARA INTERNET"
+  },
+  {
+    "id": "ftp-51vj1tuir",
+    "name": "RDC ONLINE",
+    "url": "http://www.rdconlinebd.net",
+    "category": "RDC ONLINE"
+  },
+  {
+    "id": "ftp-pdas7c8h5",
+    "name": "REALSTATION BROADBAND",
+    "url": "https://realstation.live",
+    "category": "REALSTATION BROADBAND"
+  },
+  {
+    "id": "ftp-rotztpner",
+    "name": "RED NETWORK",
+    "url": "http://lalbatte.net",
+    "category": "RED NETWORK"
+  },
+  {
+    "id": "ftp-0pklwceds",
+    "name": "REIGN ICT (FUNTIMEBD)",
+    "url": "http://www.reignict.com.bd",
+    "category": "REIGN ICT (FUNTIMEBD)"
+  },
+  {
+    "id": "ftp-0gubfh480",
+    "name": "REIGN ICT (FUNTIMEBD)",
+    "url": "http://funtimebd.com",
+    "category": "REIGN ICT (FUNTIMEBD)"
+  },
+  {
+    "id": "ftp-vheo0d1uq",
+    "name": "RL CAFE NET",
+    "url": "https://rlcafenet.com",
+    "category": "RL CAFE NET"
+  },
+  {
+    "id": "ftp-sf53f6bck",
+    "name": "ROARZONE",
+    "url": "http://www.roarzone.info",
+    "category": "ROARZONE"
+  },
+  {
+    "id": "ftp-u1pgid42u",
+    "name": "RODELA ONLINE",
+    "url": "https://rodelaonlinebd.com",
+    "category": "RODELA ONLINE"
+  },
+  {
+    "id": "ftp-9k4vxptfv",
+    "name": "ROMS NETWORK",
+    "url": "http://romsnetwork.com",
+    "category": "ROMS NETWORK"
+  },
+  {
+    "id": "ftp-yqgxg5mp0",
+    "name": "RONGDONG",
+    "url": "http://103.251.247.147",
+    "category": "RONGDONG"
+  },
+  {
+    "id": "ftp-5vjegpoxw",
+    "name": "RS INTERNET",
+    "url": "https://rsnetbd.com",
+    "category": "RS INTERNET"
+  },
+  {
+    "id": "ftp-9vef7p98z",
+    "name": "RUNWAY BROADBAND",
+    "url": "https://www.runwaybroadband.com/media-server",
+    "category": "RUNWAY BROADBAND"
+  },
+  {
+    "id": "ftp-e89rz4etv",
+    "name": "S-NET",
+    "url": "https://s-netisp.com",
+    "category": "S-NET"
+  },
+  {
+    "id": "ftp-05pqpv37g",
+    "name": "S.S ALI & CO. ISP",
+    "url": "https://www.ssaliisp.net",
+    "category": "S.S ALI & CO. ISP"
+  },
+  {
+    "id": "ftp-rrfna03qd",
+    "name": "S.S ALI & CO. ISP",
+    "url": "http://103.80.70.60",
+    "category": "S.S ALI & CO. ISP"
+  },
+  {
+    "id": "ftp-nivm9vquj",
+    "name": "S.S ALI & CO. ISP",
+    "url": "http://digbazi.net",
+    "category": "S.S ALI & CO. ISP"
+  },
+  {
+    "id": "ftp-lgkhok59c",
+    "name": "S.S ALI & CO. ISP",
+    "url": "http://103.80.70.60/drive",
+    "category": "S.S ALI & CO. ISP"
+  },
+  {
+    "id": "ftp-1v45xzzb1",
+    "name": "S.S ALI & CO. ISP",
+    "url": "http://digbazi.net/drive",
+    "category": "S.S ALI & CO. ISP"
+  },
+  {
+    "id": "ftp-khtjfiv5l",
+    "name": "SALAM ONLINE",
+    "url": "https://salamonline.com.bd",
+    "category": "SALAM ONLINE"
+  },
+  {
+    "id": "ftp-lc8mwh46j",
+    "name": "SALTSYNC LIMITED",
+    "url": "https://www.sync.net.bd",
+    "category": "SALTSYNC LIMITED"
+  },
+  {
+    "id": "ftp-mfrlmo6h1",
+    "name": "SALTSYNC LIMITED",
+    "url": "http://103.107.160.36",
+    "category": "SALTSYNC LIMITED"
+  },
+  {
+    "id": "ftp-r47zbspdd",
+    "name": "SALTSYNC LIMITED",
+    "url": "http://103.107.160.37/FTP/Movies",
+    "category": "SALTSYNC LIMITED"
+  },
+  {
+    "id": "ftp-tgq3lq3di",
+    "name": "SALTSYNC LIMITED",
+    "url": "http://103.107.160.37/FTP/TVSeries",
+    "category": "SALTSYNC LIMITED"
+  },
+  {
+    "id": "ftp-xu95j7a1u",
+    "name": "SALTSYNC LIMITED",
+    "url": "http://kaat.pw",
+    "category": "SALTSYNC LIMITED"
+  },
+  {
+    "id": "ftp-2mozc780g",
+    "name": "SAM ONLINE",
+    "url": "https://sambd.com",
+    "category": "SAM ONLINE"
+  },
+  {
+    "id": "ftp-54qf4s72s",
+    "name": "SAM ONLINE",
+    "url": "http://172.16.50.4",
+    "category": "SAM ONLINE"
+  },
+  {
+    "id": "ftp-q8nqcevzw",
+    "name": "SAM ONLINE",
+    "url": "http://172.16.50.7",
+    "category": "SAM ONLINE"
+  },
+  {
+    "id": "ftp-dmtq1vrm3",
+    "name": "SAM ONLINE",
+    "url": "http://movie.sambd.net:8096",
+    "category": "SAM ONLINE"
+  },
+  {
+    "id": "ftp-d6kezsobm",
+    "name": "SAM ONLINE",
+    "url": "https://samftp.com",
+    "category": "SAM ONLINE"
+  },
+  {
+    "id": "ftp-bvawfdt1s",
+    "name": "SARDER COMMUNICATIONS",
+    "url": "https://sardernet.com",
+    "category": "SARDER COMMUNICATIONS"
+  },
+  {
+    "id": "ftp-fh6wx4jio",
+    "name": "SARKER CABLE NETWORK",
+    "url": "https://scubenetworkbd.com",
+    "category": "SARKER CABLE NETWORK"
+  },
+  {
+    "id": "ftp-nl5qz9q12",
+    "name": "SATRONG",
+    "url": "http://103.214.156.1",
+    "category": "SATRONG"
+  },
+  {
+    "id": "ftp-6rltw1tvh",
+    "name": "SATRONG",
+    "url": "http://fs.satrong.live",
+    "category": "SATRONG"
+  },
+  {
+    "id": "ftp-tbosl35hn",
+    "name": "SATURN INTERNET",
+    "url": "http://www.saturninternetbd.com",
+    "category": "SATURN INTERNET"
+  },
+  {
+    "id": "ftp-f64st2m8k",
+    "name": "SAVAR NETCITY INTERNET",
+    "url": "http://www.netcitybd.com",
+    "category": "SAVAR NETCITY INTERNET"
+  },
+  {
+    "id": "ftp-ssaweul8p",
+    "name": "SBNETWORK",
+    "url": "http://sbnetworkbd.com",
+    "category": "SBNETWORK"
+  },
+  {
+    "id": "ftp-gujr3c6ya",
+    "name": "SEBA IT",
+    "url": "http://103.195.1.50",
+    "category": "SEBA IT"
+  },
+  {
+    "id": "ftp-awhcq11wy",
+    "name": "SEBA IT",
+    "url": "http://103.195.1.50/Data",
+    "category": "SEBA IT"
+  },
+  {
+    "id": "ftp-6tfkmpfpm",
+    "name": "SERVERBD247",
+    "url": "http://serverbd247.com",
+    "category": "SERVERBD247"
+  },
+  {
+    "id": "ftp-xlivwpzh6",
+    "name": "SHERPUR NETWORK",
+    "url": "http://43.246.200.82:8082",
+    "category": "SHERPUR NETWORK"
+  },
+  {
+    "id": "ftp-8gmfz4fz7",
+    "name": "SK TRADERS (CINEMABAZER)",
+    "url": "http://www.sktraders.net",
+    "category": "SK TRADERS (CINEMABAZER)"
+  },
+  {
+    "id": "ftp-pffbvhok6",
+    "name": "SK TRADERS (CINEMABAZER)",
+    "url": "http://103.81.104.98",
+    "category": "SK TRADERS (CINEMABAZER)"
+  },
+  {
+    "id": "ftp-otk8l7sum",
+    "name": "SK TRADERS (CINEMABAZER)",
+    "url": "http://103.81.104.98/DATA/NAS1",
+    "category": "SK TRADERS (CINEMABAZER)"
+  },
+  {
+    "id": "ftp-b0giz1faj",
+    "name": "SK TRADERS (CINEMABAZER)",
+    "url": "http://cinemabazar.net",
+    "category": "SK TRADERS (CINEMABAZER)"
+  },
+  {
+    "id": "ftp-gl7793ujm",
+    "name": "SK TRADERS (CINEMABAZER)",
+    "url": "http://cinemabazar.net/DATA/NAS1",
+    "category": "SK TRADERS (CINEMABAZER)"
+  },
+  {
+    "id": "ftp-t05v6da5b",
+    "name": "SKNETCITY",
+    "url": "https://www.sknetcity.com",
+    "category": "SKNETCITY"
+  },
+  {
+    "id": "ftp-s006usoqa",
+    "name": "SKYBIZ",
+    "url": "https://www.skybizbd.net",
+    "category": "SKYBIZ"
+  },
+  {
+    "id": "ftp-s0xtzpqiv",
+    "name": "SKYINFO ONLINE (MOVIEMAJA)",
+    "url": "http://www.skyinfoonline.net",
+    "category": "SKYINFO ONLINE (MOVIEMAJA)"
+  },
+  {
+    "id": "ftp-cnav2iqdq",
+    "name": "SKYINFO ONLINE (MOVIEMAJA)",
+    "url": "http://103.132.187.18",
+    "category": "SKYINFO ONLINE (MOVIEMAJA)"
+  },
+  {
+    "id": "ftp-i7bkq66c8",
+    "name": "SKYINFO ONLINE (MOVIEMAJA)",
+    "url": "http://103.132.187.18/Data",
+    "category": "SKYINFO ONLINE (MOVIEMAJA)"
+  },
+  {
+    "id": "ftp-a2pxits52",
+    "name": "SKYINFO ONLINE (MOVIEMAJA)",
+    "url": "http://moviemaja.net",
+    "category": "SKYINFO ONLINE (MOVIEMAJA)"
+  },
+  {
+    "id": "ftp-crn976mpz",
+    "name": "SKYINFO ONLINE (MOVIEMAJA)",
+    "url": "http://moviemaja.net/Data",
+    "category": "SKYINFO ONLINE (MOVIEMAJA)"
+  },
+  {
+    "id": "ftp-kmb0n6opo",
+    "name": "SKYLINE BROADBAND",
+    "url": "https://www.skylinectg.com",
+    "category": "SKYLINE BROADBAND"
+  },
+  {
+    "id": "ftp-q555oceqg",
+    "name": "SKYLINKNET",
+    "url": "https://slnisp.com.bd",
+    "category": "SKYLINKNET"
+  },
+  {
+    "id": "ftp-fgrduq52m",
+    "name": "SKYNET",
+    "url": "https://www.skynetbd.net",
+    "category": "SKYNET"
+  },
+  {
+    "id": "ftp-fbbb72e0w",
+    "name": "SKYNET BROADBAND SERVICE",
+    "url": "https://www.skynet.com.bd",
+    "category": "SKYNET BROADBAND SERVICE"
+  },
+  {
+    "id": "ftp-6f5q8htgk",
+    "name": "SKYNET CHOWMUHANI",
+    "url": "https://www.skynetchowmuhani.com",
+    "category": "SKYNET CHOWMUHANI"
+  },
+  {
+    "id": "ftp-imp43tsf2",
+    "name": "SKYNET CHOWMUHANI",
+    "url": "http://103.109.56.114",
+    "category": "SKYNET CHOWMUHANI"
+  },
+  {
+    "id": "ftp-mulumxohc",
+    "name": "SKYNET CHOWMUHANI",
+    "url": "http://103.109.56.115",
+    "category": "SKYNET CHOWMUHANI"
+  },
+  {
+    "id": "ftp-wfppfj0pg",
+    "name": "SKYNET CHOWMUHANI",
+    "url": "http://funtime.com.bd",
+    "category": "SKYNET CHOWMUHANI"
+  },
+  {
+    "id": "ftp-1qvkj65qi",
+    "name": "SKYNET ONLINE",
+    "url": "https://skynetonlinebd.net",
+    "category": "SKYNET ONLINE"
+  },
+  {
+    "id": "ftp-e4jxbm6k4",
+    "name": "SKYVIEW ONLINE LIMITED (TIMEPASSBD)",
+    "url": "http://skyviewonlineltd.com",
+    "category": "SKYVIEW ONLINE LIMITED (TIMEPASSBD)"
+  },
+  {
+    "id": "ftp-hpxa0ql7r",
+    "name": "SKYVIEW ONLINE LIMITED (TIMEPASSBD)",
+    "url": "http://103.200.36.250",
+    "category": "SKYVIEW ONLINE LIMITED (TIMEPASSBD)"
+  },
+  {
+    "id": "ftp-zx4q6oq5a",
+    "name": "SKYVIEW ONLINE LIMITED (TIMEPASSBD)",
+    "url": "http://www.timepassbd.live",
+    "category": "SKYVIEW ONLINE LIMITED (TIMEPASSBD)"
+  },
+  {
+    "id": "ftp-8wt937wix",
+    "name": "SKYVIEW ONLINE LIMITED (TIMEPASSBD)",
+    "url": "http://ftp.timepassbd.live",
+    "category": "SKYVIEW ONLINE LIMITED (TIMEPASSBD)"
+  },
+  {
+    "id": "ftp-5l6j93hd4",
+    "name": "SMALLSCREEN",
+    "url": "http://103.3.226.208",
+    "category": "SMALLSCREEN"
+  },
+  {
+    "id": "ftp-3pyjc5mkh",
+    "name": "SMARTNET",
+    "url": "http://www.smartnetltd.com",
+    "category": "SMARTNET"
+  },
+  {
+    "id": "ftp-e2ctjvgsq",
+    "name": "SMARTNET",
+    "url": "http://movie.smartnetltd.com",
+    "category": "SMARTNET"
+  },
+  {
+    "id": "ftp-zgmd2bzo5",
+    "name": "SMARTONLINE",
+    "url": "http://smartonlinebd.com",
+    "category": "SMARTONLINE"
+  },
+  {
+    "id": "ftp-zpt667gc5",
+    "name": "SMARTONLINE",
+    "url": "https://ctgoz.com",
+    "category": "SMARTONLINE"
+  },
+  {
+    "id": "ftp-9ird2z2xb",
+    "name": "SMILE IT & BROADBAND SERVICE",
+    "url": "http://smileit.xyz",
+    "category": "SMILE IT & BROADBAND SERVICE"
+  },
+  {
+    "id": "ftp-d1fv2t6ww",
+    "name": "SMIRITY CABLE",
+    "url": "https://www.smiritycable.com",
+    "category": "SMIRITY CABLE"
+  },
+  {
+    "id": "ftp-61h29wgs8",
+    "name": "SNS BROADBAND NETWORK",
+    "url": "https://snsbd.net",
+    "category": "SNS BROADBAND NETWORK"
+  },
+  {
+    "id": "ftp-q6d7wmm0l",
+    "name": "SPARKLINK",
+    "url": "https://sparklinkbd.com",
+    "category": "SPARKLINK"
+  },
+  {
+    "id": "ftp-pwwgt6oo5",
+    "name": "SPARKNET",
+    "url": "https://sparknetbd.com",
+    "category": "SPARKNET"
+  },
+  {
+    "id": "ftp-96s45ruln",
+    "name": "SPEED LINK BROADBAND INTERNET",
+    "url": "https://speedlinkbd.com",
+    "category": "SPEED LINK BROADBAND INTERNET"
+  },
+  {
+    "id": "ftp-iolqylk0d",
+    "name": "SPEED NET COMMUNICATION",
+    "url": "http://speed2000bd.com",
+    "category": "SPEED NET COMMUNICATION"
+  },
+  {
+    "id": "ftp-ijeib5tvr",
+    "name": "SPEED PLUS INTERNET",
+    "url": "https://www.speedplusisp.net/mainweb/index.html",
+    "category": "SPEED PLUS INTERNET"
+  },
+  {
+    "id": "ftp-5ox45eac5",
+    "name": "SPEED TECH ONLINE",
+    "url": "http://www.come2speed.com",
+    "category": "SPEED TECH ONLINE"
+  },
+  {
+    "id": "ftp-b251t9wri",
+    "name": "SPEED TECH ONLINE (TIMENAI)",
+    "url": "http://come2speed.com",
+    "category": "SPEED TECH ONLINE (TIMENAI)"
+  },
+  {
+    "id": "ftp-wid0q2g0h",
+    "name": "SPEED TECH ONLINE (TIMENAI)",
+    "url": "http://103.199.155.150",
+    "category": "SPEED TECH ONLINE (TIMENAI)"
+  },
+  {
+    "id": "ftp-57nd022u2",
+    "name": "SPEED TECH ONLINE (TIMENAI)",
+    "url": "http://103.199.155.150/ftpdata",
+    "category": "SPEED TECH ONLINE (TIMENAI)"
+  },
+  {
+    "id": "ftp-xfxto4fqu",
+    "name": "SPEED TECH ONLINE (TIMENAI)",
+    "url": "http://timenai.com",
+    "category": "SPEED TECH ONLINE (TIMENAI)"
+  },
+  {
+    "id": "ftp-7yd53u1tz",
+    "name": "SPEEDNET KHULNA",
+    "url": "https://speednetkhulna.com",
+    "category": "SPEEDNET KHULNA"
+  },
+  {
+    "id": "ftp-icme41q36",
+    "name": "SPEEDNET KHULNA",
+    "url": "http://speed4you.net",
+    "category": "SPEEDNET KHULNA"
+  },
+  {
+    "id": "ftp-42r54g9aj",
+    "name": "SPEEDO NET",
+    "url": "https://speedo.net.bd",
+    "category": "SPEEDO NET"
+  },
+  {
+    "id": "ftp-9sv0hve4p",
+    "name": "SR NETWORKS",
+    "url": "https://srnetworks.webs.com",
+    "category": "SR NETWORKS"
+  },
+  {
+    "id": "ftp-x1cpsaq1x",
+    "name": "SR NETWORKS",
+    "url": "https://srnetworks.webs.com/ftp-live-tv",
+    "category": "SR NETWORKS"
+  },
+  {
+    "id": "ftp-ucjldbeku",
+    "name": "SS ONLINE",
+    "url": "https://ssonlinebd.com",
+    "category": "SS ONLINE"
+  },
+  {
+    "id": "ftp-mg0nogy1w",
+    "name": "STAR INTERNET",
+    "url": "http://sisbdisp.com",
+    "category": "STAR INTERNET"
+  },
+  {
+    "id": "ftp-rte5m37l8",
+    "name": "STAR INTERNET",
+    "url": "http://103.115.253.254",
+    "category": "STAR INTERNET"
+  },
+  {
+    "id": "ftp-t2h3z8qsv",
+    "name": "STAR INTERNET",
+    "url": "http://103.115.253.254/Data",
+    "category": "STAR INTERNET"
+  },
+  {
+    "id": "ftp-32nuf6g6e",
+    "name": "STAR NETWORK",
+    "url": "http://www.starnetworkbd.com",
+    "category": "STAR NETWORK"
+  },
+  {
+    "id": "ftp-yxafy0eqp",
+    "name": "STARGATE COMMUNICATIONS LIMITED (STARPLEXBD)",
+    "url": "http://www.stargatebd.net",
+    "category": "STARGATE COMMUNICATIONS LIMITED (STARPLEXBD)"
+  },
+  {
+    "id": "ftp-sitfdl05n",
+    "name": "STARGATE COMMUNICATIONS LIMITED (STARPLEXBD)",
+    "url": "http://172.27.27.1",
+    "category": "STARGATE COMMUNICATIONS LIMITED (STARPLEXBD)"
+  },
+  {
+    "id": "ftp-zigeikknl",
+    "name": "STARGATE COMMUNICATIONS LIMITED (STARPLEXBD)",
+    "url": "http://172.27.27.1/data",
+    "category": "STARGATE COMMUNICATIONS LIMITED (STARPLEXBD)"
+  },
+  {
+    "id": "ftp-8r6j46apu",
+    "name": "STARGATE COMMUNICATIONS LIMITED (STARPLEXBD)",
+    "url": "http://starplexbd.com",
+    "category": "STARGATE COMMUNICATIONS LIMITED (STARPLEXBD)"
+  },
+  {
+    "id": "ftp-xv2idyryz",
+    "name": "STARGATE COMMUNICATIONS LIMITED (STARPLEXBD)",
+    "url": "http://starplexbd.com/data",
+    "category": "STARGATE COMMUNICATIONS LIMITED (STARPLEXBD)"
+  },
+  {
+    "id": "ftp-bxg4z0ic4",
+    "name": "STARONLINE",
+    "url": "https://staronline.com.bd",
+    "category": "STARONLINE"
+  },
+  {
+    "id": "ftp-g424qwrrw",
+    "name": "SUN ONLINE (SURZOMAMA)",
+    "url": "https://sunonlinebd.com",
+    "category": "SUN ONLINE (SURZOMAMA)"
+  },
+  {
+    "id": "ftp-4tnh397sp",
+    "name": "SUN ONLINE (SURZOMAMA)",
+    "url": "http://103.85.235.254",
+    "category": "SUN ONLINE (SURZOMAMA)"
+  },
+  {
+    "id": "ftp-dbbp95lsa",
+    "name": "SUN ONLINE (SURZOMAMA)",
+    "url": "http://103.85.235.254/storage",
+    "category": "SUN ONLINE (SURZOMAMA)"
+  },
+  {
+    "id": "ftp-ut0087jin",
+    "name": "SUNLIT NETWORK",
+    "url": "http://megaflix.tv",
+    "category": "SUNLIT NETWORK"
+  },
+  {
+    "id": "ftp-df828j9qf",
+    "name": "SUNLIT NETWORK",
+    "url": "http://sunlit.tv",
+    "category": "SUNLIT NETWORK"
+  },
+  {
+    "id": "ftp-balc85o0k",
+    "name": "SUPERLINK IT SOLUTION",
+    "url": "https://superlinkbd.xyz",
+    "category": "SUPERLINK IT SOLUTION"
+  },
+  {
+    "id": "ftp-9bl2h4xi9",
+    "name": "SUPERNET",
+    "url": "https://supernetbd.com",
+    "category": "SUPERNET"
+  },
+  {
+    "id": "ftp-ba2tqr6e5",
+    "name": "SUPERNET",
+    "url": "http://supernetsenbag.com",
+    "category": "SUPERNET"
+  },
+  {
+    "id": "ftp-fvlopv8ie",
+    "name": "SWAPNO NETWORK",
+    "url": "http://swapnonetwork.net",
+    "category": "SWAPNO NETWORK"
+  },
+  {
+    "id": "ftp-kfkqknn1c",
+    "name": "SWIFTNET",
+    "url": "http://www.swiftnetbd.com",
+    "category": "SWIFTNET"
+  },
+  {
+    "id": "ftp-ull9zp6s8",
+    "name": "SYLNET",
+    "url": "http://172.102.0.3",
+    "category": "SYLNET"
+  },
+  {
+    "id": "ftp-9yb9bawf4",
+    "name": "T-NETWORK",
+    "url": "https://tnetwork.com.bd",
+    "category": "T-NETWORK"
+  },
+  {
+    "id": "ftp-xhk5iyi5i",
+    "name": "TAJPATA",
+    "url": "http://103.14.129.246",
+    "category": "TAJPATA"
+  },
+  {
+    "id": "ftp-zt2443qv2",
+    "name": "TAJPATA",
+    "url": "http://tajpata.com",
+    "category": "TAJPATA"
+  },
+  {
+    "id": "ftp-1cn3x5ggu",
+    "name": "TAJPATA",
+    "url": "http://103.14.129.246/data",
+    "category": "TAJPATA"
+  },
+  {
+    "id": "ftp-uttyb2cqk",
+    "name": "TAJPATA",
+    "url": "http://file.tajpata.com",
+    "category": "TAJPATA"
+  },
+  {
+    "id": "ftp-y7rgjr4h2",
+    "name": "TAKERHAT WIFI",
+    "url": "http://www.takerhatwifi.com",
+    "category": "TAKERHAT WIFI"
+  },
+  {
+    "id": "ftp-kg3ys0dmq",
+    "name": "TALTOLA NET",
+    "url": "https://taltola.net",
+    "category": "TALTOLA NET"
+  },
+  {
+    "id": "ftp-5mdm9f7nw",
+    "name": "TALTOLA NET",
+    "url": "http://146.196.48.9",
+    "category": "TALTOLA NET"
+  },
+  {
+    "id": "ftp-e8zlm67pa",
+    "name": "TALTOLA NET",
+    "url": "http://146.196.48.10",
+    "category": "TALTOLA NET"
+  },
+  {
+    "id": "ftp-j4ytv1wkk",
+    "name": "TALUKDER NET",
+    "url": "https://talukdernet.com",
+    "category": "TALUKDER NET"
+  },
+  {
+    "id": "ftp-9mwiwwzuz",
+    "name": "TETRASOFT",
+    "url": "https://www.tetrasoftbd.com",
+    "category": "TETRASOFT"
+  },
+  {
+    "id": "ftp-v4ni9c9g9",
+    "name": "TETRASOFT",
+    "url": "http://tetraplex.net.bd",
+    "category": "TETRASOFT"
+  },
+  {
+    "id": "ftp-wca1oa392",
+    "name": "THE NET HEADS",
+    "url": "https://www.thenetheads.com",
+    "category": "THE NET HEADS"
+  },
+  {
+    "id": "ftp-ikwx3h8xg",
+    "name": "TLINK COMMUNICATION",
+    "url": "https://mytlinkbd.net",
+    "category": "TLINK COMMUNICATION"
+  },
+  {
+    "id": "ftp-z5ca25xvx",
+    "name": "TNET",
+    "url": "http://www.tnetftp.com",
+    "category": "TNET"
+  },
+  {
+    "id": "ftp-ewhq1fpnj",
+    "name": "TODAY VISION",
+    "url": "http://todayvisionbd.com",
+    "category": "TODAY VISION"
+  },
+  {
+    "id": "ftp-0mssxme8u",
+    "name": "TOUCH ONLINE",
+    "url": "https://touchonline.net.bd",
+    "category": "TOUCH ONLINE"
+  },
+  {
+    "id": "ftp-hl9mddnbw",
+    "name": "TRIANGLE SERVICES LIMITED (ELAACH)",
+    "url": "http://www.triangle.com.bd",
+    "category": "TRIANGLE SERVICES LIMITED (ELAACH)"
+  },
+  {
+    "id": "ftp-4g6jhldat",
+    "name": "TRIANGLE SERVICES LIMITED (ELAACH)",
+    "url": "http://www.elaach.com",
+    "category": "TRIANGLE SERVICES LIMITED (ELAACH)"
+  },
+  {
+    "id": "ftp-uv3hc6qpo",
+    "name": "TUHIN ENTERPRISE",
+    "url": "http://tuhinenterprise.com",
+    "category": "TUHIN ENTERPRISE"
+  },
+  {
+    "id": "ftp-688vbqy7z",
+    "name": "TUHIN ENTERPRISE",
+    "url": "http://www.tufan.live",
+    "category": "TUHIN ENTERPRISE"
+  },
+  {
+    "id": "ftp-9k3kg24b7",
+    "name": "U-TURN BROADBAND",
+    "url": "http://uturnbd.com",
+    "category": "U-TURN BROADBAND"
+  },
+  {
+    "id": "ftp-qsevirkzj",
+    "name": "U-TURN BROADBAND",
+    "url": "http://172.16.16.3",
+    "category": "U-TURN BROADBAND"
+  },
+  {
+    "id": "ftp-esvnn2btc",
+    "name": "U-TURN BROADBAND",
+    "url": "http://172.16.16.5",
+    "category": "U-TURN BROADBAND"
+  },
+  {
+    "id": "ftp-vz989jsz2",
+    "name": "U-TURN BROADBAND",
+    "url": "http://172.16.16.6",
+    "category": "U-TURN BROADBAND"
+  },
+  {
+    "id": "ftp-ga9021ahi",
+    "name": "U-TURN INTERNET COMMUNICATION",
+    "url": "http://uturninternet.com",
+    "category": "U-TURN INTERNET COMMUNICATION"
+  },
+  {
+    "id": "ftp-uiaz0gg0v",
+    "name": "UNIFIED CORE INTERNET",
+    "url": "http://www.chillbd.net",
+    "category": "UNIFIED CORE INTERNET"
+  },
+  {
+    "id": "ftp-d0v4lndka",
+    "name": "UNIQUE INTERNET",
+    "url": "https://uniquenetbd.com",
+    "category": "UNIQUE INTERNET"
+  },
+  {
+    "id": "ftp-8wmjys1y2",
+    "name": "UNIQUE INTERNET",
+    "url": "http://103.91.144.230",
+    "category": "UNIQUE INTERNET"
+  },
+  {
+    "id": "ftp-4s4sgoatl",
+    "name": "UNIQUE INTERNET",
+    "url": "http://103.91.144.230/ftpdata",
+    "category": "UNIQUE INTERNET"
+  },
+  {
+    "id": "ftp-3p61262sm",
+    "name": "UNIQUE INTERNET",
+    "url": "http://www.uniquedownloadbd.com",
+    "category": "UNIQUE INTERNET"
+  },
+  {
+    "id": "ftp-2xcewqxxr",
+    "name": "UNIQUE24 DOT NET",
+    "url": "http://unique24.net",
+    "category": "UNIQUE24 DOT NET"
+  },
+  {
+    "id": "ftp-2tngyr9ag",
+    "name": "UNIQUE24 DOT NET",
+    "url": "http://media.unique24.net",
+    "category": "UNIQUE24 DOT NET"
+  },
+  {
+    "id": "ftp-8spjlbauk",
+    "name": "UNIQUEONLINE",
+    "url": "http://www.uniqueonlinebd.com",
+    "category": "UNIQUEONLINE"
+  },
+  {
+    "id": "ftp-8hxx6amjn",
+    "name": "UPDATE NETWORK",
+    "url": "http://www.updatenetworkbd.com",
+    "category": "UPDATE NETWORK"
+  },
+  {
+    "id": "ftp-xaanwsodv",
+    "name": "VDOMELA",
+    "url": "http://103.17.181.43",
+    "category": "VDOMELA"
+  },
+  {
+    "id": "ftp-ci9mivs1y",
+    "name": "VDOMELA",
+    "url": "http://vdomela.com",
+    "category": "VDOMELA"
+  },
+  {
+    "id": "ftp-irw1p61wi",
+    "name": "VE BROADBAND NETWORK",
+    "url": "http://videoelephantbd.com",
+    "category": "VE BROADBAND NETWORK"
+  },
+  {
+    "id": "ftp-xgordl7yu",
+    "name": "VE BROADBAND NETWORK",
+    "url": "http://172.17.17.19",
+    "category": "VE BROADBAND NETWORK"
+  },
+  {
+    "id": "ftp-tfrlu3d9b",
+    "name": "VE BROADBAND NETWORK",
+    "url": "http://172.17.17.14:82",
+    "category": "VE BROADBAND NETWORK"
+  },
+  {
+    "id": "ftp-1lwle35yn",
+    "name": "VELOCITY INTERNET",
+    "url": "https://velocity.net.bd",
+    "category": "VELOCITY INTERNET"
+  },
+  {
+    "id": "ftp-5rp9arlq9",
+    "name": "VELOCITY INTERNET",
+    "url": "https://www.ctghub.com",
+    "category": "VELOCITY INTERNET"
+  },
+  {
+    "id": "ftp-eessey58d",
+    "name": "VIBE INTERNET",
+    "url": "https://www.vibebd.com",
+    "category": "VIBE INTERNET"
+  },
+  {
+    "id": "ftp-kx03pon14",
+    "name": "VIRTUAL COMMUNICATION",
+    "url": "https://www.vcbd.net",
+    "category": "VIRTUAL COMMUNICATION"
+  },
+  {
+    "id": "ftp-xppcf6abj",
+    "name": "VISION TECHNOLOGIES LIMITED (SUNPLEX)",
+    "url": "https://visiontechnologiesltd.com",
+    "category": "VISION TECHNOLOGIES LIMITED (SUNPLEX)"
+  },
+  {
+    "id": "ftp-pm7zg7uvj",
+    "name": "VISION TECHNOLOGIES LIMITED (SUNPLEX)",
+    "url": "https://sunplex.net",
+    "category": "VISION TECHNOLOGIES LIMITED (SUNPLEX)"
+  },
+  {
+    "id": "ftp-ozkmwvdtb",
+    "name": "VISION TECHNOLOGIES LIMITED (SUNPLEX)",
+    "url": "https://storage.sunplex.net",
+    "category": "VISION TECHNOLOGIES LIMITED (SUNPLEX)"
+  },
+  {
+    "id": "ftp-yfz0i93yk",
+    "name": "WEBRANGERS NET",
+    "url": "https://webrangers.net",
+    "category": "WEBRANGERS NET"
+  },
+  {
+    "id": "ftp-k09rzzp8t",
+    "name": "WETUBE NETWORK",
+    "url": "https://www.wetube.com.bd",
+    "category": "WETUBE NETWORK"
+  },
+  {
+    "id": "ftp-kgn6k204a",
+    "name": "WETUBE NETWORK",
+    "url": "http://45.45.45.45",
+    "category": "WETUBE NETWORK"
+  },
+  {
+    "id": "ftp-db5hq4d02",
+    "name": "WINNERIT",
+    "url": "http://www.winneritbd.com",
+    "category": "WINNERIT"
+  },
+  {
+    "id": "ftp-w4rhb5vv4",
+    "name": "WINNERIT",
+    "url": "http://103.92.213.55",
+    "category": "WINNERIT"
+  },
+  {
+    "id": "ftp-906anggjc",
+    "name": "WINNERIT",
+    "url": "http://103.92.213.55/Data",
+    "category": "WINNERIT"
+  },
+  {
+    "id": "ftp-or885efje",
+    "name": "WORLD COMMUNICATION INTERNET",
+    "url": "https://www.worldbd.net",
+    "category": "WORLD COMMUNICATION INTERNET"
+  },
+  {
+    "id": "ftp-gprsxxuz8",
+    "name": "X-PRESS TECHNOLOGIES LIMITED (NATURALBD)",
+    "url": "http://xpress.ltd",
+    "category": "X-PRESS TECHNOLOGIES LIMITED (NATURALBD)"
+  },
+  {
+    "id": "ftp-0paetwgwk",
+    "name": "X-PRESS TECHNOLOGIES LIMITED (NATURALBD)",
+    "url": "http://103.43.148.68",
+    "category": "X-PRESS TECHNOLOGIES LIMITED (NATURALBD)"
+  },
+  {
+    "id": "ftp-nko73f32s",
+    "name": "X-PRESS TECHNOLOGIES LIMITED (NATURALBD)",
+    "url": "http://www.naturalbd.com",
+    "category": "X-PRESS TECHNOLOGIES LIMITED (NATURALBD)"
+  },
+  {
+    "id": "ftp-mxi10t2wr",
+    "name": "XENIAL BROADBAND",
+    "url": "http://xenialbb.net",
+    "category": "XENIAL BROADBAND"
+  },
+  {
+    "id": "ftp-iyikbjfvj",
+    "name": "XPLORE CYBER & NET (DHAKA MOVIE ZONE)",
+    "url": "http://103.96.104.14",
+    "category": "XPLORE CYBER & NET (DHAKA MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-ti67u1igf",
+    "name": "XPLORE CYBER & NET (DHAKA MOVIE ZONE)",
+    "url": "http://103.96.104.14/d_drive",
+    "category": "XPLORE CYBER & NET (DHAKA MOVIE ZONE)"
+  },
+  {
+    "id": "ftp-jrohzyeaq",
+    "name": "XPLORE NET",
+    "url": "https://www.xplorenetbd.com",
+    "category": "XPLORE NET"
+  },
+  {
+    "id": "ftp-zl927t8qj",
+    "name": "XPLORE NET",
+    "url": "https://maxnetbd.com",
+    "category": "XPLORE NET"
+  },
+  {
+    "id": "ftp-oyyrmpojk",
+    "name": "YELLOW NET",
+    "url": "https://www.yellownetbd.com",
+    "category": "YELLOW NET"
+  },
+  {
+    "id": "ftp-xks1ax86n",
+    "name": "YELLOW NET",
+    "url": "https://www.yellownetbd.com/ftp",
+    "category": "YELLOW NET"
+  },
+  {
+    "id": "ftp-8sk3srflr",
+    "name": "YESNET COMMUNICATION",
+    "url": "https://yesnetcommunication.com",
+    "category": "YESNET COMMUNICATION"
+  },
+  {
+    "id": "ftp-06zvl9b24",
+    "name": "YOURNET COMMUNICATION",
+    "url": "http://www.yournetcommunications.net",
+    "category": "YOURNET COMMUNICATION"
+  },
+  {
+    "id": "ftp-l8codtlq1",
+    "name": "ZERO 4 COMMUNICATION",
+    "url": "http://zero4communication.com",
+    "category": "ZERO 4 COMMUNICATION"
+  },
+  {
+    "id": "ftp-zqlu5rsl7",
+    "name": "ZERO 4 COMMUNICATION",
+    "url": "http://103.96.36.115",
+    "category": "ZERO 4 COMMUNICATION"
+  },
+  {
+    "id": "ftp-m4dfiq587",
+    "name": "ZEROONE ONLINE (CTGOZ)",
+    "url": "http://www.zerooneonline.net",
+    "category": "ZEROONE ONLINE (CTGOZ)"
+  },
+  {
+    "id": "ftp-1azk41kyo",
+    "name": "ZEROONE ONLINE (CTGOZ)",
+    "url": "http://ctgoz.com",
+    "category": "ZEROONE ONLINE (CTGOZ)"
+  },
+  {
+    "id": "ftp-2yxi7l7bn",
+    "name": "ZIP CYBER",
+    "url": "http://www.zipcyber.com",
+    "category": "ZIP CYBER"
+  },
+  {
+    "id": "ftp-wewehzzyx",
+    "name": "ZIP NET",
+    "url": "http://www.zipnetbd.com",
+    "category": "ZIP NET"
+  },
+  {
+    "id": "ftp-nox1t07sb",
+    "name": "ZOOM ONLINE",
+    "url": "http://zoomonline.com.bd",
+    "category": "ZOOM ONLINE"
+  },
+  {
+    "id": "ftp-h6xokju4d",
+    "name": "ZOOM ONLINE NET",
+    "url": "https://zoomonlinebd.net",
+    "category": "ZOOM ONLINE NET"
+  },
+  {
+    "id": "ftp-41i8pvqsv",
+    "name": "ZX ONLINE",
+    "url": "http://www.zxonlinebd.com",
+    "category": "ZX ONLINE"
   }
 ]

@@ -10,6 +10,13 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
   Table,
@@ -36,6 +43,10 @@ import {
   ArrowDown,
   ArrowUp,
   ArrowUpDown,
+  ChevronLeft,
+  ChevronRight,
+  ChevronsLeft,
+  ChevronsRight,
   ExternalLink,
   Filter,
   Globe,
@@ -56,6 +67,11 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
     { id: "priority", desc: false },
   ]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
+
+  const [pagination, setPagination] = useState({
+    pageIndex: 0,
+    pageSize: 50,
+  });
 
   const data = useMemo(() => {
     return servers.map((s) => ({
@@ -344,9 +360,9 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
     state: {
       sorting,
       columnFilters,
+      pagination,
     },
-    onSortingChange: setSorting,
-    onColumnFiltersChange: setColumnFilters,
+    onPaginationChange: setPagination,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
@@ -354,9 +370,6 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
     initialState: {
       columnVisibility: {
         priority: false,
-      },
-      pagination: {
-        pageSize: 50,
       },
     },
   });
@@ -461,6 +474,81 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
           )}
         </TableBody>
       </Table>
+      <div className="flex items-center justify-between py-4 px-4 border-t bg-muted/10">
+        {/* Left section: Page X of Y */}
+        <div className="flex-1 text-sm text-muted-foreground whitespace-nowrap">
+          Page {table.getState().pagination.pageIndex + 1} of{" "}
+          {table.getPageCount().toLocaleString()}
+        </div>
+
+        {/* Center section: Rows per page */}
+        <div className="flex items-center gap-2 justify-center flex-1">
+          <span className="text-sm text-muted-foreground whitespace-nowrap">
+            Rows per page:
+          </span>
+          <Select
+            value={`${table.getState().pagination.pageSize}`}
+            onValueChange={(value) => {
+              table.setPageSize(Number(value));
+            }}
+          >
+            <SelectTrigger className="h-8 w-[70px]">
+              <SelectValue placeholder={table.getState().pagination.pageSize} />
+            </SelectTrigger>
+            <SelectContent side="top">
+              {[10, 20, 30, 40, 50].map((pageSize) => (
+                <SelectItem key={pageSize} value={`${pageSize}`}>
+                  {pageSize}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+
+        {/* Right section: Navigation buttons */}
+        <div className="flex items-center space-x-2 flex-1 justify-end">
+          <Button
+            variant="outline"
+            size="icon"
+            className="h-8 w-8"
+            onClick={() => table.setPageIndex(0)}
+            disabled={!table.getCanPreviousPage()}
+          >
+            <span className="sr-only">Go to first page</span>
+            <ChevronsLeft className="h-4 w-4" />
+          </Button>
+          <Button
+            variant="outline"
+            size="icon"
+            className="h-8 w-8"
+            onClick={() => table.previousPage()}
+            disabled={!table.getCanPreviousPage()}
+          >
+            <span className="sr-only">Go to previous page</span>
+            <ChevronLeft className="h-4 w-4" />
+          </Button>
+          <Button
+            variant="outline"
+            size="icon"
+            className="h-8 w-8"
+            onClick={() => table.nextPage()}
+            disabled={!table.getCanNextPage()}
+          >
+            <span className="sr-only">Go to next page</span>
+            <ChevronRight className="h-4 w-4" />
+          </Button>
+          <Button
+            variant="outline"
+            size="icon"
+            className="h-8 w-8"
+            onClick={() => table.setPageIndex(table.getPageCount() - 1)}
+            disabled={!table.getCanNextPage()}
+          >
+            <span className="sr-only">Go to last page</span>
+            <ChevronsRight className="h-4 w-4" />
+          </Button>
+        </div>
+      </div>
     </Card>
   );
 }
