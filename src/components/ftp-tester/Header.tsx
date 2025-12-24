@@ -5,17 +5,11 @@ import { Play, Terminal } from "lucide-react";
 
 interface HeaderProps {
   onTestAll: () => void;
-  onSubmitServer: () => void;
   isTestDisabled: boolean;
   hasTested: boolean;
 }
 
-export function Header({
-  onTestAll,
-  onSubmitServer,
-  isTestDisabled,
-  hasTested,
-}: HeaderProps) {
+export function Header({ onTestAll, isTestDisabled, hasTested }: HeaderProps) {
   return (
     <div className="flex flex-col items-center text-center space-y-8 mb-16">
       <div className="flex flex-col items-center space-y-4">
@@ -38,9 +32,8 @@ export function Header({
         <Button
           onClick={onTestAll}
           disabled={isTestDisabled}
-          className="w-full h-14 rounded-xl bg-primary hover:opacity-90 text-primary-foreground font-extrabold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-[1.02] active:scale-[0.98] group relative overflow-hidden"
+          className="w-full h-14 font-extrabold text-lg"
         >
-          <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
           {hasTested ? (
             <span className="flex items-center gap-2">
               <Play className="w-5 h-5 fill-current" /> Test Again

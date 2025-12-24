@@ -47,7 +47,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
           return (
             <div className="font-semibold text-foreground flex items-center gap-3">
               <div
-                className={`w-2 h-2 rounded-full flex-shrink-0 ${
+                className={`w-2 h-2 rounded-full shrink-0 ${
                   !isTested
                     ? "bg-muted"
                     : isOnline

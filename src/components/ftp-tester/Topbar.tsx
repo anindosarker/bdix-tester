@@ -22,12 +22,7 @@ export function Topbar({ onSubmitServer }: TopbarProps) {
         </div>
 
         <div className="flex items-center gap-2">
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={onSubmitServer}
-            className="rounded-full text-neutral-600 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium"
-          >
+          <Button variant="secondary" size="sm" onClick={onSubmitServer}>
             <Github className="w-4 h-4 mr-2" /> Submit Server
           </Button>
           <div className="w-px h-6 bg-neutral-200 dark:bg-neutral-800 mx-1" />

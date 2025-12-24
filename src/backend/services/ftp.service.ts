@@ -33,12 +33,13 @@ export class FtpService {
 
   private static async testHttp(url: string): Promise<TestResult> {
     try {
-      // We use a short timeout for BDIX checks
-      const response = await axios.get(url, {
+      // Use HEAD request for efficiency and a browser-like User-Agent to avoid bot blocking
+      const response = await axios.head(url, {
         timeout: 5000,
-        validateStatus: () => true, // Accept any status code (even 404/500 means server is online)
+        validateStatus: () => true, // Accept any status code as "online"
         headers: {
-          "User-Agent": "BDIX-Tester/1.0",
+          "User-Agent":
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         },
       });
 
@@ -48,11 +49,28 @@ export class FtpService {
         statusText: `Online (${response.status})`,
       };
     } catch {
-      return {
-        url,
-        isOnline: false,
-        statusText: "Offline",
-      };
+      // Fallback to GET if HEAD fails (some servers block HEAD)
+      try {
+        const response = await axios.get(url, {
+          timeout: 5000,
+          validateStatus: () => true,
+          headers: {
+            "User-Agent":
+              "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+          },
+        });
+        return {
+          url,
+          isOnline: true,
+          statusText: `Online (GET ${response.status})`,
+        };
+      } catch {
+        return {
+          url,
+          isOnline: false,
+          statusText: "Offline",
+        };
+      }
     }
   }
 
@@ -64,16 +82,34 @@ export class FtpService {
     return new Promise((resolve) => {
       const socket = new net.Socket();
       const timeout = 5000;
+      let buffer = "";
 
       socket.setTimeout(timeout);
 
+      socket.on("data", (data) => {
+        buffer += data.toString();
+        // Standard FTP greeting starts with 220
+        if (buffer.startsWith("220")) {
+          socket.destroy();
+          resolve({
+            url,
+            isOnline: true,
+            statusText: "Online (FTP)",
+          });
+        }
+      });
+
       socket.on("connect", () => {
-        socket.destroy();
-        resolve({
-          url,
-          isOnline: true,
-          statusText: "Online (TCP)",
-        });
+        // For non-FTP services, just connecting might be enough
+        // but we wait a bit for the greeting if it's expected to be FTP
+        if (port !== "21") {
+          socket.destroy();
+          resolve({
+            url,
+            isOnline: true,
+            statusText: `Online (TCP:${port})`,
+          });
+        }
       });
 
       socket.on("error", () => {
