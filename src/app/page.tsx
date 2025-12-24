@@ -89,6 +89,7 @@ export default function FtpTesterPage() {
           onTestAll={testAll}
           isTestDisabled={isLoading || !servers || servers.length === 0}
           hasTested={hasTested}
+          isTesting={isTesting}
         />
 
         <TestProgress

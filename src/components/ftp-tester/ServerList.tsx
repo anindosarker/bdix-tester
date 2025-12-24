@@ -70,7 +70,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
 
   const [pagination, setPagination] = useState({
     pageIndex: 0,
-    pageSize: 50,
+    pageSize: 10000, // Default to all (effectively infinite for this dataset)
   });
 
   const data = useMemo(() => {
@@ -324,6 +324,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
                 src={row.original.url}
                 className="w-[1000px] h-[600px] origin-top-left scale-[0.128] pointer-events-none"
                 title="Preview"
+                loading="lazy"
               />
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/preview:opacity-100 transition-opacity bg-black/20">
                 <Globe className="w-4 h-4 text-white" />
@@ -487,13 +488,21 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
             Rows per page:
           </span>
           <Select
-            value={`${table.getState().pagination.pageSize}`}
+            value={
+              table.getState().pagination.pageSize >= data.length
+                ? "all"
+                : `${table.getState().pagination.pageSize}`
+            }
             onValueChange={(value) => {
-              table.setPageSize(Number(value));
+              if (value === "all") {
+                table.setPageSize(data.length);
+              } else {
+                table.setPageSize(Number(value));
+              }
             }}
           >
             <SelectTrigger className="h-8 w-[70px]">
-              <SelectValue placeholder={table.getState().pagination.pageSize} />
+              <SelectValue placeholder="Rows" />
             </SelectTrigger>
             <SelectContent side="top">
               {[10, 20, 30, 40, 50].map((pageSize) => (
@@ -501,6 +510,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
                   {pageSize}
                 </SelectItem>
               ))}
+              <SelectItem value="all">All</SelectItem>
             </SelectContent>
           </Select>
         </div>

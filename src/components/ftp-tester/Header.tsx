@@ -7,9 +7,15 @@ interface HeaderProps {
   onTestAll: () => void;
   isTestDisabled: boolean;
   hasTested: boolean;
+  isTesting: boolean;
 }
 
-export function Header({ onTestAll, isTestDisabled, hasTested }: HeaderProps) {
+export function Header({
+  onTestAll,
+  isTestDisabled,
+  hasTested,
+  isTesting,
+}: HeaderProps) {
   return (
     <div className="flex flex-col items-center text-center space-y-8 mb-16">
       <div className="flex flex-col items-center space-y-4">
@@ -32,7 +38,11 @@ export function Header({ onTestAll, isTestDisabled, hasTested }: HeaderProps) {
           disabled={isTestDisabled}
           className="w-full h-14 font-extrabold text-lg"
         >
-          {hasTested ? (
+          {isTesting ? (
+            <span className="flex items-center gap-2">
+              <span className="animate-spin text-xl">◌</span> Scanning...
+            </span>
+          ) : hasTested ? (
             <span className="flex items-center gap-2">
               <Play className="w-5 h-5 fill-current" /> Test Again
             </span>
