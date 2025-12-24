@@ -154,6 +154,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
     [results]
   );
 
+  // eslint-disable-next-line react-hooks/incompatible-library
   const table = useReactTable({
     data: servers,
     columns,
