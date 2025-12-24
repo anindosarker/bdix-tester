@@ -198,6 +198,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
           if (res && !res.loading) return 1;
           return 2;
         },
+        filterFn: "equals",
         header: ({ column }) => (
           <div className="flex flex-col gap-2 py-2">
             <Button
