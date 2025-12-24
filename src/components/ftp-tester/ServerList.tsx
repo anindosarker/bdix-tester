@@ -6,12 +6,10 @@ import { Card } from "@/components/ui/card";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuSeparator,
+  DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
   Table,
@@ -24,11 +22,26 @@ import {
 import { FtpServer, TestResult } from "@/lib/types/ftp";
 import {
   ColumnDef,
+  ColumnFiltersState,
   flexRender,
   getCoreRowModel,
+  getFilteredRowModel,
+  getPaginationRowModel,
+  getSortedRowModel,
+  SortingState,
   useReactTable,
 } from "@tanstack/react-table";
-import { Activity, ExternalLink, Filter, Globe } from "lucide-react";
+import {
+  Activity,
+  ArrowDown,
+  ArrowUp,
+  ArrowUpDown,
+  ExternalLink,
+  Filter,
+  Globe,
+  Search,
+  X,
+} from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
@@ -39,50 +52,87 @@ interface ServerListProps {
 }
 
 export function ServerList({ servers, isLoading, results }: ServerListProps) {
-  const [filter, setFilter] = useState<"all" | "online">("all");
-  const showOnlyOnline = filter === "online";
+  const [sorting, setSorting] = useState<SortingState>([
+    { id: "priority", desc: false },
+  ]);
+  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
 
-  const displayServers = useMemo(() => {
-    // 1. Filter
-    let filtered = servers;
-    if (showOnlyOnline) {
-      filtered = servers.filter((s) => results[s.id]?.isOnline);
-    }
+  const data = useMemo(() => {
+    return servers.map((s) => ({
+      ...s,
+      // Add a hidden priority field for the initial sort
+      priority: results[s.id]?.isOnline ? 0 : results[s.id]?.loading ? 1 : 2,
+      result: results[s.id],
+    }));
+  }, [servers, results]);
 
-    // 2. Sort: Online > Loading > Others
-    return [...filtered].sort((a, b) => {
-      const resA = results[a.id];
-      const resB = results[b.id];
-
-      // Priority 1: Online
-      if (resA?.isOnline && !resB?.isOnline) return -1;
-      if (!resA?.isOnline && resB?.isOnline) return 1;
-
-      // Priority 2: Loading
-      if (resA?.loading && !resB?.loading) return -1;
-      if (!resA?.loading && resB?.loading) return 1;
-
-      // Maintain stability if no difference
-      return 0;
-    });
-  }, [servers, results, showOnlyOnline]);
-
-  const columns = useMemo<ColumnDef<FtpServer>[]>(
+  const columns = useMemo<
+    ColumnDef<
+      FtpServer & {
+        priority: number;
+        result: TestResult & { loading: boolean };
+      }
+    >[]
+  >(
     () => [
       {
+        id: "priority",
+        accessorKey: "priority",
+        header: () => null,
+        cell: () => null,
+        enableHiding: true,
+      },
+      {
         accessorKey: "name",
-        header: () => (
-          <div className="flex items-center gap-2">
-            <Activity className="w-3 h-3" /> Server Name
-          </div>
-        ),
+        header: ({ column }) => {
+          return (
+            <div className="flex flex-col gap-2 py-2">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="-ml-3 h-8 data-[state=open]:bg-accent"
+                onClick={() =>
+                  column.toggleSorting(column.getIsSorted() === "asc")
+                }
+              >
+                <span>Server Name</span>
+                {column.getIsSorted() === "asc" ? (
+                  <ArrowUp className="ml-2 h-3 w-3" />
+                ) : column.getIsSorted() === "desc" ? (
+                  <ArrowDown className="ml-2 h-3 w-3" />
+                ) : (
+                  <ArrowUpDown className="ml-2 h-3 w-3" />
+                )}
+              </Button>
+              <div className="relative group">
+                <Search className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 text-muted-foreground group-focus-within:text-primary transition-colors" />
+                <Input
+                  placeholder="Filter name..."
+                  value={(column.getFilterValue() as string) ?? ""}
+                  onChange={(event) =>
+                    column.setFilterValue(event.target.value)
+                  }
+                  className="h-7 w-full pl-7 pr-7 text-[10px] bg-muted/50 border-none focus-visible:ring-1 focus-visible:ring-primary/30"
+                />
+                {(column.getFilterValue() as string) && (
+                  <button
+                    onClick={() => column.setFilterValue("")}
+                    className="absolute right-2 top-1/2 -translate-y-1/2"
+                  >
+                    <X className="w-3 h-3 text-muted-foreground hover:text-foreground" />
+                  </button>
+                )}
+              </div>
+            </div>
+          );
+        },
         cell: ({ row }) => {
           const server = row.original;
           const result = results[server.id];
           const isOnline = result?.isOnline;
           const isTested = !!result;
           return (
-            <div className="font-semibold flex items-center gap-2 min-w-[150px] py-1">
+            <div className="font-semibold flex items-center gap-2 min-w-[200px] py-1">
               <div
                 className={`w-2 h-2 rounded-full shrink-0 ${
                   !isTested
@@ -92,16 +142,36 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
                     : "bg-destructive"
                 }`}
               />
-              <span className="break-all">
-                {row.index + 1}. {server.name}
-              </span>
+              <span className="break-all">{server.name}</span>
             </div>
           );
         },
       },
       {
         accessorKey: "url",
-        header: "Host",
+        header: ({ column }) => (
+          <div className="flex flex-col gap-2 py-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="-ml-3 h-8"
+              onClick={() =>
+                column.toggleSorting(column.getIsSorted() === "asc")
+              }
+            >
+              <span>Host</span>
+              <ArrowUpDown className="ml-2 h-3 w-3" />
+            </Button>
+            <div className="relative">
+              <Input
+                placeholder="Filter host..."
+                value={(column.getFilterValue() as string) ?? ""}
+                onChange={(event) => column.setFilterValue(event.target.value)}
+                className="h-7 w-full px-2 text-[10px] bg-muted/50 border-none focus-visible:ring-1 focus-visible:ring-primary/30"
+              />
+            </div>
+          </div>
+        ),
         cell: ({ row }) => (
           <div className="text-muted-foreground font-mono text-[11px] break-all max-w-[250px] py-1">
             <a
@@ -116,8 +186,72 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
         ),
       },
       {
-        accessorKey: "status",
-        header: "Status",
+        id: "status",
+        accessorFn: (row) => {
+          const res = results[row.id];
+          if (res?.isOnline) return 0;
+          if (res && !res.loading) return 1;
+          return 2;
+        },
+        header: ({ column }) => (
+          <div className="flex flex-col gap-2 py-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="-ml-3 h-8 w-fit justify-start bg-transparent hover:bg-transparent px-2"
+              onClick={() =>
+                column.toggleSorting(column.getIsSorted() === "asc")
+              }
+            >
+              <div className="h-8 flex items-center text-xs font-medium">
+                Status
+              </div>
+              {column.getIsSorted() === "asc" ? (
+                <ArrowUp className="ml-2 h-3 w-3" />
+              ) : column.getIsSorted() === "desc" ? (
+                <ArrowDown className="ml-2 h-3 w-3" />
+              ) : (
+                <ArrowUpDown className="ml-2 h-3 w-3" />
+              )}
+            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="h-7 w-full justify-between px-2 text-[10px] bg-muted/50 hover:bg-muted font-normal border-none"
+                >
+                  <span className="truncate">
+                    {column.getFilterValue() === 0
+                      ? "Online"
+                      : column.getFilterValue() === 1
+                      ? "Offline"
+                      : column.getFilterValue() === 2
+                      ? "Pending"
+                      : "All"}
+                  </span>
+                  <Filter className="w-3 h-3 opacity-50" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-32">
+                <DropdownMenuItem
+                  onClick={() => column.setFilterValue(undefined)}
+                >
+                  All
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => column.setFilterValue(0)}>
+                  Online
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => column.setFilterValue(1)}>
+                  Offline
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => column.setFilterValue(2)}>
+                  Pending
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
+        ),
         cell: ({ row }) => {
           const result = results[row.original.id];
           if (result?.loading) {
@@ -136,7 +270,14 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
           }
           const isOnline = result.isOnline;
           return (
-            <Badge variant={isOnline ? "default" : "destructive"}>
+            <Badge
+              variant={isOnline ? "default" : "destructive"}
+              className={
+                isOnline
+                  ? "bg-emerald-500/10 text-emerald-500 border-emerald-500/20 shadow-none hover:bg-emerald-500/20"
+                  : ""
+              }
+            >
               {isOnline ? "Online" : "Offline"}
             </Badge>
           );
@@ -144,7 +285,14 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
       },
       {
         id: "preview",
-        header: "Preview",
+        header: () => (
+          <div className="flex flex-col gap-2 py-2">
+            <div className="h-8 flex items-center text-xs font-medium px-2">
+              Preview
+            </div>
+            <div className="h-7" /> {/* Spacer */}
+          </div>
+        ),
         cell: ({ row }) => {
           const result = results[row.original.id];
           const isOnline = result?.isOnline;
@@ -173,11 +321,18 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
       },
       {
         id: "actions",
-        header: "Action",
+        header: () => (
+          <div className="flex flex-col gap-2 py-2">
+            <div className="h-8 flex items-center text-xs font-medium px-2">
+              Action
+            </div>
+            <div className="h-7" /> {/* Spacer */}
+          </div>
+        ),
         cell: ({ row }) => (
           <Link href={row.original.url} target="_blank">
-            <Button variant="outline" size="sm">
-              <ExternalLink className="mr-2" /> Visit
+            <Button variant="outline" size="sm" className="h-8 px-3">
+              <ExternalLink className="w-3 h-3 mr-2" /> Visit
             </Button>
           </Link>
         ),
@@ -186,63 +341,70 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
     [results]
   );
 
-  // eslint-disable-next-line react-hooks/incompatible-library
   const table = useReactTable({
-    data: displayServers,
+    data,
     columns,
+    state: {
+      sorting,
+      columnFilters,
+    },
+    onSortingChange: setSorting,
+    onColumnFiltersChange: setColumnFilters,
     getCoreRowModel: getCoreRowModel(),
+    getSortedRowModel: getSortedRowModel(),
+    getFilteredRowModel: getFilteredRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
+    initialState: {
+      columnVisibility: {
+        priority: false,
+      },
+      pagination: {
+        pageSize: 50,
+      },
+    },
   });
 
   return (
-    <Card className="overflow-hidden">
-      <div className="px-4 py-3 border-b flex items-center justify-between bg-muted/10">
-        <div className="flex items-center gap-2">
-          <Globe className="w-4 h-4 text-primary" />
-          <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
-            Server Directory
-          </h3>
+    <Card className="rounded-xl border bg-card/30 backdrop-blur-sm overflow-hidden shadow-2xl border-white/5">
+      <div className="px-5 py-4 border-b border-white/5 flex items-center justify-between bg-white/[0.02]">
+        <div className="flex items-center gap-3">
+          <div className="p-2 rounded-lg bg-primary/10 text-primary">
+            <Globe className="w-4 h-4" />
+          </div>
+          <div>
+            <h3 className="text-sm font-bold tracking-tight text-foreground/90">
+              Server Directory
+            </h3>
+            <p className="text-[10px] text-muted-foreground/60 font-medium uppercase tracking-widest">
+              {table.getFilteredRowModel().rows.length} Total Servers Found
+            </p>
+          </div>
         </div>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
+        <div className="flex items-center gap-2">
+          {columnFilters.length > 0 && (
             <Button
-              variant={showOnlyOnline ? "default" : "secondary"}
+              variant="ghost"
               size="sm"
+              onClick={() => table.resetColumnFilters()}
+              className="h-8 text-[10px] uppercase font-bold text-muted-foreground hover:text-foreground"
             >
-              <Filter className="w-3 h-3" />
-              {showOnlyOnline ? "Filter: Online Only" : "Filter: All"}
+              Clear Filters
             </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="w-48">
-            <DropdownMenuLabel className="text-[10px] uppercase tracking-widest text-muted-foreground/60">
-              Filter Options
-            </DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuRadioGroup
-              value={filter}
-              onValueChange={(v) => setFilter(v as "all" | "online")}
-            >
-              <DropdownMenuRadioItem
-                value="all"
-                className="text-xs focus:bg-accent cursor-pointer"
-              >
-                Show All Servers
-              </DropdownMenuRadioItem>
-              <DropdownMenuRadioItem
-                value="online"
-                className="text-xs focus:bg-accent cursor-pointer"
-              >
-                Verified Online Only
-              </DropdownMenuRadioItem>
-            </DropdownMenuRadioGroup>
-          </DropdownMenuContent>
-        </DropdownMenu>
+          )}
+        </div>
       </div>
       <Table>
-        <TableHeader>
+        <TableHeader className="bg-white/[0.01]">
           {table.getHeaderGroups().map((headerGroup) => (
-            <TableRow key={headerGroup.id}>
+            <TableRow
+              key={headerGroup.id}
+              className="hover:bg-transparent border-white/5"
+            >
               {headerGroup.headers.map((header) => (
-                <TableHead key={header.id}>
+                <TableHead
+                  key={header.id}
+                  className="p-0 border-r border-white/5 last:border-0 align-top"
+                >
                   {header.isPlaceholder
                     ? null
                     : flexRender(
@@ -257,29 +419,32 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
         <TableBody>
           {isLoading ? (
             Array.from({ length: 5 }).map((_, i) => (
-              <TableRow key={i} className="border-border">
+              <TableRow key={i} className="border-white/5">
                 <TableCell className="pl-6">
-                  <Skeleton className="h-4 w-32 bg-muted" />
+                  <Skeleton className="h-4 w-32 bg-white/5" />
                 </TableCell>
                 <TableCell>
-                  <Skeleton className="h-4 w-40 bg-muted" />
+                  <Skeleton className="h-4 w-40 bg-white/5" />
                 </TableCell>
                 <TableCell>
-                  <Skeleton className="h-4 w-16 bg-muted" />
+                  <Skeleton className="h-4 w-16 bg-white/5" />
                 </TableCell>
                 <TableCell>
-                  <Skeleton className="h-16 w-32 bg-muted rounded-lg" />
+                  <Skeleton className="h-16 w-32 bg-white/5 rounded-lg" />
                 </TableCell>
                 <TableCell>
-                  <Skeleton className="h-8 w-8 ml-auto bg-muted rounded-full" />
+                  <Skeleton className="h-8 w-8 ml-auto bg-white/5 rounded-full" />
                 </TableCell>
               </TableRow>
             ))
           ) : table.getRowModel().rows.length > 0 ? (
             table.getRowModel().rows.map((row) => (
-              <TableRow key={row.id}>
+              <TableRow
+                key={row.id}
+                className="group hover:bg-white/[0.02] border-white/5 transition-colors"
+              >
                 {row.getVisibleCells().map((cell) => (
-                  <TableCell key={cell.id}>
+                  <TableCell key={cell.id} className="py-3 px-4">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </TableCell>
                 ))}
@@ -287,15 +452,28 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
             ))
           ) : (
             <TableRow>
-              <TableCell colSpan={columns.length} className="h-48 text-center">
+              <TableCell
+                colSpan={columns.length}
+                className="h-48 text-center bg-white/[0.01]"
+              >
                 <div className="py-12 space-y-4">
-                  <div className="text-muted text-6xl opacity-20">🔍</div>
-                  <h3 className="text-xl font-bold text-muted-foreground">
+                  <div className="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mx-auto mb-2">
+                    <Search className="w-8 h-8 text-primary/20" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground/80">
                     No servers found
                   </h3>
-                  <p className="text-muted-foreground/60">
-                    Try refining your search terms.
+                  <p className="text-muted-foreground/60 text-sm max-w-xs mx-auto">
+                    No results match your current filters. Try resetting or
+                    adjusting your search terms.
                   </p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => table.resetColumnFilters()}
+                  >
+                    Clear all filters
+                  </Button>
                 </div>
               </TableCell>
             </TableRow>

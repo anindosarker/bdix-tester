@@ -2,35 +2,23 @@
 
 import { Footer } from "@/components/ftp-tester/Footer";
 import { Header } from "@/components/ftp-tester/Header";
-import { SearchBar } from "@/components/ftp-tester/SearchBar";
 import { ServerList } from "@/components/ftp-tester/ServerList";
 import { TestProgress } from "@/components/ftp-tester/TestProgress";
 import { Topbar } from "@/components/ftp-tester/Topbar";
 import { useFtpServers, useTestServer } from "@/hooks/use-ftp";
 import { FtpServer, TestResult } from "@/lib/types/ftp";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { toast } from "sonner";
 
 export default function FtpTesterPage() {
   const { data: servers, isLoading } = useFtpServers();
   const testMutation = useTestServer();
-  const [search, setSearch] = useState("");
   const [hasTested, setHasTested] = useState(false);
   const [isTesting, setIsTesting] = useState(false);
   const [checkedCount, setCheckedCount] = useState(0);
   const [results, setResults] = useState<
     Record<string, TestResult & { loading: boolean }>
   >({});
-
-  const filteredServers = useMemo(() => {
-    if (!servers) return [];
-    return servers.filter(
-      (s: FtpServer) =>
-        s.name.toLowerCase().includes(search.toLowerCase()) ||
-        s.url.toLowerCase().includes(search.toLowerCase()) ||
-        s.category.toLowerCase().includes(search.toLowerCase())
-    );
-  }, [servers, search]);
 
   const testOne = async (id: string, url: string) => {
     setResults((prev) => ({
@@ -58,17 +46,17 @@ export default function FtpTesterPage() {
   };
 
   const testAll = async () => {
-    if (!filteredServers.length) return;
+    if (!servers || !servers.length) return;
     setHasTested(true);
     setIsTesting(true);
     setCheckedCount(0);
     setResults({});
 
-    toast.info(`Scanning ${filteredServers.length} servers...`);
+    toast.info(`Scanning ${servers.length} servers...`);
 
     const batchSize = 5;
-    for (let i = 0; i < filteredServers.length; i += batchSize) {
-      const batch = filteredServers.slice(i, i + batchSize);
+    for (let i = 0; i < servers.length; i += batchSize) {
+      const batch = servers.slice(i, i + batchSize);
       await Promise.all(batch.map((s: FtpServer) => testOne(s.id, s.url)));
     }
 
@@ -99,27 +87,21 @@ export default function FtpTesterPage() {
       <div className="max-w-7xl mx-auto">
         <Header
           onTestAll={testAll}
-          isTestDisabled={isLoading || filteredServers.length === 0}
+          isTestDisabled={isLoading || !servers || servers.length === 0}
           hasTested={hasTested}
         />
 
         <TestProgress
           current={checkedCount}
-          total={filteredServers.length}
+          total={servers?.length || 0}
           onlineCount={onlineCount}
           offlineCount={offlineCount}
           isTesting={isTesting}
         />
 
         <div className="space-y-12 px-4 md:px-0">
-          <SearchBar
-            value={search}
-            onChange={setSearch}
-            totalFiltered={filteredServers.length}
-          />
-
           <ServerList
-            servers={filteredServers}
+            servers={servers || []}
             isLoading={isLoading}
             results={results}
           />
