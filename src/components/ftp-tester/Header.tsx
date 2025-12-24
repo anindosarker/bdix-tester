@@ -25,7 +25,7 @@ export function Header({
         <div className="space-y-2">
           <div className="flex items-center justify-center gap-3">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-              FTP <span className="text-primary italic">Tester</span>
+              BDIX FTP <span className="text-primary italic">Tester</span>
             </h1>
           </div>
           <p className="text-muted-foreground font-medium max-w-sm">
