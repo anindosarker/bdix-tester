@@ -35,7 +35,7 @@ export class FtpService {
     try {
       // Use HEAD request for efficiency and a browser-like User-Agent to avoid bot blocking
       const response = await axios.head(url, {
-        timeout: 5000,
+        timeout: 2000,
         validateStatus: () => true, // Accept any status code as "online"
         headers: {
           "User-Agent":
@@ -52,7 +52,7 @@ export class FtpService {
       // Fallback to GET if HEAD fails (some servers block HEAD)
       try {
         const response = await axios.get(url, {
-          timeout: 5000,
+          timeout: 2000,
           validateStatus: () => true,
           headers: {
             "User-Agent":
@@ -81,7 +81,7 @@ export class FtpService {
   ): Promise<TestResult> {
     return new Promise((resolve) => {
       const socket = new net.Socket();
-      const timeout = 5000;
+      const timeout = 2000;
       let buffer = "";
 
       socket.setTimeout(timeout);

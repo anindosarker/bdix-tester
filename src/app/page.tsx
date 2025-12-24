@@ -54,7 +54,7 @@ export default function FtpTesterPage() {
 
     toast.info(`Scanning ${servers.length} servers...`);
 
-    const batchSize = 5;
+    const batchSize = 50;
     for (let i = 0; i < servers.length; i += batchSize) {
       const batch = servers.slice(i, i + batchSize);
       await Promise.all(batch.map((s: FtpServer) => testOne(s.id, s.url)));
