@@ -91,9 +91,12 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
                 variant="ghost"
                 size="sm"
                 className="-ml-3 h-8 data-[state=open]:bg-accent"
-                onClick={() =>
-                  column.toggleSorting(column.getIsSorted() === "asc")
-                }
+                onClick={() => {
+                  const sorted = column.getIsSorted();
+                  if (sorted === "asc") column.toggleSorting(true);
+                  else if (sorted === "desc") column.clearSorting();
+                  else column.toggleSorting(false);
+                }}
               >
                 <span>Server Name</span>
                 {column.getIsSorted() === "asc" ? (
@@ -155,9 +158,12 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
               variant="ghost"
               size="sm"
               className="-ml-3 h-8"
-              onClick={() =>
-                column.toggleSorting(column.getIsSorted() === "asc")
-              }
+              onClick={() => {
+                const sorted = column.getIsSorted();
+                if (sorted === "asc") column.toggleSorting(true);
+                else if (sorted === "desc") column.clearSorting();
+                else column.toggleSorting(false);
+              }}
             >
               <span>Host</span>
               <ArrowUpDown className="ml-2 h-3 w-3" />
@@ -199,9 +205,12 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
               variant="ghost"
               size="sm"
               className="-ml-3 h-8 w-fit justify-start bg-transparent hover:bg-transparent px-2"
-              onClick={() =>
-                column.toggleSorting(column.getIsSorted() === "asc")
-              }
+              onClick={() => {
+                const sorted = column.getIsSorted();
+                if (sorted === "asc") column.toggleSorting(true);
+                else if (sorted === "desc") column.clearSorting();
+                else column.toggleSorting(false);
+              }}
             >
               <div className="h-8 flex items-center text-xs font-medium">
                 Status
@@ -454,7 +463,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
             <TableRow>
               <TableCell
                 colSpan={columns.length}
-                className="h-48 text-center bg-white/[0.01]"
+                className="h-48 text-center bg-white/1"
               >
                 <div className="py-12 space-y-4">
                   <div className="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mx-auto mb-2">
