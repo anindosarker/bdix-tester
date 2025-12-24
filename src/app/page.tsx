@@ -84,13 +84,12 @@ export default function FtpTesterPage() {
   ).length;
 
   return (
-    <div className="min-h-screen bg-background pt-24 pb-16 px-4 md:px-12 selection:bg-primary/30">
+    <div className="min-h-screen bg-background pt-24 pb-16 px-4 selection:bg-primary/20">
       <Topbar onSubmitServer={openGithubIssue} />
 
       <div className="max-w-4xl mx-auto">
         <Header
           onTestAll={testAll}
-          onSubmitServer={openGithubIssue}
           isTestDisabled={isLoading || filteredServers.length === 0}
           hasTested={hasTested}
         />

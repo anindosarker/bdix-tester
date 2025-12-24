@@ -45,17 +45,19 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
           const isOnline = result?.isOnline;
           const isTested = !!result;
           return (
-            <div className="font-semibold text-foreground flex items-center gap-3">
+            <div className="font-semibold flex items-center gap-2">
               <div
                 className={`w-2 h-2 rounded-full shrink-0 ${
                   !isTested
                     ? "bg-muted"
                     : isOnline
-                    ? "bg-emerald-500 shadow-md shadow-emerald-500/50"
-                    : "bg-destructive shadow-md shadow-destructive/50"
+                    ? "bg-emerald-500"
+                    : "bg-destructive"
                 }`}
               />
-              <span className="truncate max-w-[150px]">{server.name}</span>
+              <span className="truncate">
+                {row.index + 1}. {server.name}
+              </span>
             </div>
           );
         },
@@ -64,12 +66,12 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
         accessorKey: "url",
         header: "Host",
         cell: ({ row }) => (
-          <div className="text-muted-foreground font-mono text-[11px] truncate max-w-[150px]">
+          <div className="text-muted-foreground font-mono text-[11px] truncate">
             <a
               href={row.original.url}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-primary transition-colors"
+              className="hover:underline"
             >
               {row.original.url.replace("http://", "").replace("/", "")}
             </a>
@@ -97,14 +99,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
           }
           const isOnline = result.isOnline;
           return (
-            <Badge
-              variant={isOnline ? "default" : "destructive"}
-              className={`${
-                isOnline
-                  ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20"
-                  : "bg-destructive/10 text-destructive border-destructive/20"
-              } border font-bold text-[9px] uppercase tracking-widest px-2 py-0.5 rounded-full`}
-            >
+            <Badge variant={isOnline ? "default" : "destructive"}>
               {isOnline ? "Online" : "Offline"}
             </Badge>
           );
@@ -126,14 +121,14 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
           }
 
           return (
-            <div className="relative group/preview w-40 h-24 rounded-lg border border-border bg-muted/30 overflow-hidden shadow-inner">
+            <div className="relative group/preview w-32 h-20 rounded border bg-muted overflow-hidden">
               <iframe
                 src={row.original.url}
-                className="w-[1000px] h-[600px] origin-top-left scale-[0.16] pointer-events-none"
+                className="w-[1000px] h-[600px] origin-top-left scale-[0.128] pointer-events-none"
                 title="Preview"
               />
-              <div className="absolute inset-0 bg-transparent flex items-center justify-center opacity-0 group-hover/preview:opacity-100 transition-opacity">
-                <Globe className="w-4 h-4 text-white animate-pulse" />
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/preview:opacity-100 transition-opacity bg-black/20">
+                <Globe className="w-4 h-4 text-white" />
               </div>
             </div>
           );
@@ -162,19 +157,13 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
   });
 
   return (
-    <Card className="bg-card/40 p-0 backdrop-blur-xl border border-border rounded-xl overflow-hidden shadow-xl">
+    <Card className="overflow-hidden">
       <Table>
-        <TableHeader className="bg-muted/50 border-b border-border">
+        <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
-            <TableRow
-              key={headerGroup.id}
-              className="hover:bg-transparent border-none"
-            >
+            <TableRow key={headerGroup.id}>
               {headerGroup.headers.map((header) => (
-                <TableHead
-                  key={header.id}
-                  className="text-muted-foreground font-bold uppercase tracking-wider text-[10px] h-12"
-                >
+                <TableHead key={header.id}>
                   {header.isPlaceholder
                     ? null
                     : flexRender(
@@ -209,21 +198,9 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
             ))
           ) : table.getRowModel().rows.length > 0 ? (
             table.getRowModel().rows.map((row) => (
-              <TableRow
-                key={row.id}
-                className="group border-border hover:bg-primary/5 transition-colors h-28"
-              >
+              <TableRow key={row.id}>
                 {row.getVisibleCells().map((cell) => (
-                  <TableCell
-                    key={cell.id}
-                    className={
-                      cell.column.id === "name"
-                        ? "pl-6"
-                        : cell.column.id === "actions"
-                        ? "pr-6"
-                        : ""
-                    }
-                  >
+                  <TableCell key={cell.id}>
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </TableCell>
                 ))}

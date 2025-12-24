@@ -13,16 +13,14 @@ export function Header({ onTestAll, isTestDisabled, hasTested }: HeaderProps) {
   return (
     <div className="flex flex-col items-center text-center space-y-8 mb-16">
       <div className="flex flex-col items-center space-y-4">
-        <div className="w-16 h-16 rounded-xl bg-card border border-border flex items-center justify-center shadow-lg">
-          <Terminal className="w-8 h-8 text-primary" />
+        <div className="w-16 h-16 rounded-xl border flex items-center justify-center bg-card">
+          <Terminal className="w-8 h-8" />
         </div>
-        <div className="space-y-2">
-          <div className="flex items-center justify-center gap-3">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-              BDIX FTP <span className="text-primary italic">Tester</span>
-            </h1>
-          </div>
-          <p className="text-muted-foreground font-medium max-w-sm">
+        <div className="space-y-1">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+            BDIX FTP <span className="text-primary">Tester</span>
+          </h1>
+          <p className="text-muted-foreground font-medium">
             Test your FTP server connections instantly
           </p>
         </div>

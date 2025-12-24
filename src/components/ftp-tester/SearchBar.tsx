@@ -2,7 +2,6 @@
 
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
-import { useState } from "react";
 
 interface SearchBarProps {
   value: string;
@@ -11,41 +10,22 @@ interface SearchBarProps {
 }
 
 export function SearchBar({ value, onChange, totalFiltered }: SearchBarProps) {
-  const [isFocused, setIsFocused] = useState(false);
-
   return (
-    <div className="max-w-4xl mx-auto w-full mb-8 space-y-4">
-      <div className="flex items-center justify-between text-xs font-bold uppercase tracking-widest text-muted-foreground px-1">
+    <div className="max-w-4xl mx-auto w-full mb-8 space-y-2">
+      <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-muted-foreground px-1">
         <span>Available FTP Servers</span>
-        <span className="text-muted-foreground/60 font-mono italic">
+        <span className="font-mono italic opacity-60">
           {totalFiltered} of {totalFiltered} servers
         </span>
       </div>
-
-      <div className="relative group">
-        <div
-          className={`
-          relative overflow-hidden transition-all duration-300 rounded-xl
-          ${
-            isFocused
-              ? "ring-1 ring-primary/50 shadow-xl shadow-primary/10"
-              : "border border-border shadow-lg"
-          }
-          bg-card/80 backdrop-blur-xl
-        `}
-        >
-          <div className="absolute left-5 top-1/2 -translate-y-1/2 text-muted-foreground group-hover:text-primary transition-colors">
-            <Search className="w-5 h-5" />
-          </div>
-          <Input
-            placeholder="Search servers by name, host, or protocol..."
-            value={value}
-            onChange={(e) => onChange(e.target.value)}
-            onFocus={() => setIsFocused(true)}
-            onBlur={() => setIsFocused(false)}
-            className="pl-14 pr-6 h-14 text-sm font-medium border-none focus-visible:ring-0 bg-transparent placeholder:text-muted-foreground/50 text-foreground"
-          />
-        </div>
+      <div className="relative">
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+        <Input
+          placeholder="Search servers..."
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          className="pl-10 h-12"
+        />
       </div>
     </div>
   );
