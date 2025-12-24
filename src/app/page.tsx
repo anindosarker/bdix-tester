@@ -111,40 +111,18 @@ export default function FtpTesterPage() {
           isTesting={isTesting}
         />
 
-        {onlineCount > 0 && (
-          <div className="mb-12 space-y-4 px-4 md:px-0">
-            <div className="flex items-center gap-2 px-1">
-              <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <h2 className="text-sm font-bold uppercase tracking-widest text-foreground">
-                Verified Online Servers
-              </h2>
-            </div>
-            <ServerList
-              servers={filteredServers}
-              isLoading={false}
-              results={results}
-              showOnlyOnline
-            />
-          </div>
-        )}
-
-        <div className="px-4 md:px-0">
+        <div className="space-y-12 px-4 md:px-0">
           <SearchBar
             value={search}
             onChange={setSearch}
             totalFiltered={filteredServers.length}
           />
 
-          <div className="space-y-4">
-            <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground px-1">
-              All Servers
-            </div>
-            <ServerList
-              servers={filteredServers}
-              isLoading={isLoading}
-              results={results}
-            />
-          </div>
+          <ServerList
+            servers={filteredServers}
+            isLoading={isLoading}
+            results={results}
+          />
         </div>
 
         <Footer />

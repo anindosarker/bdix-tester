@@ -3,6 +3,15 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
   Table,
@@ -19,26 +28,43 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { Activity, ExternalLink, Globe } from "lucide-react";
+import { Activity, ExternalLink, Filter, Globe } from "lucide-react";
 import Link from "next/link";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 
 interface ServerListProps {
   servers: FtpServer[];
   isLoading: boolean;
   results: Record<string, TestResult & { loading: boolean }>;
-  showOnlyOnline?: boolean;
 }
 
-export function ServerList({
-  servers,
-  isLoading,
-  results,
-  showOnlyOnline,
-}: ServerListProps) {
+export function ServerList({ servers, isLoading, results }: ServerListProps) {
+  const [filter, setFilter] = useState<"all" | "online">("all");
+  const showOnlyOnline = filter === "online";
+
   const displayServers = useMemo(() => {
-    if (!showOnlyOnline) return servers;
-    return servers.filter((s) => results[s.id]?.isOnline);
+    // 1. Filter
+    let filtered = servers;
+    if (showOnlyOnline) {
+      filtered = servers.filter((s) => results[s.id]?.isOnline);
+    }
+
+    // 2. Sort: Online > Loading > Others
+    return [...filtered].sort((a, b) => {
+      const resA = results[a.id];
+      const resB = results[b.id];
+
+      // Priority 1: Online
+      if (resA?.isOnline && !resB?.isOnline) return -1;
+      if (!resA?.isOnline && resB?.isOnline) return 1;
+
+      // Priority 2: Loading
+      if (resA?.loading && !resB?.loading) return -1;
+      if (!resA?.loading && resB?.loading) return 1;
+
+      // Maintain stability if no difference
+      return 0;
+    });
   }, [servers, results, showOnlyOnline]);
 
   const columns = useMemo<ColumnDef<FtpServer>[]>(
@@ -169,6 +195,48 @@ export function ServerList({
 
   return (
     <Card className="overflow-hidden">
+      <div className="px-4 py-3 border-b flex items-center justify-between bg-muted/10">
+        <div className="flex items-center gap-2">
+          <Globe className="w-4 h-4 text-primary" />
+          <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
+            Server Directory
+          </h3>
+        </div>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button
+              variant={showOnlyOnline ? "default" : "secondary"}
+              size="sm"
+            >
+              <Filter className="w-3 h-3" />
+              {showOnlyOnline ? "Filter: Online Only" : "Filter: All"}
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="w-48">
+            <DropdownMenuLabel className="text-[10px] uppercase tracking-widest text-muted-foreground/60">
+              Filter Options
+            </DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuRadioGroup
+              value={filter}
+              onValueChange={(v) => setFilter(v as "all" | "online")}
+            >
+              <DropdownMenuRadioItem
+                value="all"
+                className="text-xs focus:bg-accent cursor-pointer"
+              >
+                Show All Servers
+              </DropdownMenuRadioItem>
+              <DropdownMenuRadioItem
+                value="online"
+                className="text-xs focus:bg-accent cursor-pointer"
+              >
+                Verified Online Only
+              </DropdownMenuRadioItem>
+            </DropdownMenuRadioGroup>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
       <Table>
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
