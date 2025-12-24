@@ -161,7 +161,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
   });
 
   return (
-    <Card className="bg-card/40 backdrop-blur-xl border border-border rounded-xl overflow-hidden shadow-xl">
+    <Card className="bg-card/40 p-0 backdrop-blur-xl border border-border rounded-xl overflow-hidden shadow-xl">
       <Table>
         <TableHeader className="bg-muted/50 border-b border-border">
           {table.getHeaderGroups().map((headerGroup) => (
