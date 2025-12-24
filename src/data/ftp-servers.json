@@ -28,5 +28,23 @@
     "name": "Local FTP 3",
     "url": "http://103.135.134.226/",
     "category": "General"
+  },
+  {
+    "id": "ftp-0vgprwjx3",
+    "name": "COGENT BROADBAND (KHULNAFLIX)",
+    "url": "http://bokasoka.net/NAS1",
+    "category": "COGENT BROADBAND (KHULNAFLIX)"
+  },
+  {
+    "id": "ftp-zyf5hzw55",
+    "name": "INTEPID BROADBAND COMMUNICATION COMPANY LIMITED",
+    "url": "http://www.intrepidbd.com",
+    "category": "INTEPID BROADBAND COMMUNICATION COMPANY LIMITED"
+  },
+  {
+    "id": "ftp-70rc0445g",
+    "name": "INTEPID BROADBAND COMMUNICATION COMPANY LIMITED",
+    "url": "http://103.203.94.1:8065",
+    "category": "INTEPID BROADBAND COMMUNICATION COMPANY LIMITED"
   }
 ]

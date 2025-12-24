@@ -45,7 +45,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
           const isOnline = result?.isOnline;
           const isTested = !!result;
           return (
-            <div className="font-semibold flex items-center gap-2">
+            <div className="font-semibold flex items-center gap-2 min-w-[150px] py-1">
               <div
                 className={`w-2 h-2 rounded-full shrink-0 ${
                   !isTested
@@ -55,7 +55,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
                     : "bg-destructive"
                 }`}
               />
-              <span className="truncate">
+              <span className="break-words">
                 {row.index + 1}. {server.name}
               </span>
             </div>
@@ -66,7 +66,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
         accessorKey: "url",
         header: "Host",
         cell: ({ row }) => (
-          <div className="text-muted-foreground font-mono text-[11px] truncate">
+          <div className="text-muted-foreground font-mono text-[11px] break-all max-w-[250px] py-1">
             <a
               href={row.original.url}
               target="_blank"

@@ -11,7 +11,7 @@ interface SearchBarProps {
 
 export function SearchBar({ value, onChange, totalFiltered }: SearchBarProps) {
   return (
-    <div className="max-w-4xl mx-auto w-full mb-8 space-y-2">
+    <div className="w-full mb-8 space-y-2">
       <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-muted-foreground px-1">
         <span>Available FTP Servers</span>
         <span className="font-mono italic opacity-60">
