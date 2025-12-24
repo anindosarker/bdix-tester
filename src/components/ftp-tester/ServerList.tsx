@@ -27,9 +27,20 @@ interface ServerListProps {
   servers: FtpServer[];
   isLoading: boolean;
   results: Record<string, TestResult & { loading: boolean }>;
+  showOnlyOnline?: boolean;
 }
 
-export function ServerList({ servers, isLoading, results }: ServerListProps) {
+export function ServerList({
+  servers,
+  isLoading,
+  results,
+  showOnlyOnline,
+}: ServerListProps) {
+  const displayServers = useMemo(() => {
+    if (!showOnlyOnline) return servers;
+    return servers.filter((s) => results[s.id]?.isOnline);
+  }, [servers, results, showOnlyOnline]);
+
   const columns = useMemo<ColumnDef<FtpServer>[]>(
     () => [
       {
@@ -55,7 +66,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
                     : "bg-destructive"
                 }`}
               />
-              <span className="break-words">
+              <span className="break-all">
                 {row.index + 1}. {server.name}
               </span>
             </div>
@@ -151,7 +162,7 @@ export function ServerList({ servers, isLoading, results }: ServerListProps) {
 
   // eslint-disable-next-line react-hooks/incompatible-library
   const table = useReactTable({
-    data: servers,
+    data: displayServers,
     columns,
     getCoreRowModel: getCoreRowModel(),
   });

@@ -4,7 +4,7 @@ import { Footer } from "@/components/ftp-tester/Footer";
 import { Header } from "@/components/ftp-tester/Header";
 import { SearchBar } from "@/components/ftp-tester/SearchBar";
 import { ServerList } from "@/components/ftp-tester/ServerList";
-import { StatsGrid } from "@/components/ftp-tester/StatsGrid";
+import { TestProgress } from "@/components/ftp-tester/TestProgress";
 import { Topbar } from "@/components/ftp-tester/Topbar";
 import { useFtpServers, useTestServer } from "@/hooks/use-ftp";
 import { FtpServer, TestResult } from "@/lib/types/ftp";
@@ -16,6 +16,8 @@ export default function FtpTesterPage() {
   const testMutation = useTestServer();
   const [search, setSearch] = useState("");
   const [hasTested, setHasTested] = useState(false);
+  const [isTesting, setIsTesting] = useState(false);
+  const [checkedCount, setCheckedCount] = useState(0);
   const [results, setResults] = useState<
     Record<string, TestResult & { loading: boolean }>
   >({});
@@ -50,20 +52,27 @@ export default function FtpTesterPage() {
         ...prev,
         [id]: { url, isOnline: false, statusText: "Error", loading: false },
       }));
+    } finally {
+      setCheckedCount((prev) => prev + 1);
     }
   };
 
   const testAll = async () => {
     if (!filteredServers.length) return;
     setHasTested(true);
+    setIsTesting(true);
+    setCheckedCount(0);
+    setResults({});
+
     toast.info(`Scanning ${filteredServers.length} servers...`);
 
-    // Test in batches of 5 to avoid overloading the backend/client
     const batchSize = 5;
     for (let i = 0; i < filteredServers.length; i += batchSize) {
       const batch = filteredServers.slice(i, i + batchSize);
       await Promise.all(batch.map((s: FtpServer) => testOne(s.id, s.url)));
     }
+
+    setIsTesting(false);
     toast.success("All scans completed!");
   };
 
@@ -94,24 +103,49 @@ export default function FtpTesterPage() {
           hasTested={hasTested}
         />
 
-        <StatsGrid
-          totalCount={filteredServers.length}
+        <TestProgress
+          current={checkedCount}
+          total={filteredServers.length}
           onlineCount={onlineCount}
           offlineCount={offlineCount}
-          isVisible={hasTested}
+          isTesting={isTesting}
         />
 
-        <SearchBar
-          value={search}
-          onChange={setSearch}
-          totalFiltered={filteredServers.length}
-        />
+        {onlineCount > 0 && (
+          <div className="mb-12 space-y-4 px-4 md:px-0">
+            <div className="flex items-center gap-2 px-1">
+              <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <h2 className="text-sm font-bold uppercase tracking-widest text-foreground">
+                Verified Online Servers
+              </h2>
+            </div>
+            <ServerList
+              servers={filteredServers}
+              isLoading={false}
+              results={results}
+              showOnlyOnline
+            />
+          </div>
+        )}
 
-        <ServerList
-          servers={filteredServers}
-          isLoading={isLoading}
-          results={results}
-        />
+        <div className="px-4 md:px-0">
+          <SearchBar
+            value={search}
+            onChange={setSearch}
+            totalFiltered={filteredServers.length}
+          />
+
+          <div className="space-y-4">
+            <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground px-1">
+              All Servers
+            </div>
+            <ServerList
+              servers={filteredServers}
+              isLoading={isLoading}
+              results={results}
+            />
+          </div>
+        </div>
 
         <Footer />
       </div>
