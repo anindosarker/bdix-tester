@@ -5,14 +5,14 @@ import { Header } from "@/components/ftp-tester/Header";
 import { ServerList } from "@/components/ftp-tester/ServerList";
 import { TestProgress } from "@/components/ftp-tester/TestProgress";
 import { Topbar } from "@/components/ftp-tester/Topbar";
-import { useFtpServers, useTestServer } from "@/hooks/use-ftp";
+import { useFtpBatchTester, useFtpServers } from "@/hooks/use-ftp";
 import { FtpServer, TestResult } from "@/lib/types/ftp";
 import { useState } from "react";
 import { toast } from "sonner";
 
 export default function FtpTesterPage() {
   const { data: servers, isLoading } = useFtpServers();
-  const testMutation = useTestServer();
+  const batchTester = useFtpBatchTester();
   const [hasTested, setHasTested] = useState(false);
   const [isTesting, setIsTesting] = useState(false);
   const [checkedCount, setCheckedCount] = useState(0);
@@ -26,7 +26,7 @@ export default function FtpTesterPage() {
       [id]: { url, isOnline: false, statusText: "Testing...", loading: true },
     }));
     try {
-      const res = await testMutation.mutateAsync(url);
+      const res = await batchTester(url);
       setResults((prev) => ({
         ...prev,
         [id]: {
@@ -38,7 +38,7 @@ export default function FtpTesterPage() {
       console.error("Test failed", error);
       setResults((prev) => ({
         ...prev,
-        [id]: { url, isOnline: false, statusText: "Error", loading: false },
+        [id]: { url, isOnline: false, statusText: "Offline", loading: false },
       }));
     } finally {
       setCheckedCount((prev) => prev + 1);
@@ -54,11 +54,14 @@ export default function FtpTesterPage() {
 
     toast.info(`Scanning ${servers.length} servers...`);
 
-    const batchSize = 50;
-    for (let i = 0; i < servers.length; i += batchSize) {
-      const batch = servers.slice(i, i + batchSize);
-      await Promise.all(batch.map((s: FtpServer) => testOne(s.id, s.url)));
-    }
+    // We can just fire them all off, the batchTester (Pacer) will queue them up
+    // However, for 4000+ items, pushing 4000 promises to the stack at once might still suffice?
+    // Let's rely on Pacer, but maybe do it in chunks of 500 to be safe for the UI thread?
+    // Actually, Pacer handles the execution, but the loop itself is sync.
+    // Iterating 4000 times is fine.
+
+    // We use Promise.all to wait for all of them to finish for the "isTesting" state
+    await Promise.all(servers.map((s: FtpServer) => testOne(s.id, s.url)));
 
     setIsTesting(false);
     toast.success("All scans completed!");
